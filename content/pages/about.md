@@ -2,6 +2,10 @@
 title: "About"
 profileImage: "/images/profile/artist-portrait.jpg"
 instagramHandle: "yuliia_art_uk_ua"
+instagramSectionTitle: "Recent Works"
+instagramSectionSubtitle: "Follow my journey on Instagram"
+downloadCvText: "Download CV"
+viewMoreText: "View more on Instagram"
 instagramPosts:
   - id: "DHTyUkXKJk6"
     image: "/images/instagram/instagram-1.jpg"

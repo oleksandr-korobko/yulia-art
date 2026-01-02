@@ -63,6 +63,10 @@ export interface AboutPageContent {
   title: string;
   profileImage: string;
   instagramHandle: string;
+  instagramSectionTitle: string;
+  instagramSectionSubtitle: string;
+  downloadCvText: string;
+  viewMoreText: string;
   instagramPosts: InstagramPost[];
   content: string;
 }

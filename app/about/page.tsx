@@ -9,37 +9,37 @@ export default function AboutPage() {
   return (
     <main>
       {/* Profile Section */}
-      <div className="relative bg-white">
-        <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
-          <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-            <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
+      <div className="relative bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <div className="grid grid-cols-1 gap-y-16 sm:gap-y-24 lg:grid-cols-2 lg:items-stretch">
+            <div className="overflow-hidden rounded-lg bg-white">
               <Image
                 alt="Yuliia Holovatiuk-Ungureanu"
                 src={aboutContent.profileImage}
-                fill
-                className="bg-gray-50 object-cover"
+                width={800}
+                height={1000}
+                className="h-full w-full object-cover"
               />
             </div>
-          </div>
-          <div className="px-6 lg:contents">
-            <div className="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-              <h1 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
-                {aboutContent.title}
-              </h1>
-              <div className="mt-6 max-w-xl text-base font-light leading-relaxed text-gray-700 lg:max-w-none">
-                {paragraphs.map((paragraph, index) => (
-                  <p key={index} className={index === 0 ? '' : 'mt-6'}>
-                    {paragraph}
-                  </p>
-                ))}
-
-                <div className="mt-16">
-                  <a
-                    href={siteConfig.cvFile}
-                    className="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-                  >
-                    Download CV
-                  </a>
+            <div className="flex flex-col justify-center lg:pl-8">
+              <div className="text-base font-light leading-relaxed text-gray-700">
+                <h1 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
+                  {aboutContent.title}
+                </h1>
+                <div className="mt-6 space-y-6">
+                  {paragraphs.map((paragraph, index) => (
+                    <p key={index}>
+                      {paragraph}
+                    </p>
+                  ))}
+                  <div className="mt-10">
+                    <a
+                      href={siteConfig.cvFile}
+                      className="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                    >
+                      {aboutContent.downloadCvText}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -51,10 +51,10 @@ export default function AboutPage() {
       <div className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
-            Recent Works
+            {aboutContent.instagramSectionTitle}
           </h2>
           <p className="mt-2 text-base text-gray-600">
-            Follow my journey on Instagram
+            {aboutContent.instagramSectionSubtitle}
           </p>
           <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-4">
             {/* Row 1: Large + Small */}
@@ -168,7 +168,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="text-base font-light text-gray-900 hover:text-gray-600"
             >
-              View more on Instagram <span aria-hidden="true">&rarr;</span>
+              {aboutContent.viewMoreText} <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
