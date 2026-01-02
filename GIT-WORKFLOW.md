@@ -33,11 +33,11 @@
    git commit -m "Your commit message"
    ```
 
-3. **Push в development:**
+3. **Push в development + Deploy на production:**
    ```bash
    git push origin development
+   npx vercel --prod               # Деплоїть на yulia-art.vercel.app
    ```
-   → Vercel автоматично створить preview deployment
 
 ### Випуск в Production
 
@@ -100,11 +100,12 @@ git checkout master         # Switch to master
 git pull origin development  # Get latest changes
 ```
 
-### Створити коміт
+### Створити коміт і задеплоїти
 ```bash
 git add .                              # Stage all changes
 git commit -m "Description of changes" # Commit
 git push origin development            # Push to GitHub
+npx vercel --prod                      # Deploy to production
 ```
 
 ### Подивитись статус
