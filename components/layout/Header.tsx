@@ -6,12 +6,6 @@ import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } fr
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { CATEGORIES } from '@/lib/types'
 
-const navigation = [
-  { name: 'HOME', href: '/' },
-  { name: 'ABOUT', href: '/about' },
-  { name: 'CONTACT', href: '/contact' },
-]
-
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -33,16 +27,13 @@ export function Header() {
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
-            <div className="hidden lg:flex lg:gap-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
-                >
-                  {item.name}
-                </Link>
-              ))}
+            <div className="hidden lg:flex lg:items-center lg:gap-x-8">
+              <Link
+                href="/"
+                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
+              >
+                HOME
+              </Link>
               <div className="relative group">
                 <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer">
                   WORKS
@@ -61,6 +52,18 @@ export function Header() {
                   </div>
                 </div>
               </div>
+              <Link
+                href="/about"
+                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
+              >
+                ABOUT
+              </Link>
+              <Link
+                href="/contact"
+                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
+              >
+                CONTACT
+              </Link>
             </div>
           </nav>
         </div>
@@ -86,16 +89,13 @@ export function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                <Link
+                  href="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  HOME
+                </Link>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50">
                     WORKS
@@ -114,6 +114,20 @@ export function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
+                <Link
+                  href="/about"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  ABOUT
+                </Link>
+                <Link
+                  href="/contact"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  CONTACT
+                </Link>
               </div>
             </div>
           </div>
