@@ -30,12 +30,12 @@ export function Header() {
             <div className="hidden lg:flex lg:items-center lg:gap-x-8">
               <Link
                 href="/"
-                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
+                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
               >
                 HOME
               </Link>
               <div className="relative group">
-                <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer">
+                <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
                   WORKS
                 </span>
                 <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -54,13 +54,13 @@ export function Header() {
               </div>
               <Link
                 href="/about"
-                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
+                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
               >
                 ABOUT
               </Link>
               <Link
                 href="/contact"
-                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600"
+                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
               >
                 CONTACT
               </Link>
