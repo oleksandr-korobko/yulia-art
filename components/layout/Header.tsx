@@ -10,58 +10,56 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
-      <div className="mx-auto max-w-7xl">
-        <div className="px-6 pt-6 lg:px-8">
-          <nav aria-label="Global" className="flex items-center justify-between">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
+    <header className="bg-white">
+      <div className="mx-auto max-w-2xl px-6 py-6 lg:max-w-7xl lg:px-8">
+        <nav aria-label="Global" className="flex items-center justify-between lg:justify-center">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon aria-hidden="true" className="size-6" />
+          </button>
+          <div className="hidden lg:flex lg:items-center lg:gap-x-12">
+            <Link
+              href="/"
+              className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-6" />
-            </button>
-            <div className="hidden lg:flex lg:items-center lg:gap-x-8">
-              <Link
-                href="/"
-                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
-              >
-                HOME
-              </Link>
-              <div className="relative group">
-                <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
-                  WORKS
-                </span>
-                <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="p-2">
-                    {CATEGORIES.map((category) => (
-                      <Link
-                        key={category.slug}
-                        href={`/works/${category.slug}`}
-                        className="block rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 hover:bg-gray-50"
-                      >
-                        {category.displayName}
-                      </Link>
-                    ))}
-                  </div>
+              HOME
+            </Link>
+            <div className="relative group">
+              <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
+                WORKS
+              </span>
+              <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="p-2">
+                  {CATEGORIES.map((category) => (
+                    <Link
+                      key={category.slug}
+                      href={`/works/${category.slug}`}
+                      className="block rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 hover:bg-gray-50"
+                    >
+                      {category.displayName}
+                    </Link>
+                  ))}
                 </div>
               </div>
-              <Link
-                href="/about"
-                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
-              >
-                ABOUT
-              </Link>
-              <Link
-                href="/contact"
-                className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
-              >
-                CONTACT
-              </Link>
             </div>
-          </nav>
-        </div>
+            <Link
+              href="/about"
+              className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+            >
+              ABOUT
+            </Link>
+            <Link
+              href="/contact"
+              className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+            >
+              CONTACT
+            </Link>
+          </div>
+        </nav>
       </div>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-50" />

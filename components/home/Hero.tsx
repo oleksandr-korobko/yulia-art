@@ -6,7 +6,7 @@ export function Hero() {
 
   return (
     <div className="relative bg-white">
-      <div className="mx-auto max-w-2xl px-6 py-16 sm:py-20 lg:max-w-7xl lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-2xl px-6 pb-16 sm:pb-20 lg:max-w-7xl lg:px-8 lg:pb-32">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center">
             <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl lg:text-6xl">
