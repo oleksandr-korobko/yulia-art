@@ -43,12 +43,11 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Disclosure as="div" className="relative">
-                <DisclosureButton className="flex items-center gap-x-1 text-sm font-light tracking-wide text-gray-900 hover:text-gray-600">
+              <div className="relative group">
+                <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer">
                   WORKS
-                  <ChevronDownIcon aria-hidden="true" className="size-4" />
-                </DisclosureButton>
-                <DisclosurePanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
+                </span>
+                <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="p-2">
                     {CATEGORIES.map((category) => (
                       <Link
@@ -60,8 +59,8 @@ export function Header() {
                       </Link>
                     ))}
                   </div>
-                </DisclosurePanel>
-              </Disclosure>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
