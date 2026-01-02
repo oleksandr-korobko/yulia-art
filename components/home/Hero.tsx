@@ -1,4 +1,9 @@
+import Image from 'next/image';
+import { getHomePageContent } from '@/lib/content';
+
 export function Hero() {
+  const homeContent = getHomePageContent();
+
   return (
     <div className="bg-white pt-32 pb-24 sm:pt-40 sm:pb-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -8,18 +13,16 @@ export function Hero() {
               YULIIA HOLOVATIUK-UNGUREANU
             </h1>
             <p className="mt-8 text-base font-light leading-relaxed text-gray-600 sm:text-lg">
-              A multidisciplinary artist working across immersive installation,
-              sculpture, ceramics, and material-based painting, engaging with
-              archival materials, legal documents, and artefacts to examine how
-              war, displacement, and the pursuit of justice shape pathways of
-              healing, resilience, and rebuilding future realities.
+              {homeContent.content}
             </p>
           </div>
-          <div className="relative overflow-hidden rounded-lg">
-            <img
+          <div className="relative h-[400px] overflow-hidden rounded-lg lg:h-[500px]">
+            <Image
               alt="Artist workspace"
-              src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=2102&auto=format&fit=crop"
-              className="h-full w-full object-cover"
+              src={homeContent.heroImage}
+              fill
+              className="object-cover"
+              priority
             />
           </div>
         </div>

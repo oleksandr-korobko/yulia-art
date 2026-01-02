@@ -37,6 +37,49 @@ export interface WorkFrontmatter {
   order: number;
 }
 
+export interface CategoryInfoWithImage extends CategoryInfo {
+  previewImage: string;
+}
+
+export interface HomePageContent {
+  title: string;
+  description: string;
+  heroImage: string;
+  content: string;
+}
+
+export interface ArtistStatementContent {
+  title: string;
+  image: string;
+  content: string;
+}
+
+export interface InstagramPost {
+  id: string;
+  image: string;
+}
+
+export interface AboutPageContent {
+  title: string;
+  profileImage: string;
+  instagramHandle: string;
+  instagramPosts: InstagramPost[];
+  content: string;
+}
+
+export interface SiteConfig {
+  siteName: string;
+  siteTitle: string;
+  siteDescription: string;
+  artistName: string;
+  location: string;
+  email: string;
+  instagram: string;
+  instagramHandle: string;
+  copyright: string;
+  cvFile: string;
+}
+
 export const CATEGORIES: CategoryInfo[] = [
   {
     slug: 'installations',

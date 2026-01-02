@@ -1,16 +1,9 @@
 import Link from 'next/link';
-import { CATEGORIES } from '@/lib/types';
-
-const categoryImages = {
-  installations: 'https://images.unsplash.com/photo-1561214115-f2f134cc4912?q=80&w=3270&auto=format&fit=crop',
-  sculptures: 'https://images.unsplash.com/photo-1578926314433-e2789279f4aa?q=80&w=3270&auto=format&fit=crop',
-  paintings: 'https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?q=80&w=3272&auto=format&fit=crop',
-  ceramics: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=3270&auto=format&fit=crop',
-  'text-informed': 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=3270&auto=format&fit=crop',
-};
+import { getCategoriesWithImages } from '@/lib/content';
 
 export function SelectedWorks() {
-  const [firstRow, secondRow] = [CATEGORIES.slice(0, 2), CATEGORIES.slice(2)];
+  const categories = getCategoriesWithImages();
+  const [firstRow, secondRow] = [categories.slice(0, 2), categories.slice(2)];
 
   return (
     <div className="bg-white py-24 sm:py-32">
@@ -26,7 +19,7 @@ export function SelectedWorks() {
             >
               <img
                 alt=""
-                src={categoryImages[category.slug]}
+                src={category.previewImage}
                 className="absolute inset-0 -z-10 size-full object-cover"
               />
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
@@ -50,7 +43,7 @@ export function SelectedWorks() {
             >
               <img
                 alt=""
-                src={categoryImages[category.slug]}
+                src={category.previewImage}
                 className="absolute inset-0 -z-10 size-full object-cover"
               />
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />

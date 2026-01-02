@@ -1,10 +1,14 @@
+import { getSiteConfig } from '@/lib/content';
+
 export function Footer() {
+  const siteConfig = getSiteConfig();
+
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center md:order-2">
           <a
-            href="https://www.instagram.com/yuliia_art_uk_ua"
+            href={siteConfig.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-800"
@@ -20,7 +24,7 @@ export function Footer() {
           </a>
         </div>
         <p className="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
-          &copy; 2025 Yuliia Holovatiuk-Ungureanu. All rights reserved.
+          {siteConfig.copyright}
         </p>
       </div>
     </footer>
