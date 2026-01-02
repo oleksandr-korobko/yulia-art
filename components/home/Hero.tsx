@@ -6,9 +6,9 @@ export function Hero() {
 
   return (
     <div className="relative bg-white">
-      <div className="mx-auto max-w-2xl px-6 pb-16 sm:pb-20 lg:max-w-7xl lg:px-8 lg:pb-32">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="flex flex-col justify-center">
+      <div className="mx-auto max-w-2xl lg:max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="flex flex-col justify-center px-6 py-16 sm:py-20 lg:px-8 lg:py-32">
             <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl lg:text-6xl">
               {homeContent.artistName}
             </h1>
@@ -16,7 +16,7 @@ export function Hero() {
               {homeContent.content}
             </p>
           </div>
-          <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
+          <div className="relative min-h-[500px] lg:min-h-0">
             <Image
               alt={homeContent.heroImageAlt}
               src={homeContent.heroImage}
