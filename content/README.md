@@ -8,10 +8,11 @@
 content/
 ├── README.md                    # Цей файл
 ├── site-config.md               # Глобальні налаштування сайту
-├── selected-works.md            # Конфігурація секції Selected Works
 ├── pages/                       # Контент для сторінок
-│   ├── home.md                  # Hero секція головної сторінки
-│   ├── artist-statement.md      # Artist Statement
+│   ├── main/                    # Контент головної сторінки
+│   │   ├── home.md              # Hero секція
+│   │   ├── artist-statement.md  # Artist Statement
+│   │   └── selected-works.md    # Selected Works секція
 │   └── about.md                 # About page з Instagram
 └── works/                       # Markdown файли робіт
     ├── installations/
@@ -30,18 +31,23 @@ content/
 
 ### Сторінки (pages/)
 
-#### `home.md`
+#### `pages/main/home.md`
 Контент для Hero секції головної сторінки:
 - Artist name
 - Tagline/bio
 - Hero image path
 
-#### `artist-statement.md`
+#### `pages/main/artist-statement.md`
 Artist Statement:
 - Три параграфи про практику
 - Фото художниці в процесі роботи
 
-#### `about.md`
+#### `pages/main/selected-works.md`
+Секція Selected Works на головній сторінці:
+- Title секції
+- Всі 5 категорій робіт з display names, descriptions та preview images
+
+#### `pages/about.md`
 About page:
 - Повна біографія (5 параграфів)
 - Профільне фото
@@ -55,11 +61,6 @@ About page:
 - Контактна інформація
 - Social media links
 - Copyright
-
-#### `selected-works.md`
-Секція Selected Works на головній сторінці:
-- Title секції
-- Всі 5 категорій робіт з display names, descriptions та preview images
 
 ### Роботи (works/)
 

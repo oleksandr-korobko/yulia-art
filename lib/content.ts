@@ -29,7 +29,7 @@ function readMarkdownFile<T>(filePath: string): { data: T; content: string } {
  * Get home page content
  */
 export function getHomePageContent(): HomePageContent {
-  const { data, content } = readMarkdownFile<Omit<HomePageContent, 'content'>>('pages/home.md');
+  const { data, content } = readMarkdownFile<Omit<HomePageContent, 'content'>>('pages/main/home.md');
   return { ...data, content };
 }
 
@@ -37,7 +37,7 @@ export function getHomePageContent(): HomePageContent {
  * Get artist statement content
  */
 export function getArtistStatementContent(): ArtistStatementContent {
-  const { data, content } = readMarkdownFile<Omit<ArtistStatementContent, 'content'>>('pages/artist-statement.md');
+  const { data, content } = readMarkdownFile<Omit<ArtistStatementContent, 'content'>>('pages/main/artist-statement.md');
   return { ...data, content };
 }
 
@@ -61,7 +61,7 @@ export function getSiteConfig(): SiteConfig {
  * Get Selected Works section content
  */
 export function getSelectedWorksContent(): SelectedWorksContent {
-  const { data } = readMarkdownFile<SelectedWorksContent>('selected-works.md');
+  const { data } = readMarkdownFile<SelectedWorksContent>('pages/main/selected-works.md');
   return data;
 }
 

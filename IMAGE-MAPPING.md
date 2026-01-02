@@ -10,7 +10,7 @@
 
 ### 1. Hero Section (Головна сторінка)
 
-**Використовується в:** `components/home/Hero.tsx` → `content/pages/home.md`
+**Використовується в:** `components/home/Hero.tsx` → `content/pages/main/home.md`
 
 **Зараз:** `https://images.unsplas.h./photo-1536924940846-227afb31e2a5...` (поламане посилання)
 
@@ -27,7 +27,7 @@
 
 ### 2. Category Preview Images (Превʼю категорій)
 
-**Використовується в:** `components/home/SelectedWorks.tsx` → `content/selected-works.md`
+**Використовується в:** `components/home/SelectedWorks.tsx` → `content/pages/main/selected-works.md`
 
 **Зараз:** Усі — Unsplash placeholders
 
@@ -46,7 +46,7 @@
 
 ### 3. Profile Photos (Фото художниці)
 
-**Використовується в:** `app/about/page.tsx` і `components/home/ArtistStatement.tsx` → `content/pages/about.md` та `content/pages/artist-statement.md`
+**Використовується в:** `app/about/page.tsx` і `components/home/ArtistStatement.tsx` → `content/pages/about.md` та `content/pages/main/artist-statement.md`
 
 **Зараз:** Unsplash placeholders
 
@@ -174,9 +174,9 @@
 
 | Компонент | Зараз (hardcoded) | Буде використовувати |
 |-----------|------------------|---------------------|
-| `Hero.tsx` | Текст + Unsplash URL | `content/pages/home.md` |
-| `SelectedWorks.tsx` | Unsplash URLs | `content/categories.md` |
-| `ArtistStatement.tsx` | Текст + Unsplash URL | `content/pages/artist-statement.md` |
+| `Hero.tsx` | Текст + Unsplash URL | `content/pages/main/home.md` |
+| `SelectedWorks.tsx` | Unsplash URLs | `content/pages/main/selected-works.md` |
+| `ArtistStatement.tsx` | Текст + Unsplash URL | `content/pages/main/artist-statement.md` |
 | `about/page.tsx` | Текст + Unsplash URLs | `content/pages/about.md` |
 | `Footer.tsx` | Хардкод | `content/site-config.md` |
 | Works pages | Ще не створені | `content/works/[category]/[slug].md` |
