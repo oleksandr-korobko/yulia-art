@@ -12,6 +12,7 @@ import {
   SiteConfig,
   SelectedWorksContent,
   InstagramFeedContent,
+  ContactPageContent,
 } from './types';
 
 const contentDirectory = path.join(process.cwd(), 'content');
@@ -56,6 +57,14 @@ export function getAboutPageContent(): AboutPageContent {
 export function getInstagramFeedContent(): InstagramFeedContent {
   const { data } = readMarkdownFile<InstagramFeedContent>('instagram-feed.md');
   return data;
+}
+
+/**
+ * Get contact page content
+ */
+export function getContactPageContent(): ContactPageContent {
+  const { data, content } = readMarkdownFile<Omit<ContactPageContent, 'content'>>('pages/contact.md');
+  return { ...data, content };
 }
 
 /**

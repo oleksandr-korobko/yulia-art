@@ -78,6 +78,15 @@ export interface InstagramFeedContent {
   posts: InstagramPost[];
 }
 
+export interface ContactPageContent {
+  title: string;
+  heading: string;
+  emailLabel: string;
+  email: string;
+  instagramLabel: string;
+  content: string;
+}
+
 export interface SiteConfig {
   siteName: string;
   siteTitle: string;
