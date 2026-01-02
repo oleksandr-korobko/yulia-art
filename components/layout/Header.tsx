@@ -14,11 +14,6 @@ export function Header() {
       <div className="mx-auto max-w-7xl">
         <div className="px-6 pt-6 lg:px-8">
           <nav aria-label="Global" className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="text-sm font-light tracking-widest text-gray-900">
-                YULIIA HOLOVATIUK-UNGUREANU
-              </span>
-            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
@@ -71,12 +66,7 @@ export function Header() {
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="text-sm font-light tracking-widest text-gray-900">
-                YULIIA HOLOVATIUK-UNGUREANU
-              </span>
-            </Link>
+          <div className="flex items-center justify-end">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
