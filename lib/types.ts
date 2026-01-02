@@ -80,10 +80,13 @@ export interface InstagramFeedContent {
 
 export interface ContactPageContent {
   title: string;
-  heading: string;
   emailLabel: string;
   email: string;
   instagramLabel: string;
+  instagramUrl: string;
+  copyrightYear: string;
+  copyrightHolder: string;
+  profileImage: string;
   content: string;
 }
 

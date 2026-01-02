@@ -1,28 +1,44 @@
+import Image from 'next/image';
 import { getContactPageContent, getSiteConfig } from '@/lib/content';
+
+export const metadata = {
+  title: 'Contact | Yuliia Holovatiuk-Ungureanu',
+  description: 'Get in touch with artist Yuliia Holovatiuk-Ungureanu. Email and Instagram contact information.',
+};
 
 export default function ContactPage() {
   const contactContent = getContactPageContent();
   const siteConfig = getSiteConfig();
-  const paragraphs = contactContent.content.split('\n\n');
+
+  // Split content into sections
+  const sections = contactContent.content.split('## ').filter(Boolean);
+  const copyrightSection = sections.find((s) => s.startsWith('Copyright'));
+  const disclaimerSection = sections.find((s) => s.startsWith('External Links'));
+  const cookiesSection = sections.find((s) => s.startsWith('Third-Party'));
 
   return (
     <main>
-      <div className="relative bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-          <div className="mx-auto max-w-2xl">
-            <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl">
-              {contactContent.heading}
-            </h1>
-
-            <div className="mt-10 space-y-6 text-base font-light leading-relaxed text-gray-700">
-              {paragraphs.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+      <div className="relative bg-white">
+        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+          {/* Left side - Image */}
+          <div className="relative lg:col-span-5 lg:row-span-2">
+            <div className="relative h-64 sm:h-80 lg:absolute lg:inset-0 lg:h-full">
+              <Image
+                src={contactContent.profileImage}
+                alt="Yuliia Holovatiuk-Ungureanu"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                priority
+              />
             </div>
+          </div>
 
-            <div className="mt-16 space-y-8">
+          {/* Right side - Content */}
+          <div className="px-6 py-24 sm:py-32 lg:col-span-7 lg:px-0 lg:pt-16 lg:pb-0 lg:flex lg:items-end">
+            <div className="mx-auto max-w-lg lg:mx-0 lg:pb-0">
               {/* Email */}
-              <div>
+              <div className="mb-12">
                 <h2 className="text-sm font-light uppercase tracking-wide text-gray-500">
                   {contactContent.emailLabel}
                 </h2>
@@ -35,12 +51,12 @@ export default function ContactPage() {
               </div>
 
               {/* Instagram */}
-              <div>
+              <div className="mb-32">
                 <h2 className="text-sm font-light uppercase tracking-wide text-gray-500">
                   {contactContent.instagramLabel}
                 </h2>
                 <a
-                  href={siteConfig.instagram}
+                  href={contactContent.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 flex items-center gap-3 text-xl font-light text-gray-900 hover:text-gray-600 transition-colors group"
@@ -60,6 +76,47 @@ export default function ContactPage() {
                   @{siteConfig.instagramHandle}
                 </a>
               </div>
+
+              {/* Copyright */}
+              {copyrightSection && (
+                <div className="border-t border-gray-200 pt-6 pb-6">
+                  <h3 className="text-base font-light tracking-wide text-gray-900">
+                    Copyright
+                  </h3>
+                  <div className="text-sm font-light leading-relaxed text-gray-600">
+                    {copyrightSection
+                      .replace('Copyright\n\n', '')
+                      .split('\n\n')
+                      .map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                  </div>
+                </div>
+              )}
+
+              {/* External Links Disclaimer */}
+              {disclaimerSection && (
+                <div className="border-t border-gray-200 pt-6 pb-6">
+                  <h3 className="text-base font-light tracking-wide text-gray-900">
+                    External Links Disclaimer
+                  </h3>
+                  <p className="text-sm font-light leading-relaxed text-gray-600">
+                    {disclaimerSection.replace('External Links Disclaimer\n\n', '')}
+                  </p>
+                </div>
+              )}
+
+              {/* Third-Party Cookies */}
+              {cookiesSection && (
+                <div className="border-t border-gray-200 pt-6">
+                  <h3 className="text-base font-light tracking-wide text-gray-900">
+                    Third-Party Cookies
+                  </h3>
+                  <p className="text-sm font-light leading-relaxed text-gray-600">
+                    {cookiesSection.replace('Third-Party Cookies\n\n', '')}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
