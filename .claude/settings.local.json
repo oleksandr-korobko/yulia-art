@@ -10,7 +10,9 @@
       "Bash(npm install:*)",
       "Bash(cat:*)",
       "Bash(npm run lint:*)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "Bash(brew install:*)",
+      "Bash(npx vercel:*)"
     ]
   }
 }
