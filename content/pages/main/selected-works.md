@@ -16,15 +16,15 @@ categories:
     description: "Material-based paintings using natural pigments and earth imprints, where surface operates as substance"
     previewImage: "/images/categories/paintings-preview.jpg"
 
-  - slug: "ceramics"
-    displayName: "Ceramic Works"
-    description: "Ceramic objects ranging from singular forms to modular structures, addressing reconstruction, fragility, and continuity"
-    previewImage: "/images/categories/ceramics-preview.jpg"
-
   - slug: "text-informed"
     displayName: "Text-Informed & Archival Works"
     description: "Works engaging text, archival materials, photographs, and moving images to examine memory, history, and lived experience"
     previewImage: "/images/categories/text-informed-preview.jpg"
+
+  - slug: "ceramics"
+    displayName: "Ceramic Works"
+    description: "Ceramic objects ranging from singular forms to modular structures, addressing reconstruction, fragility, and continuity"
+    previewImage: "/images/categories/ceramics-preview.jpg"
 ---
 
 # Selected Works
