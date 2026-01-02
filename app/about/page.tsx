@@ -85,11 +85,15 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className={`group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 ${colSpan} ${roundedClass}`}
                 >
-                  <img
-                    src={post.image}
-                    alt={post.alt}
-                    className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <div className="relative h-80 w-full">
+                    <Image
+                      src={post.image}
+                      alt={post.alt}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 16vw"
+                    />
+                  </div>
                 </a>
               );
             })}
