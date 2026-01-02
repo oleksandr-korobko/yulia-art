@@ -27,7 +27,7 @@
 
 ### 2. Category Preview Images (Превʼю категорій)
 
-**Використовується в:** `components/home/SelectedWorks.tsx` → `content/categories.md`
+**Використовується в:** `components/home/SelectedWorks.tsx` → `content/selected-works.md`
 
 **Зараз:** Усі — Unsplash placeholders
 

@@ -1,4 +1,5 @@
 ---
+title: "Selected Works"
 categories:
   - slug: "installations"
     displayName: "Installations"
@@ -26,6 +27,6 @@ categories:
     previewImage: "/images/categories/text-informed-preview.jpg"
 ---
 
-# Work Categories
+# Selected Works
 
-This file defines all work categories for the portfolio, including display names, descriptions, and preview images.
+This file defines the Selected Works section on the homepage, including the title and all work categories with their display names, descriptions, and preview images.

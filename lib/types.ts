@@ -80,6 +80,11 @@ export interface SiteConfig {
   cvFile: string;
 }
 
+export interface SelectedWorksContent {
+  title: string;
+  categories: CategoryInfoWithImage[];
+}
+
 export const CATEGORIES: CategoryInfo[] = [
   {
     slug: 'installations',

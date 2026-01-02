@@ -8,7 +8,7 @@
 content/
 ├── README.md                    # Цей файл
 ├── site-config.md               # Глобальні налаштування сайту
-├── categories.md                # Конфігурація категорій робіт
+├── selected-works.md            # Конфігурація секції Selected Works
 ├── pages/                       # Контент для сторінок
 │   ├── home.md                  # Hero секція головної сторінки
 │   ├── artist-statement.md      # Artist Statement
@@ -56,11 +56,10 @@ About page:
 - Social media links
 - Copyright
 
-#### `categories.md`
-Всі 5 категорій робіт з:
-- Display names
-- Descriptions
-- Preview image paths
+#### `selected-works.md`
+Секція Selected Works на головній сторінці:
+- Title секції
+- Всі 5 категорій робіт з display names, descriptions та preview images
 
 ### Роботи (works/)
 

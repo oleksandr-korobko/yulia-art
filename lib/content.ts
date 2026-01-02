@@ -10,6 +10,7 @@ import {
   ArtistStatementContent,
   AboutPageContent,
   SiteConfig,
+  SelectedWorksContent,
 } from './types';
 
 const contentDirectory = path.join(process.cwd(), 'content');
@@ -57,11 +58,20 @@ export function getSiteConfig(): SiteConfig {
 }
 
 /**
+ * Get Selected Works section content
+ */
+export function getSelectedWorksContent(): SelectedWorksContent {
+  const { data } = readMarkdownFile<SelectedWorksContent>('selected-works.md');
+  return data;
+}
+
+/**
  * Get categories with preview images
+ * @deprecated Use getSelectedWorksContent() instead
  */
 export function getCategoriesWithImages(): CategoryInfoWithImage[] {
-  const { data } = readMarkdownFile<{ categories: CategoryInfoWithImage[] }>('categories.md');
-  return data.categories;
+  const content = getSelectedWorksContent();
+  return content.categories;
 }
 
 /**

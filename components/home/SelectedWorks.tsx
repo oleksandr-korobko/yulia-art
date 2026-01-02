@@ -1,15 +1,15 @@
 import Link from 'next/link';
-import { getCategoriesWithImages } from '@/lib/content';
+import { getSelectedWorksContent } from '@/lib/content';
 
 export function SelectedWorks() {
-  const categories = getCategoriesWithImages();
-  const [firstRow, secondRow] = [categories.slice(0, 2), categories.slice(2)];
+  const selectedWorks = getSelectedWorksContent();
+  const [firstRow, secondRow] = [selectedWorks.categories.slice(0, 2), selectedWorks.categories.slice(2)];
 
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <p className="mt-2 max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
-          Selected Works
+          {selectedWorks.title}
         </p>
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           {firstRow.map((category) => (
