@@ -12,7 +12,7 @@ export function ArtistStatement() {
           <div>
             <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-white">
               <Image
-                alt="Artist at work"
+                alt={statement.imageAlt}
                 src={statement.image}
                 fill
                 className="rounded-lg object-contain"

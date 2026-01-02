@@ -18,7 +18,7 @@ export function SelectedWorks() {
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-lg bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:col-span-3 lg:pt-80"
             >
               <img
-                alt=""
+                alt={category.altText}
                 src={category.previewImage}
                 className="absolute inset-0 -z-10 size-full object-cover"
               />
@@ -42,7 +42,7 @@ export function SelectedWorks() {
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-lg bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:col-span-2 lg:pt-80"
             >
               <img
-                alt=""
+                alt={category.altText}
                 src={category.previewImage}
                 className="absolute inset-0 -z-10 size-full object-cover"
               />

@@ -10,7 +10,7 @@ export function Hero() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center">
             <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl lg:text-6xl">
-              YULIIA HOLOVATIUK-UNGUREANU
+              {homeContent.artistName}
             </h1>
             <p className="mt-10 text-lg font-light leading-relaxed text-gray-600 sm:text-xl lg:mt-12 lg:text-2xl">
               {homeContent.content}
@@ -18,7 +18,7 @@ export function Hero() {
           </div>
           <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
             <Image
-              alt="Artist workspace"
+              alt={homeContent.heroImageAlt}
               src={homeContent.heroImage}
               fill
               className="object-cover"

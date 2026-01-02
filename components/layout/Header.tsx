@@ -5,9 +5,11 @@ import Link from 'next/link'
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { CATEGORIES } from '@/lib/types'
+import { getSiteConfig } from '@/lib/content'
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const siteConfig = getSiteConfig()
 
   return (
     <header className="bg-white">
@@ -18,7 +20,7 @@ export function Header() {
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">{siteConfig.navigation.openMenu}</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
@@ -26,11 +28,11 @@ export function Header() {
               href="/"
               className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
-              HOME
+              {siteConfig.navigation.home}
             </Link>
             <div className="relative group">
               <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
-                WORKS
+                {siteConfig.navigation.works}
               </span>
               <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="p-2">
@@ -50,13 +52,13 @@ export function Header() {
               href="/about"
               className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
-              ABOUT
+              {siteConfig.navigation.about}
             </Link>
             <Link
               href="/contact"
               className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
-              CONTACT
+              {siteConfig.navigation.contact}
             </Link>
           </div>
         </nav>
@@ -70,7 +72,7 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">{siteConfig.navigation.closeMenu}</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
           </div>
@@ -82,11 +84,11 @@ export function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  HOME
+                  {siteConfig.navigation.home}
                 </Link>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50">
-                    WORKS
+                    {siteConfig.navigation.works}
                     <ChevronDownIcon aria-hidden="true" className="size-5" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
@@ -107,14 +109,14 @@ export function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  ABOUT
+                  {siteConfig.navigation.about}
                 </Link>
                 <Link
                   href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  CONTACT
+                  {siteConfig.navigation.contact}
                 </Link>
               </div>
             </div>

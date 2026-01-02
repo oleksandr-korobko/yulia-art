@@ -14,7 +14,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-y-16 sm:gap-y-24 lg:grid-cols-2 lg:items-stretch">
             <div className="overflow-hidden rounded-lg bg-white">
               <Image
-                alt="Yuliia Holovatiuk-Ungureanu"
+                alt={aboutContent.profileImageAlt}
                 src={aboutContent.profileImage}
                 width={800}
                 height={1000}
@@ -66,7 +66,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[0]?.image}
-                alt="Instagram post 1"
+                alt={aboutContent.instagramPosts[0]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -78,7 +78,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[1]?.image}
-                alt="Instagram post 2"
+                alt={aboutContent.instagramPosts[1]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -92,7 +92,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[2]?.image}
-                alt="Instagram post 3"
+                alt={aboutContent.instagramPosts[2]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -104,7 +104,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[3]?.image}
-                alt="Instagram post 4"
+                alt={aboutContent.instagramPosts[3]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -118,7 +118,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[4]?.image}
-                alt="Instagram post 5"
+                alt={aboutContent.instagramPosts[4]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -130,7 +130,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[5]?.image}
-                alt="Instagram post 6"
+                alt={aboutContent.instagramPosts[5]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -144,7 +144,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[6]?.image}
-                alt="Instagram post 7"
+                alt={aboutContent.instagramPosts[6]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>
@@ -156,7 +156,7 @@ export default function AboutPage() {
             >
               <img
                 src={aboutContent.instagramPosts[7]?.image}
-                alt="Instagram post 8"
+                alt={aboutContent.instagramPosts[7]?.alt}
                 className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </a>

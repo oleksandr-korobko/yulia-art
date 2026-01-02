@@ -39,29 +39,34 @@ export interface WorkFrontmatter {
 
 export interface CategoryInfoWithImage extends CategoryInfo {
   previewImage: string;
+  altText: string;
 }
 
 export interface HomePageContent {
   title: string;
-  description: string;
   heroImage: string;
+  heroImageAlt: string;
+  artistName: string;
   content: string;
 }
 
 export interface ArtistStatementContent {
   title: string;
   image: string;
+  imageAlt: string;
   content: string;
 }
 
 export interface InstagramPost {
   id: string;
   image: string;
+  alt: string;
 }
 
 export interface AboutPageContent {
   title: string;
   profileImage: string;
+  profileImageAlt: string;
   instagramHandle: string;
   instagramSectionTitle: string;
   instagramSectionSubtitle: string;
@@ -82,6 +87,14 @@ export interface SiteConfig {
   instagramHandle: string;
   copyright: string;
   cvFile: string;
+  navigation: {
+    home: string;
+    works: string;
+    about: string;
+    contact: string;
+    openMenu: string;
+    closeMenu: string;
+  };
 }
 
 export interface SelectedWorksContent {
