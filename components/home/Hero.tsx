@@ -1,10 +1,10 @@
 export function Hero() {
   return (
-    <div className="relative bg-white">
-      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-        <div className="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-40 lg:pb-48 xl:col-span-6">
-          <div className="mx-auto max-w-lg lg:mx-0">
-            <h1 className="mt-24 text-4xl font-light tracking-wide text-gray-900 sm:mt-10 sm:text-5xl lg:text-6xl">
+    <div className="bg-white pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl lg:text-6xl">
               YULIIA HOLOVATIUK-UNGUREANU
             </h1>
             <p className="mt-8 text-base font-light leading-relaxed text-gray-600 sm:text-lg">
@@ -15,13 +15,13 @@ export function Hero() {
               healing, resilience, and rebuilding future realities.
             </p>
           </div>
-        </div>
-        <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
-          <img
-            alt="Artist workspace"
-            src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=2102&auto=format&fit=crop"
-            className="aspect-3/2 w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-          />
+          <div className="relative overflow-hidden rounded-lg">
+            <img
+              alt="Artist workspace"
+              src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=2102&auto=format&fit=crop"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>
