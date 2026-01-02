@@ -21,7 +21,7 @@ export default function AboutPage() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="flex flex-col justify-center lg:pl-8">
+            <div className="flex flex-col lg:pl-8">
               <div className="text-base font-light leading-relaxed text-gray-700">
                 <h1 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
                   {aboutContent.title}
@@ -32,15 +32,15 @@ export default function AboutPage() {
                       {paragraph}
                     </p>
                   ))}
-                  <div className="mt-10">
-                    <a
-                      href={siteConfig.cvFile}
-                      className="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-                    >
-                      {aboutContent.downloadCvText}
-                    </a>
-                  </div>
                 </div>
+              </div>
+              <div className="mt-auto pt-10">
+                <a
+                  href={siteConfig.cvFile}
+                  className="inline-block rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                >
+                  {aboutContent.downloadCvText}
+                </a>
               </div>
             </div>
           </div>
