@@ -56,110 +56,42 @@ export default function AboutPage() {
           <p className="mt-2 text-base text-gray-600">
             {aboutContent.instagramSectionSubtitle}
           </p>
-          <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-4">
-            {/* Row 1: Large + Small */}
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[0]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-4 lg:rounded-tl-4xl max-lg:rounded-t-4xl"
-            >
-              <img
-                src={aboutContent.instagramPosts[0]?.image}
-                alt={aboutContent.instagramPosts[0]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[1]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-2 lg:rounded-tr-4xl"
-            >
-              <img
-                src={aboutContent.instagramPosts[1]?.image}
-                alt={aboutContent.instagramPosts[1]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6">
+            {aboutContent.instagramPosts.map((post, index) => {
+              const rowIndex = Math.floor(index / 2);
+              const isEvenRow = rowIndex % 2 === 0;
+              const isFirstInRow = index % 2 === 0;
+              const isLastPost = index === aboutContent.instagramPosts.length - 1;
+              const isFirstPost = index === 0;
 
-            {/* Row 2: Small + Large */}
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[2]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-2"
-            >
-              <img
-                src={aboutContent.instagramPosts[2]?.image}
-                alt={aboutContent.instagramPosts[2]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[3]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-4"
-            >
-              <img
-                src={aboutContent.instagramPosts[3]?.image}
-                alt={aboutContent.instagramPosts[3]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
+              // Pattern alternates: Row 0,2,4... = [4,2], Row 1,3,5... = [2,4]
+              const colSpan = isEvenRow
+                ? (isFirstInRow ? 'lg:col-span-4' : 'lg:col-span-2')
+                : (isFirstInRow ? 'lg:col-span-2' : 'lg:col-span-4');
 
-            {/* Row 3: Medium + Medium */}
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[4]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-3"
-            >
-              <img
-                src={aboutContent.instagramPosts[4]?.image}
-                alt={aboutContent.instagramPosts[4]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[5]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-3"
-            >
-              <img
-                src={aboutContent.instagramPosts[5]?.image}
-                alt={aboutContent.instagramPosts[5]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
+              // Corner rounding
+              let roundedClass = '';
+              if (isFirstPost) roundedClass = 'lg:rounded-tl-4xl max-lg:rounded-t-4xl';
+              else if (index === 1) roundedClass = 'lg:rounded-tr-4xl';
+              else if (index === aboutContent.instagramPosts.length - 2) roundedClass = 'lg:rounded-bl-4xl max-lg:rounded-b-4xl';
+              else if (isLastPost) roundedClass = 'lg:rounded-br-4xl';
 
-            {/* Row 4: Small + Small + Small (but only 2 to make 8 total) */}
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[6]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-3 lg:rounded-bl-4xl max-lg:rounded-b-4xl"
-            >
-              <img
-                src={aboutContent.instagramPosts[6]?.image}
-                alt={aboutContent.instagramPosts[6]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
-            <a
-              href={`https://instagram.com/p/${aboutContent.instagramPosts[7]?.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 lg:col-span-3 lg:rounded-br-4xl"
-            >
-              <img
-                src={aboutContent.instagramPosts[7]?.image}
-                alt={aboutContent.instagramPosts[7]?.alt}
-                className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
+              return (
+                <a
+                  key={post.id}
+                  href={`https://instagram.com/p/${post.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group relative flex overflow-hidden rounded-lg bg-white shadow-sm outline outline-black/5 ${colSpan} ${roundedClass}`}
+                >
+                  <img
+                    src={post.image}
+                    alt={post.alt}
+                    className="h-80 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </a>
+              );
+            })}
           </div>
           <div className="mt-10 flex justify-center">
             <a
