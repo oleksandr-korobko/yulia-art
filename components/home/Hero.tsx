@@ -16,12 +16,12 @@ export function Hero() {
               {homeContent.content}
             </p>
           </div>
-          <div className="relative min-h-[500px] lg:min-h-0">
+          <div className="relative min-h-[500px] lg:min-h-[600px]">
             <Image
               alt={homeContent.heroImageAlt}
               src={homeContent.heroImage}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>
