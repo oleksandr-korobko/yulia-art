@@ -7,27 +7,26 @@ export function ArtistStatement() {
 
   return (
     <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-4">
-            <div className="relative h-[500px] overflow-hidden rounded-lg bg-gray-900 shadow-2xl lg:h-[600px]">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-24 lg:grid-cols-2">
+          <div>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-white">
               <Image
                 alt="Artist at work"
                 src={statement.image}
                 fill
-                className="rounded-lg object-cover brightness-75"
+                className="rounded-lg object-contain"
               />
-              <div className="absolute inset-0 bg-gray-900 mix-blend-multiply opacity-40" />
             </div>
           </div>
-          <div>
-            <div className="text-base font-light leading-relaxed text-gray-700 lg:max-w-lg">
+          <div className="flex flex-col justify-center">
+            <div className="text-base font-light leading-relaxed text-gray-700">
               <h2 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
                 {statement.title}
               </h2>
-              <div className="max-w-xl">
+              <div className="mt-6 space-y-8">
                 {paragraphs.map((paragraph, index) => (
-                  <p key={index} className={index === 0 ? 'mt-6' : 'mt-8'}>
+                  <p key={index}>
                     {paragraph}
                   </p>
                 ))}

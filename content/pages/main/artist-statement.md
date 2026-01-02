@@ -1,6 +1,6 @@
 ---
 title: "Artist Statement"
-image: "/images/profile/artist-working.jpg"
+image: "/images/profile/artist-statement.jpg"
 ---
 
 My practice explores the interplay between material presence and historical memory, investigating how objects, spaces, and archives can embody and transmit experiences of displacement, conflict, and resilience. Working across installation, sculpture, ceramics, and material-based painting, I engage with found objects, archival materials, and legal documents to examine how personal and collective histories intersect with broader socio-political realities.
