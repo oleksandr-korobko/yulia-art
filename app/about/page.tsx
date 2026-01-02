@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import { getAboutPageContent, getSiteConfig } from '@/lib/content';
+import { getAboutPageContent, getSiteConfig, getInstagramFeedContent } from '@/lib/content';
 
 export default function AboutPage() {
   const aboutContent = getAboutPageContent();
   const siteConfig = getSiteConfig();
+  const instagramFeed = getInstagramFeedContent();
   const paragraphs = aboutContent.content.split('\n\n');
 
   return (
@@ -51,17 +52,17 @@ export default function AboutPage() {
       <div className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
-            {aboutContent.instagramSectionTitle}
+            {instagramFeed.sectionTitle}
           </h2>
           <p className="mt-2 text-base text-gray-600">
-            {aboutContent.instagramSectionSubtitle}
+            {instagramFeed.sectionSubtitle}
           </p>
           <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6">
-            {aboutContent.instagramPosts.map((post, index) => {
+            {instagramFeed.posts.map((post, index) => {
               const rowIndex = Math.floor(index / 2);
               const isEvenRow = rowIndex % 2 === 0;
               const isFirstInRow = index % 2 === 0;
-              const isLastPost = index === aboutContent.instagramPosts.length - 1;
+              const isLastPost = index === instagramFeed.posts.length - 1;
               const isFirstPost = index === 0;
 
               // Pattern alternates: Row 0,2,4... = [4,2], Row 1,3,5... = [2,4]
@@ -73,7 +74,7 @@ export default function AboutPage() {
               let roundedClass = '';
               if (isFirstPost) roundedClass = 'lg:rounded-tl-4xl max-lg:rounded-t-4xl';
               else if (index === 1) roundedClass = 'lg:rounded-tr-4xl';
-              else if (index === aboutContent.instagramPosts.length - 2) roundedClass = 'lg:rounded-bl-4xl max-lg:rounded-b-4xl';
+              else if (index === instagramFeed.posts.length - 2) roundedClass = 'lg:rounded-bl-4xl max-lg:rounded-b-4xl';
               else if (isLastPost) roundedClass = 'lg:rounded-br-4xl';
 
               return (
@@ -100,7 +101,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="text-base font-light text-gray-900 hover:text-gray-600"
             >
-              {aboutContent.viewMoreText} <span aria-hidden="true">&rarr;</span>
+              {instagramFeed.viewMoreText} <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>

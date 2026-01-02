@@ -11,6 +11,7 @@ import {
   AboutPageContent,
   SiteConfig,
   SelectedWorksContent,
+  InstagramFeedContent,
 } from './types';
 
 const contentDirectory = path.join(process.cwd(), 'content');
@@ -47,6 +48,14 @@ export function getArtistStatementContent(): ArtistStatementContent {
 export function getAboutPageContent(): AboutPageContent {
   const { data, content } = readMarkdownFile<Omit<AboutPageContent, 'content'>>('pages/about.md');
   return { ...data, content };
+}
+
+/**
+ * Get Instagram feed content
+ */
+export function getInstagramFeedContent(): InstagramFeedContent {
+  const { data } = readMarkdownFile<InstagramFeedContent>('instagram-feed.md');
+  return data;
 }
 
 /**
