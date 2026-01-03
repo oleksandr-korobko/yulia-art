@@ -18,10 +18,11 @@
 - [x] **Meta tags** (title, description) for all pages ✅
 - [x] **OpenGraph tags** for social media sharing ✅
 - [x] **JSON-LD structured data** for artworks ✅
+- [x] **Image assets** (og-image.jpg, favicon.ico, apple-touch-icon.png) ✅
 - [ ] **sitemap.xml** generation
 - [ ] **robots.txt** configuration
-- [ ] **Image assets** (og-image.jpg, favicon.ico, apple-touch-icon.png)
-→ **See SEO-PLAN.md for detailed implementation** (Phases 1-6 complete)
+- [ ] **Add NEXT_PUBLIC_SITE_URL to Vercel** (environment variable)
+→ **See SEO-PLAN.md for detailed implementation** (Phases 1-7 complete)
 
 ### Performance Optimization
 - [x] Basic responsive layout
