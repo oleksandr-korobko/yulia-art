@@ -23,6 +23,19 @@ Consider that it is better for me to start from simple things, even if I have to
 2. Update "Next Steps" section in `PROGRESS.md`
 3. Update timestamp in `PROGRESS.md`
 
+## Deployment Workflow
+
+**When user says "save and deploy":**
+1. Create Git commit with descriptive message
+2. Push to GitHub (`git push origin development`)
+3. Deploy to Vercel production: `npx vercel --prod --yes`
+4. **IMPORTANT:** DO NOT kill the local dev server
+
+**Local dev server:**
+- Should remain running during and after deployment
+- User will manually stop it when needed
+- Never kill dev server unless explicitly asked
+
 ## Project Context
 
 Portfolio website for **Yuliia Holovatiuk-Ungureanu**, a UK-based Ukrainian multidisciplinary artist.
@@ -65,9 +78,10 @@ type Category =
 ## Commands
 
 ```bash
-npm run dev      # Dev server
-npm run build    # Production build
-npm run lint     # Lint check
+npm run dev                    # Dev server (localhost:3000)
+npm run build                  # Production build (test locally)
+npm run lint                   # Lint check
+npx vercel --prod --yes        # Deploy to production
 ```
 
 ## Key Requirements
