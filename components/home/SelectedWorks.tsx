@@ -13,7 +13,7 @@ export function SelectedWorks() {
           {selectedWorks.title}
         </p>
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          {firstRow.map((category) => (
+          {firstRow.map((category, index) => (
             <article
               key={category.slug}
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-lg bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:col-span-3 lg:pt-80"
@@ -24,6 +24,7 @@ export function SelectedWorks() {
                 fill
                 className="absolute inset-0 -z-10 object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                priority={index === 0}
               />
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
               <div className="absolute inset-0 -z-10 rounded-lg ring-1 ring-inset ring-gray-900/10" />

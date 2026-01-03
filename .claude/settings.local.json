@@ -46,7 +46,9 @@
       "Bash(lsof:*)",
       "Bash(timeout 20 npm run dev:*)",
       "Bash(npm run dev:local:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(npx lighthouse:*)",
+      "Bash(npx lighthouse@11.0.0:*)"
     ]
   }
 }

@@ -35,3 +35,4 @@ next-env.d.ts
 
 # Temporary content fetch directory (no longer used)
 /.content-temp/
+lighthouse-report.*
