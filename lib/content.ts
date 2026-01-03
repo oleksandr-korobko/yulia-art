@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
 import {
   LegacyWork,
   WorkFrontmatter,
@@ -13,9 +15,15 @@ import {
   SelectedWorksContent,
   InstagramFeedContent,
   ContactPageContent,
+  Work,
+  WorkMeta,
+  CategorySlug,
+  WorkNavigation,
 } from './types';
 
 const contentDirectory = path.join(process.cwd(), 'content');
+const worksDirectory = path.join(process.cwd(), 'content/works');
+const categoryOrderPath = path.join(process.cwd(), 'content/category-order.json');
 
 /**
  * Read and parse a markdown file
@@ -178,4 +186,159 @@ export function getWorkSlugs(category: Category): string[] {
   return fileNames
     .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => fileName.replace(/\.md$/, ''));
+}
+
+// ============================================================================
+// NEW WORKS SYSTEM FUNCTIONS (2-repo architecture)
+// ============================================================================
+
+/**
+ * Перевіряє чи існує контент (може не існувати при першому build)
+ */
+function contentExists(): boolean {
+  return fs.existsSync(worksDirectory);
+}
+
+/**
+ * Reads category-order.json
+ */
+function getCategoryOrder(): Record<CategorySlug, string[]> {
+  if (!fs.existsSync(categoryOrderPath)) {
+    return {
+      installations: [],
+      sculptures: [],
+      paintings: [],
+      ceramics: [],
+      'text-informed': [],
+    };
+  }
+  const fileContents = fs.readFileSync(categoryOrderPath, 'utf8');
+  return JSON.parse(fileContents);
+}
+
+/**
+ * Get all work slugs
+ */
+export function getAllWorkSlugs(): string[] {
+  if (!contentExists()) return [];
+
+  const fileNames = fs.readdirSync(worksDirectory);
+  return fileNames
+    .filter((name) => name.endsWith('.md'))
+    .map((name) => name.replace(/\.md$/, ''));
+}
+
+/**
+ * Get metadata for all works
+ */
+export function getAllWorksMeta(): WorkMeta[] {
+  const slugs = getAllWorkSlugs();
+  return slugs.map((slug) => getWorkMeta(slug));
+}
+
+/**
+ * Get metadata for a single work (without content)
+ */
+export function getWorkMeta(slug: string): WorkMeta {
+  const fullPath = path.join(worksDirectory, `${slug}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { data } = matter(fileContents);
+
+  return {
+    ...data,
+    slug,
+  } as WorkMeta;
+}
+
+/**
+ * Get full work with content (async)
+ */
+export async function getWork(slug: string): Promise<Work> {
+  const fullPath = path.join(worksDirectory, `${slug}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { data, content } = matter(fileContents);
+
+  const processedContent = await remark().use(html).process(content);
+
+  return {
+    ...data,
+    slug,
+    content: processedContent.toString(),
+  } as Work;
+}
+
+/**
+ * Get works by category (sorted by category-order.json)
+ */
+export function getWorksByCategorySlug(category: CategorySlug): WorkMeta[] {
+  if (!contentExists()) return [];
+
+  const order = getCategoryOrder();
+  const orderedSlugs = order[category] || [];
+
+  // First, works in order from JSON
+  const orderedWorks = orderedSlugs
+    .map((slug) => {
+      try {
+        return getWorkMeta(slug);
+      } catch {
+        return null;
+      }
+    })
+    .filter((work): work is WorkMeta => work !== null);
+
+  // Then, works not in JSON (new works)
+  const allWorks = getAllWorksMeta().filter((work) =>
+    work.categories.includes(category)
+  );
+
+  const unorderedWorks = allWorks.filter(
+    (work) => !orderedSlugs.includes(work.slug)
+  );
+
+  return [...orderedWorks, ...unorderedWorks];
+}
+
+/**
+ * Get featured works for homepage
+ */
+export function getNewFeaturedWorks(): WorkMeta[] {
+  if (!contentExists()) return [];
+
+  return getAllWorksMeta()
+    .filter((work) => work.featured)
+    .sort((a, b) => b.year - a.year);
+}
+
+/**
+ * Get Previous/Next navigation within category
+ */
+export function getWorkNavigation(
+  slug: string,
+  category: CategorySlug
+): WorkNavigation {
+  const works = getWorksByCategorySlug(category);
+  const currentIndex = works.findIndex((w) => w.slug === slug);
+
+  if (currentIndex === -1) {
+    return { previous: null, next: null };
+  }
+
+  const previous =
+    currentIndex > 0
+      ? {
+          slug: works[currentIndex - 1].slug,
+          title: works[currentIndex - 1].title,
+        }
+      : null;
+
+  const next =
+    currentIndex < works.length - 1
+      ? {
+          slug: works[currentIndex + 1].slug,
+          title: works[currentIndex + 1].title,
+        }
+      : null;
+
+  return { previous, next };
 }
