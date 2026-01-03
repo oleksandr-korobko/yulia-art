@@ -32,3 +32,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Auto-generated content (fetched from yulia-art-content repo)
+/content/works/
+/content/category-order.json
+/.content-temp/
