@@ -10,9 +10,10 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
 export default config
