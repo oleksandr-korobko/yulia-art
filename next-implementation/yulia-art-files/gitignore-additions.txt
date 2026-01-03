@@ -1,0 +1,3 @@
+# Content (fetched from yulia-art-content repo)
+/content/
+/.content-temp/

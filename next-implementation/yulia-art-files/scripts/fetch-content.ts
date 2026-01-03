@@ -2,7 +2,8 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
-const CONTENT_REPO = 'oleksandr-korobko/yulia-art-content';
+// ⚠️ ЗАМІНИ НА СВІЙ GITHUB USERNAME
+const CONTENT_REPO = 'YOUR_USERNAME/yulia-art-content';
 const CONTENT_BRANCH = 'main';
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 const IMAGES_DIR = path.join(process.cwd(), 'public/images');
@@ -12,17 +13,10 @@ async function fetchContent() {
   console.log(`   Repository: ${CONTENT_REPO}`);
   console.log(`   Branch: ${CONTENT_BRANCH}`);
 
-  // Видаляємо тільки works/ та category-order.json (НЕ весь content/)
-  const worksDest = path.join(CONTENT_DIR, 'works');
-  const orderDest = path.join(CONTENT_DIR, 'category-order.json');
-
-  if (fs.existsSync(worksDest)) {
-    fs.rmSync(worksDest, { recursive: true });
-    console.log('🗑️  Removed old content/works/');
-  }
-  if (fs.existsSync(orderDest)) {
-    fs.rmSync(orderDest);
-    console.log('🗑️  Removed old content/category-order.json');
+  // Видаляємо стару папку content якщо є
+  if (fs.existsSync(CONTENT_DIR)) {
+    fs.rmSync(CONTENT_DIR, { recursive: true });
+    console.log('🗑️  Removed old content/');
   }
 
   // Клонуємо контент-репо (shallow clone для швидкості)
@@ -44,6 +38,7 @@ async function fetchContent() {
 
     // Копіюємо works
     const worksSource = path.join(tempDir, 'works');
+    const worksDest = path.join(CONTENT_DIR, 'works');
     if (fs.existsSync(worksSource)) {
       fs.cpSync(worksSource, worksDest, { recursive: true });
       const worksCount = fs.readdirSync(worksDest).filter(f => f.endsWith('.md')).length;
@@ -55,6 +50,7 @@ async function fetchContent() {
 
     // Копіюємо category-order.json
     const orderSource = path.join(tempDir, 'category-order.json');
+    const orderDest = path.join(CONTENT_DIR, 'category-order.json');
     if (fs.existsSync(orderSource)) {
       fs.copyFileSync(orderSource, orderDest);
       console.log('✅ Copied category-order.json');

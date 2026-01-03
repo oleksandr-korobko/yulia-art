@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "fetch-content": "tsx scripts/fetch-content.ts",
-    "prebuild": "npm run fetch-content",
-    "dev": "npm run fetch-content && next dev",
-    "dev:local": "next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
