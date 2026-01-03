@@ -33,7 +33,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Auto-generated content (fetched from yulia-art-content repo)
-/content/works/
-/content/category-order.json
+# Temporary content fetch directory (no longer used)
 /.content-temp/
