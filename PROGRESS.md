@@ -69,9 +69,11 @@
 - `/public/og-image.jpg` (1200×630px) - Default social sharing image
 - `/public/favicon.ico` - Browser tab icon
 - `/public/apple-touch-icon.png` (180×180px) - iOS icon
-- `/public/images/about/artist-profile.jpg` - About page sharing image
 
-**Impact:** Social media sharing will show broken images until these are created. However, individual artwork pages will use actual artwork images (which exist).
+✅ **Fixed:**
+- `/public/images/profile/artist-portrait.jpg` - About page now uses existing artist portrait (119KB)
+
+**Impact:** Social media sharing will show broken images for homepage until og-image.jpg is created. However, individual artwork pages and About page will use actual images (which exist).
 
 **Next:** Create placeholder images or use existing artwork as temporary OG image.
 

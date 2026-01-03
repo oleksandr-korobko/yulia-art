@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'UK-based Ukrainian multidisciplinary artist exploring themes of war, displacement, memory, and resilience.',
     images: [
       {
-        url: `${siteUrl}/images/about/artist-profile.jpg`,
+        url: `${siteUrl}/images/profile/artist-portrait.jpg`,
         width: 1200,
         height: 630,
         alt: 'Yuliia Holovatiuk-Ungureanu',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Yuliia Holovatiuk-Ungureanu',
     description: 'UK-based Ukrainian multidisciplinary artist exploring themes of war, displacement, memory, and resilience.',
-    images: [`${siteUrl}/images/about/artist-profile.jpg`],
+    images: [`${siteUrl}/images/profile/artist-portrait.jpg`],
   },
 };
 
