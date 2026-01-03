@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { CATEGORIES, CATEGORY_ORDER } from '@/lib/categories';
 import {
   getWork,
-  getWorksByCategory,
+  getWorksByCategorySlug,
   getAllWorkSlugs,
   getWorkNavigation,
 } from '@/lib/content';
@@ -63,7 +63,7 @@ export default async function DynamicPage({ params }: Props) {
 
 function CategoryPage({ slug }: { slug: CategorySlug }) {
   const category = CATEGORIES[slug];
-  const works = getWorksByCategory(slug);
+  const works = getWorksByCategorySlug(slug);
 
   return (
     <main className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
