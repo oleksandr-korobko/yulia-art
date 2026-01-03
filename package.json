@@ -6,6 +6,7 @@
     "fetch-content": "tsx scripts/fetch-content.ts",
     "prebuild": "npm run fetch-content",
     "dev": "npm run fetch-content && next dev",
+    "dev:local": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
