@@ -1,5 +1,35 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getAboutPageContent, getSiteConfig, getInstagramFeedContent } from '@/lib/content';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Yuliia Holovatiuk-Ungureanu is a UK-based Ukrainian multidisciplinary artist working with installation, sculpture, ceramics, and text-informed practices.',
+
+  openGraph: {
+    type: 'profile',
+    url: `${siteUrl}/about`,
+    title: 'About Yuliia Holovatiuk-Ungureanu',
+    description: 'UK-based Ukrainian multidisciplinary artist exploring themes of war, displacement, memory, and resilience.',
+    images: [
+      {
+        url: `${siteUrl}/images/about/artist-profile.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Yuliia Holovatiuk-Ungureanu',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Yuliia Holovatiuk-Ungureanu',
+    description: 'UK-based Ukrainian multidisciplinary artist exploring themes of war, displacement, memory, and resilience.',
+    images: [`${siteUrl}/images/about/artist-profile.jpg`],
+  },
+};
 
 export default function AboutPage() {
   const aboutContent = getAboutPageContent();

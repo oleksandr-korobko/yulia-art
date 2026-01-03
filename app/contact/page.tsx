@@ -1,9 +1,25 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getContactPageContent, getSiteConfig } from '@/lib/content';
 
-export const metadata = {
-  title: 'Contact | Yuliia Holovatiuk-Ungureanu',
-  description: 'Get in touch with artist Yuliia Holovatiuk-Ungureanu. Email and Instagram contact information.',
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: 'Get in touch with Yuliia Holovatiuk-Ungureanu. Email: ungureanuyuliia@gmail.com',
+
+  openGraph: {
+    type: 'website',
+    url: `${siteUrl}/contact`,
+    title: 'Contact Yuliia Holovatiuk-Ungureanu',
+    description: 'Get in touch with Yuliia for exhibitions, commissions, or inquiries.',
+  },
+
+  twitter: {
+    card: 'summary',
+    title: 'Contact Yuliia Holovatiuk-Ungureanu',
+    description: 'Get in touch with Yuliia for exhibitions, commissions, or inquiries.',
+  },
 };
 
 export default function ContactPage() {

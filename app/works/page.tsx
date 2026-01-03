@@ -1,12 +1,27 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CATEGORIES, CATEGORY_ORDER } from '@/lib/categories';
 import { getWorksByCategorySlug } from '@/lib/content';
 
-export const metadata = {
-  title: 'Works — Yuliia Holovatiuk-Ungureanu',
-  description:
-    'Explore artworks across installations, sculptures, paintings, ceramics, and text-informed works.',
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
+export const metadata: Metadata = {
+  title: 'Works',
+  description: 'Explore artworks by Yuliia Holovatiuk-Ungureanu across installations, sculptures, ceramics, paintings, and text-informed practices.',
+
+  openGraph: {
+    type: 'website',
+    url: `${siteUrl}/works`,
+    title: 'Works - Yuliia Holovatiuk-Ungureanu',
+    description: 'Explore artworks across installations, sculptures, ceramics, and text-informed practices.',
+  },
+
+  twitter: {
+    card: 'summary',
+    title: 'Works - Yuliia Holovatiuk-Ungureanu',
+    description: 'Explore artworks across installations, sculptures, ceramics, and text-informed practices.',
+  },
 };
 
 export default function WorksPage() {

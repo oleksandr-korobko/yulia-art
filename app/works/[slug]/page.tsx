@@ -9,6 +9,7 @@ import {
   getWorkNavigation,
 } from '@/lib/content';
 import { CategorySlug } from '@/lib/types';
+import { ArtworkStructuredData } from '@/components/StructuredData';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -23,25 +24,83 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
-  // Якщо це категорія
+  // Category page metadata
   if (slug in CATEGORIES) {
     const category = CATEGORIES[slug as CategorySlug];
+    const works = getWorksByCategorySlug(slug as CategorySlug);
+
+    // Use first work's cover image as category preview
+    const previewImage = works.length > 0
+      ? works[0].coverImage
+      : '/og-image.jpg';
+
     return {
-      title: `${category.name} — Yuliia Holovatiuk-Ungureanu`,
+      title: category.name,
       description: category.description,
+
+      openGraph: {
+        type: 'website',
+        url: `${siteUrl}/works/${slug}`,
+        title: category.name,
+        description: category.description,
+        images: [
+          {
+            url: `${siteUrl}${previewImage}`,
+            width: 1200,
+            height: 630,
+            alt: `${category.name} - Yuliia Holovatiuk-Ungureanu`,
+          },
+        ],
+      },
+
+      twitter: {
+        card: 'summary_large_image',
+        title: category.name,
+        description: category.description,
+        images: [`${siteUrl}${previewImage}`],
+      },
     };
   }
 
-  // Якщо це робота
+  // Individual work metadata
   try {
     const work = await getWork(slug);
+
     return {
-      title: `${work.title} — Yuliia Holovatiuk-Ungureanu`,
+      title: work.title,
       description: work.shortDescription,
+
+      openGraph: {
+        type: 'article',
+        url: `${siteUrl}/works/${slug}`,
+        title: work.title,
+        description: work.shortDescription,
+        publishedTime: `${work.year}-01-01T00:00:00.000Z`,
+        authors: ['Yuliia Holovatiuk-Ungureanu'],
+        images: [
+          {
+            url: `${siteUrl}${work.coverImage}`,
+            width: 1200,
+            height: 630,
+            alt: `${work.title} - ${work.materials}`,
+          },
+        ],
+      },
+
+      twitter: {
+        card: 'summary_large_image',
+        title: work.title,
+        description: work.shortDescription,
+        images: [`${siteUrl}${work.coverImage}`],
+        creator: '@yuliia_art_uk_ua',
+      },
     };
   } catch {
-    return {};
+    return {
+      title: 'Work Not Found',
+    };
   }
 }
 
@@ -144,7 +203,9 @@ async function WorkPage({ slug }: { slug: string }) {
   const categoryInfo = CATEGORIES[primaryCategory];
 
   return (
-    <main>
+    <>
+      <ArtworkStructuredData work={work} />
+      <main>
       {/* HERO: Full-width Cover Image */}
       <section className="relative">
         <div className="w-full h-[70vh] lg:h-[85vh]">
@@ -311,5 +372,6 @@ async function WorkPage({ slug }: { slug: string }) {
         </Link>
       </section>
     </main>
+    </>
   );
 }

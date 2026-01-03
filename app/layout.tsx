@@ -13,10 +13,60 @@ const cormorant = Cormorant_Garamond({
 })
 
 const siteConfig = getSiteConfig()
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const metadata: Metadata = {
-  title: siteConfig.siteTitle,
+  title: {
+    default: siteConfig.siteTitle,
+    template: '%s — Yuliia Holovatiuk-Ungureanu',
+  },
   description: siteConfig.siteDescription,
+
+  // OpenGraph (Facebook, LinkedIn, Instagram)
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: siteUrl,
+    siteName: 'Yuliia Holovatiuk-Ungureanu',
+    title: siteConfig.siteTitle,
+    description: siteConfig.siteDescription,
+    images: [
+      {
+        url: `${siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Yuliia Holovatiuk-Ungureanu - Artist Portfolio',
+      },
+    ],
+  },
+
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.siteTitle,
+    description: siteConfig.siteDescription,
+    images: [`${siteUrl}/og-image.jpg`],
+    creator: '@yuliia_art_uk_ua',
+  },
+
+  // Icons
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+
+  // Robots
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({
