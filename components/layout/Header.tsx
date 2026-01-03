@@ -15,7 +15,7 @@ export function Header({ navigation }: HeaderProps) {
 
   return (
     <header className="bg-white">
-      <div className="mx-auto max-w-2xl px-6 py-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-6 py-8 lg:max-w-7xl lg:px-8">
         <nav aria-label="Global" className="flex items-center justify-between lg:justify-center">
           <button
             type="button"
@@ -28,12 +28,12 @@ export function Header({ navigation }: HeaderProps) {
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
             <Link
               href="/"
-              className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
               {navigation.home}
             </Link>
             <div className="relative group">
-              <span className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
+              <span className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
                 {navigation.works}
               </span>
               <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -52,13 +52,13 @@ export function Header({ navigation }: HeaderProps) {
             </div>
             <Link
               href="/about"
-              className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
               {navigation.about}
             </Link>
             <Link
               href="/contact"
-              className="text-sm font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
             >
               {navigation.contact}
             </Link>

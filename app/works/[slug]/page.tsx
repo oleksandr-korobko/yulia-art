@@ -66,7 +66,7 @@ function CategoryPage({ slug }: { slug: CategorySlug }) {
   const works = getWorksByCategorySlug(slug);
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+    <main className="mx-auto max-w-7xl px-6 pt-12 pb-16 lg:px-8 lg:pt-16 lg:pb-24">
       {/* Back link */}
       <Link
         href="/works"

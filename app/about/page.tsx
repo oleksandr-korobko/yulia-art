@@ -8,7 +8,7 @@ export default function AboutPage() {
   const paragraphs = aboutContent.content.split('\n\n');
 
   return (
-    <main>
+    <main className="pt-12 lg:pt-16">
       {/* Profile Section */}
       <div className="relative bg-white pb-24 sm:pb-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">

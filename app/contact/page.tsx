@@ -17,7 +17,7 @@ export default function ContactPage() {
   const cookiesSection = sections.find((s) => s.startsWith('Third-Party'));
 
   return (
-    <main>
+    <main className="pt-12 lg:pt-16">
       <div className="relative bg-white">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-16 lg:px-8">
           {/* Left side - Image */}
