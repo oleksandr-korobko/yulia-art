@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import {
-  Work,
+  LegacyWork,
   WorkFrontmatter,
   Category,
   CategoryInfoWithImage,
@@ -95,7 +95,7 @@ export function getCategoriesWithImages(): CategoryInfoWithImage[] {
 /**
  * Get all works for a specific category
  */
-export function getWorksByCategory(category: Category): Work[] {
+export function getWorksByCategory(category: Category): LegacyWork[] {
   const worksDirectory = path.join(contentDirectory, 'works', category);
 
   if (!fs.existsSync(worksDirectory)) {
@@ -114,7 +114,7 @@ export function getWorksByCategory(category: Category): Work[] {
         slug,
         ...data,
         description: content,
-      } as Work;
+      } as LegacyWork;
     })
     .sort((a, b) => a.order - b.order);
 
@@ -124,9 +124,9 @@ export function getWorksByCategory(category: Category): Work[] {
 /**
  * Get all works across all categories
  */
-export function getAllWorks(): Work[] {
+export function getAllWorks(): LegacyWork[] {
   const categories: Category[] = ['installations', 'sculptures', 'paintings', 'ceramics', 'text-informed'];
-  const allWorks: Work[] = [];
+  const allWorks: LegacyWork[] = [];
 
   categories.forEach((category) => {
     const works = getWorksByCategory(category);
@@ -139,7 +139,7 @@ export function getAllWorks(): Work[] {
 /**
  * Get featured works (for homepage)
  */
-export function getFeaturedWorks(): Work[] {
+export function getFeaturedWorks(): LegacyWork[] {
   const allWorks = getAllWorks();
   return allWorks.filter((work) => work.featured);
 }
@@ -147,7 +147,7 @@ export function getFeaturedWorks(): Work[] {
 /**
  * Get a single work by category and slug
  */
-export function getWorkBySlug(category: Category, slug: string): Work | null {
+export function getWorkBySlug(category: Category, slug: string): LegacyWork | null {
   const filePath = path.join('works', category, `${slug}.md`);
   const fullPath = path.join(contentDirectory, filePath);
 
@@ -161,7 +161,7 @@ export function getWorkBySlug(category: Category, slug: string): Work | null {
     slug,
     ...data,
     description: content,
-  } as Work;
+  } as LegacyWork;
 }
 
 /**

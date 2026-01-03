@@ -1,17 +1,54 @@
-export type Category =
+// Категорії робіт
+export type CategorySlug =
   | 'installations'
   | 'sculptures'
   | 'paintings'
   | 'ceramics'
   | 'text-informed';
 
+// Backward compatibility
+export type Category = CategorySlug;
+
 export interface CategoryInfo {
-  slug: Category;
+  slug: CategorySlug;
   displayName: string;
   description: string;
 }
 
-export interface Work {
+// Метадані роботи (frontmatter)
+export interface WorkMeta {
+  title: string;
+  slug: string; // генерується з назви файлу
+  year: number;
+  categories: CategorySlug[];
+  materials: string;
+  dimensions: string;
+  coverImage: string;
+  images: string[];
+  shortDescription: string;
+  featured: boolean;
+}
+
+// Повна робота (з markdown контентом)
+export interface Work extends WorkMeta {
+  content: string; // HTML з markdown
+}
+
+// Backward compatibility - deprecated, use WorkMeta instead
+export interface WorkFrontmatter {
+  title: string;
+  year: number;
+  category: Category;
+  materials: string;
+  dimensions: string;
+  featured: boolean;
+  coverImage: string;
+  images: string[];
+  order: number;
+}
+
+// Backward compatibility - старий формат Work (буде видалено в Етапі 4)
+export interface LegacyWork {
   slug: string;
   title: string;
   year: number;
@@ -25,16 +62,10 @@ export interface Work {
   description: string;
 }
 
-export interface WorkFrontmatter {
-  title: string;
-  year: number;
-  category: Category;
-  materials: string;
-  dimensions: string;
-  featured: boolean;
-  coverImage: string;
-  images: string[];
-  order: number;
+// Для навігації Previous/Next
+export interface WorkNavigation {
+  previous: { slug: string; title: string } | null;
+  next: { slug: string; title: string } | null;
 }
 
 export interface CategoryInfoWithImage extends CategoryInfo {
