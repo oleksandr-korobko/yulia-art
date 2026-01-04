@@ -35,7 +35,7 @@ export function Lightbox({ images, initialIndex, onClose, workTitle }: LightboxP
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
     };
   }, [onClose, goToPrevious, goToNext]);
 
