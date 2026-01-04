@@ -10,6 +10,9 @@ images:
   - "/images/works/unintended/02.jpg"
   - "/images/works/unintended/03.jpg"
   - "/images/works/unintended/04.jpg"
+  - "/images/works/unintended/05.jpg"
+  - "/images/works/unintended/06.jpg"
+  - "/images/works/unintended/07.jpg"
 shortDescription: "Unintended is a ceramic sculpture developed through the experimental translation of a monochrome painting into a three-dimensional form. Emerging from testing and risk, the work reflects on transformation, emotional plasticity, and the productive uncertainty of material processes."
 featured: false
 ---

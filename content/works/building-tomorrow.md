@@ -12,6 +12,14 @@ images:
   - "/images/works/building-tomorrow/04.jpg"
   - "/images/works/building-tomorrow/05.jpg"
   - "/images/works/building-tomorrow/06.jpg"
+  - "/images/works/building-tomorrow/07.jpg"
+  - "/images/works/building-tomorrow/08.jpg"
+  - "/images/works/building-tomorrow/09.jpg"
+  - "/images/works/building-tomorrow/10.jpg"
+  - "/images/works/building-tomorrow/11.jpg"
+  - "/images/works/building-tomorrow/12.jpg"
+  - "/images/works/building-tomorrow/13.jpg"
+  - "/images/works/building-tomorrow/14.jpg"
 shortDescription: "Building Tomorrow is a modular ceramic installation composed of reconfigurable slip-cast bricks developed after the artist's displacement from Ukraine in 2022. Rooted in childhood play and shared making, the work explores home as an evolving condition shaped by rupture, care, and the ongoing process of rebuilding."
 featured: false
 ---
