@@ -25,6 +25,16 @@ export function Header({ navigation }: HeaderProps) {
             <span className="sr-only">{navigation.openMenu}</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
+
+          {/* Mobile brand name */}
+          <Link
+            href="/"
+            className="lg:hidden text-sm font-light tracking-wider text-gray-900 uppercase"
+          >
+            Yuliia UNGUREANU
+          </Link>
+
+          {/* Desktop navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
             <Link
               href="/"
