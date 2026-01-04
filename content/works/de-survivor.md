@@ -2,18 +2,18 @@
 title: "De-Survivor"
 year: 2024
 categories: ["sculptures"]
-materials: "Found ceramic cup"
-dimensions: "Variable"
+materials: "Found object"
+dimensions: "H12 × W16 × D14 cm"
 coverImage: "/images/works/de-survivor/cover.jpg"
 images:
   - "/images/works/de-survivor/01.jpg"
   - "/images/works/de-survivor/02.jpg"
   - "/images/works/de-survivor/03.jpg"
   - "/images/works/de-survivor/04.jpg"
-shortDescription: "Ceramic cup recovered intact from the ruins of a missile-struck residential building in Kharkiv."
+shortDescription: "De-Survivor presents a ceramic cup recovered intact from the ruins of a missile-struck residential building in Ukraine. The work reflects on endurance and erasure, questioning what it means for an object to remain when a home can no longer exist."
 featured: false
 ---
 
-De-Survivor presents a found ceramic cup recovered as the sole unbroken object from the ruins of a 16-storey residential building in Kharkiv, which burned for two days after a Russian missile strike. Although the structure remained standing, it was later declared uninhabitable and dismantled, its interior reduced to debris.
+This sculptural work isolates a found ceramic cup — the sole unbroken artefact recovered from the ruins of a 16-storey residential building in Kharkiv, which burned for two days following a Russian missile strike. Although the structure remained standing, it was declared uninhabitable and later dismantled, its interior reduced to rubble.
 
-Set against the disappearance of the building itself, the cup persists as an anomalous remainder. The work examines the paradox of endurance within total destruction, positioning the object as a witness to erasure rather than survival. It holds the imprint of a domestic space that no longer exists, raising questions about permanence, loss, and what remains after war has stripped a place of habitation.
+Removed from function and repositioned as a single object, the cup operates not as a remnant but as a marker of endurance within erasure. It carries the imprint of a domestic space that no longer exists, confronting questions of what remains, what disappears, and what is irrevocably lost when habitation is stripped away by war.

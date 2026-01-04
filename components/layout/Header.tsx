@@ -16,13 +16,13 @@ export function Header({ navigation }: HeaderProps) {
   return (
     <header className="bg-white">
       <div className="mx-auto max-w-2xl px-6 py-8 lg:max-w-7xl lg:px-8">
-        <nav aria-label="Global" className="flex items-center justify-between lg:justify-center">
-          {/* Mobile brand name */}
+        <nav aria-label="Global" className="flex items-center justify-between">
+          {/* Brand name - visible on all screens */}
           <Link
             href="/"
-            className="lg:hidden text-lg font-light tracking-wider text-gray-900 uppercase"
+            className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200"
           >
-            Yuliia UNGUREANU
+            Yuliia Holovatiuk-Ungureanu
           </Link>
 
           <button
@@ -36,12 +36,6 @@ export function Header({ navigation }: HeaderProps) {
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
-            <Link
-              href="/"
-              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-all duration-200 leading-6 border-b-2 border-transparent hover:border-gray-300"
-            >
-              {navigation.home}
-            </Link>
             <div className="relative group">
               <span className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-colors duration-200 cursor-pointer leading-6">
                 {navigation.works}

@@ -1,9 +1,9 @@
 ---
 title: "My Wallpaper. Fragments of a Lost Home II"
-year: 2024
+year: "2024–2025"
 categories: ["text-informed", "sculptures"]
 materials: "Photographic fragments, sandbags, found object, metal support structure"
-dimensions: "Variable"
+dimensions: "Dimensions variable"
 coverImage: "/images/works/my-wallpaper-fragments-of-a-lost-home-ii/cover.jpg"
 images:
   - "/images/works/my-wallpaper-fragments-of-a-lost-home-ii/01.jpg"
@@ -18,7 +18,7 @@ images:
   - "/images/works/my-wallpaper-fragments-of-a-lost-home-ii/10.jpg"
   - "/images/works/my-wallpaper-fragments-of-a-lost-home-ii/11.jpg"
   - "/images/works/my-wallpaper-fragments-of-a-lost-home-ii/12.jpg"
-shortDescription: "Outdoor wallpaper installation with war-damaged cities, weighted with sandbags and a melted child's chair from Irpin."
+shortDescription: "This outdoor wallpaper installation presents photographic fragments of war-damaged Ukrainian cities as a torn and exposed surface. Weighted with sandbags and mounted on a temporary support structure, the work reflects how destruction becomes a constant visual background during war. A melted child's chair found in Irpin anchors the installation in lived loss, while its gradual erosion gestures toward memory, transformation, and rebuilding."
 featured: false
 ---
 

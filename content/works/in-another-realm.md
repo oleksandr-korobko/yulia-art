@@ -2,8 +2,8 @@
 title: "In Another Realm"
 year: 2024
 categories: ["text-informed"]
-materials: "Burned wood, lino print, mixed media"
-dimensions: "Variable"
+materials: "Burned wood, linoprint, mixed media"
+dimensions: "W100cm x H120cm x D10cm"
 coverImage: "/images/works/in-another-realm/cover.jpg"
 images:
   - "/images/works/in-another-realm/01.jpg"
@@ -11,7 +11,7 @@ images:
   - "/images/works/in-another-realm/03.jpg"
   - "/images/works/in-another-realm/04.jpg"
   - "/images/works/in-another-realm/05.jpg"
-shortDescription: "Burned wood and lino print registering destruction of Ukrainian civilian architecture, with damage inscribed into material surface."
+shortDescription: "In Another Realm uses burned wood and lino print to register the destruction of Ukrainian civilian architecture, embedding traces of missile damage into the material surface. The work treats the image not as representation, but as a site where memory and loss are physically inscribed."
 featured: false
 ---
 

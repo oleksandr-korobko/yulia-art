@@ -2,11 +2,107 @@
 
 **Last Updated:** 2026-01-04
 **Branch:** development
-**Current Focus:** Design Polish & UX Improvements
+**Current Focus:** Content Updates & Design Improvements
 
 ---
 
-## Latest Session (2026-01-04) - Image Orientation Fix
+## Latest Session (2026-01-04) - Major Content Update: 7 New Works + Header Redesign
+
+### Completed Today
+- ✅ **Updated Existing Works (Sculptures):**
+  - I Have to Leave My Childhood Here - updated description, materials, dimensions (W40cm x H64cm x D36.5cm)
+  - De-Survivor - updated description, materials, dimensions (H12 × W16 × D14 cm)
+  - Scattered Bonds - updated description, new shortDescription
+
+- ✅ **Updated Existing Works (Text-informed):**
+  - My Wallpaper. Fragments of a Lost Home II - updated year (2024–2025), dimensions, shortDescription
+
+- ✅ **Updated Existing Works (Paintings):**
+  - Purity - moved from ceramics to paintings, updated year (2023), materials, dimensions, full description
+  - Traces of Caldon Canal - moved from text-informed to paintings, updated materials, dimensions, full description
+
+- ✅ **Created 7 New Works:**
+  1. **My Petrified Heart** (Text-informed) - petrified wood sculpture exploring emotional fossilisation
+  2. **In Another Realm** (Text-informed) - burned wood and linoprint registering destruction of Ukrainian architecture
+  3. **Building Tomorrow** (Ceramics) - modular slip-cast bricks installation about home and displacement
+  4. **Unintended** (Ceramics) - ceramic sculpture emerging from painting experiment, work-in-progress
+  5. **It Is Happening** (Paintings) - material-based painting from Liberation series residual gestures
+  6. **Freedom** (Paintings) - wooden board triptych exploring self-expression through material resistance
+  7. **Golden Serenity** (Paintings) - Liberation series monochromatic work with kumkum pigment
+
+- ✅ **Header Redesign:**
+  - Added artist's full name (Yuliia Holovatiuk-Ungureanu) on the left
+  - Moved navigation menu (Works, About, Contact) to the right
+  - Improved desktop/mobile consistency
+  - Maintained responsive design
+
+- ✅ **Category Updates:**
+  - Paintings category now active with 6 works (was empty)
+  - Ceramics category updated with 2 new works
+  - Text-informed category expanded with 2 new works
+  - Updated category-order.json with all new works
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 40 pages generated correctly (was 33, now +7 new works)
+  - No TypeScript errors
+  - All new works rendering properly
+
+### Technical Details
+
+**Files Created:**
+- `content/works/my-petrified-heart.md` - New text-informed work
+- `content/works/building-tomorrow.md` - New ceramics work
+- `content/works/unintended.md` - New ceramics work
+- `content/works/it-is-happening.md` - New painting
+- `content/works/freedom.md` - New painting
+- `content/works/golden-serenity.md` - New painting
+- `content/works/on-the-50th-parallel.md` - New painting
+
+**Files Modified:**
+- `content/works/i-have-to-leave-my-childhood-here.md` - Updated description and metadata
+- `content/works/de-survivor.md` - Updated description and metadata
+- `content/works/scattered-bonds.md` - Updated description
+- `content/works/my-wallpaper-fragments-of-a-lost-home-ii.md` - Updated year and dimensions
+- `content/works/purity.md` - Complete rewrite, moved to paintings
+- `content/works/in-another-realm.md` - Updated dimensions and shortDescription
+- `content/works/traces-of-caldon-canal.md` - Complete rewrite, moved to paintings
+- `content/category-order.json` - Added all new works, reorganized categories
+- `components/layout/Header.tsx` - Redesigned header layout
+
+**Category Distribution:**
+- Installations: 6 works
+- Sculptures: 5 works
+- Paintings: 6 works (newly populated!)
+- Ceramics: 2 works (newly populated!)
+- Text-informed: 10 works
+
+### User Experience Impact
+- **Expanded portfolio** - 7 new works showcase broader artistic practice
+- **Complete paintings category** - Full representation of Liberation series and material-based works
+- **Professional branding** - Full artist name prominently displayed in header
+- **Improved navigation** - Clearer visual hierarchy with brand left, menu right
+- **Accurate metadata** - All dimensions, materials, and dates corrected
+
+### Pending Tasks
+- ⏳ **The Snake** - awaiting photos from artist (Google Drive access issue)
+  - Description ready but needs image files
+  - Will update once photos are available
+
+### Statistics
+- Total works: 26 (was 19, added 7)
+- Total pages: 40 (was 33)
+- Categories active: 5/5 (paintings and ceramics now active)
+- Build time: ~25s
+
+### Next Steps
+1. Obtain photos for The Snake from artist
+2. Deploy all content updates to production
+3. Monitor for any content feedback from artist
+
+---
+
+## Previous Session (2026-01-04) - Image Orientation Fix
 
 ### Completed Today
 - ✅ **Fixed EXIF Orientation Issue:**
