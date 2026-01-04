@@ -5,12 +5,14 @@ profileImageAlt: "Portrait of Yuliia Holovatiuk-Ungureanu"
 downloadCvText: "Download CV"
 ---
 
-Yuliia Holovatiuk-Ungureanu is a Ukrainian-born, UK-based multidisciplinary artist whose practice spans immersive installation, sculpture, ceramics, and material-based painting. Her work engages with archival materials, legal documents, found objects, and natural substances to examine how war, displacement, and the pursuit of justice shape individual and collective experiences of healing, resilience, and reconstruction.
+Yuliia Holovatiuk-Ungureanu (b. 1987, Lviv, Ukraine) is a multidisciplinary Ukrainian artist living and working in the United Kingdom. Her practice unfolds across installation, sculpture, ceramics, painting, performance, and socially engaged projects, with a focus on material processes, spatial experience, and embodied engagement.
 
-Central to her practice is the exploration of material witness—the idea that objects, spaces, and substances carry traces of lived experience and historical memory. Through installations that invite contemplation and sensory engagement, Yuliia creates environments where personal and collective histories intersect, allowing visitors to encounter the weight of displacement, loss, and endurance through physical presence rather than explicit narrative.
+At the core of her work is a transformative process — moving from lived experiences of war, displacement, and destruction toward questions of responsibility, justice, and the possibility of futures shaped through conscious rebuilding. Working with clay, soil, natural pigments, found objects, and documents, she allows material, repetition, and spatial relationships to carry memory, tension, and endurance rather than illustrate events.
 
-Her recent work has increasingly focused on the ongoing conflict in Ukraine, addressing questions of belonging, rupture, and the possibility of rebuilding. By working with materials that embody both fragility and strength—such as ceramics, earth pigments, and found objects—she explores how art can serve as a space for processing trauma, preserving memory, and imagining pathways toward justice and renewal.
+Drawing on archival research, historical records, and legal documents, Yuliia examines how systems of power and responsibility become embedded within material traces. Her use of non-conventional pigments such as kumkum, sindur, turmeric, and earth shifts attention from representation toward material presence and inner transformation.
 
-Yuliia holds a Master's degree in Fine Art and has exhibited her work in solo and group exhibitions across the UK and internationally. Her practice is informed by ongoing research into archival methodologies, material histories, and the socio-political dimensions of contemporary art.
+Across installations, performative situations, and participatory formats, she creates spaces that slow perception and invite attentive presence. Repetition, modular structures, and restrained gestures operate as meditative tools, opening questions of care, fragility, and balance within unstable conditions.
 
-She is currently based in the United Kingdom, where she continues to develop new bodies of work that engage with themes of displacement, memory, and the enduring capacity for resilience in the face of collective trauma.
+Her practice is closely connected to Ukrainian cultural heritage and its vulnerability to erasure, approaching identity as something lived, carried, and continuously reassembled. Through material and spatial work, she explores peace not as resolution, but as an ongoing process shaped through attention, responsibility, and participation.
+
+Her work has been presented in solo and group exhibitions in the UK and Europe and is held in private collections in Ukraine, the United Kingdom, and Europe.

@@ -1,6 +1,6 @@
 ---
 sectionTitle: "Recent Works"
-sectionSubtitle: "Follow my journey on Instagram"
+sectionSubtitle: ""
 viewMoreText: "View more on Instagram"
 posts:
   - id: "DHTyUkXKJk6"
