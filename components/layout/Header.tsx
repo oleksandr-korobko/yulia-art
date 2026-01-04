@@ -17,6 +17,14 @@ export function Header({ navigation }: HeaderProps) {
     <header className="bg-white">
       <div className="mx-auto max-w-2xl px-6 py-8 lg:max-w-7xl lg:px-8">
         <nav aria-label="Global" className="flex items-center justify-between lg:justify-center">
+          {/* Mobile brand name */}
+          <Link
+            href="/"
+            className="lg:hidden text-lg font-light tracking-wider text-gray-900 uppercase"
+          >
+            Yuliia UNGUREANU
+          </Link>
+
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -25,14 +33,6 @@ export function Header({ navigation }: HeaderProps) {
             <span className="sr-only">{navigation.openMenu}</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
-
-          {/* Mobile brand name */}
-          <Link
-            href="/"
-            className="lg:hidden text-lg font-light tracking-wider text-gray-900 uppercase"
-          >
-            Yuliia UNGUREANU
-          </Link>
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
