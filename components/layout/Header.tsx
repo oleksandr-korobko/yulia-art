@@ -29,7 +29,7 @@ export function Header({ navigation }: HeaderProps) {
           {/* Mobile brand name */}
           <Link
             href="/"
-            className="lg:hidden text-sm font-light tracking-wider text-gray-900 uppercase"
+            className="lg:hidden text-lg font-light tracking-wider text-gray-900 uppercase"
           >
             Yuliia UNGUREANU
           </Link>
