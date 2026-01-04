@@ -10,6 +10,7 @@ images:
   - "/images/works/it-is-happening/02.jpg"
   - "/images/works/it-is-happening/03.jpg"
   - "/images/works/it-is-happening/04.jpg"
+  - "/images/works/it-is-happening/05.jpg"
 shortDescription: "It Is Happening is a material-based painting that emerged unintentionally from residual gestures during the artist's Liberation series. Working with cold wax, linseed oil, and natural pigments, the piece records a process of intuitive layering in which material action precedes fixed meaning."
 featured: false
 ---

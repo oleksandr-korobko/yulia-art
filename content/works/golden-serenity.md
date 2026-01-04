@@ -10,6 +10,7 @@ images:
   - "/images/works/golden-serenity/02.jpg"
   - "/images/works/golden-serenity/03.jpg"
   - "/images/works/golden-serenity/04.jpg"
+  - "/images/works/golden-serenity/05.jpg"
 shortDescription: "Golden Serenity is part of Liberation, a series of monochromatic works created from natural, handmade pigments and dedicated to womanhood and feminine power. Using kumkum as the sole pigment, the painting unfolds as a deep red field where strength and tenderness coexist. Layered with cold wax and linseed oil, the surface holds traces of care, repetition, and quiet resilience."
 featured: false
 ---
