@@ -6,7 +6,73 @@
 
 ---
 
-## Latest Session (2026-01-04) - Paintings Photos Update
+## Latest Session (2026-01-04) - Sculptures & Text-Informed Works Photos Update
+
+### Completed Today
+- ✅ **Added Photos for Sculpture/Text-Informed Works:**
+  - My Petrified Heart: 6 photos (new)
+  - In Another Realm: 6 photos (new)
+  - I Have to Leave My Childhood Here: 1 photo (new cover image)
+  - The Snake: 1 photo (new cover image)
+
+- ✅ **Updated The Snake Work:**
+  - Replaced placeholder text with full description
+  - Updated materials: "Found object(s); red wall hook"
+  - Updated dimensions: "Dimensions variable"
+  - Complete description about burned showerhead recovered from Irpin
+
+- ✅ **Photo Processing:**
+  - Extracted from ZIP with Cyrillic encoding issues
+  - Used Python script to handle encoding properly
+  - Organized photos by work
+  - Sorted and renamed: cover.jpg + 01.jpg, 02.jpg, etc.
+  - Skipped video files (.mp4)
+
+- ✅ **Build & Deployment:**
+  - Production build successful ✅
+  - 41 pages generated
+  - 16 files committed (14 photos + 2 markdown updates)
+  - Deployed to production via Vercel
+  - Upload size: 5.4MB
+
+### Technical Details
+
+**Files Created:**
+- `public/images/works/my-petrified-heart/` - 6 photos (cover + 01-05)
+- `public/images/works/in-another-realm/` - 6 photos (cover + 01-05)
+- `public/images/works/i-have-to-leave-my-childhood-here/cover.jpg` - new cover
+- `public/images/works/the-snake/cover.jpg` - new cover
+
+**Files Modified:**
+- `content/works/my-petrified-heart.md` - Removed 06.jpg reference (only 5 additional images)
+- `content/works/the-snake.md` - Complete rewrite with full description, removed empty image slots
+
+**Photo Statistics:**
+- Total photos added: 14
+- My Petrified Heart: 6 images
+- In Another Realm: 6 images
+- I Have to Leave My Childhood Here: 1 image
+- The Snake: 1 image
+
+### User Experience Impact
+- **Text-informed works documented** - My Petrified Heart and In Another Realm now have comprehensive galleries
+- **Sculpture covers updated** - Better visual representation for I Have to Leave My Childhood Here and The Snake
+- **The Snake complete** - No longer placeholder, full professional description
+- **Material traces visible** - Petrified wood texture and burned wood details now clear
+
+### Statistics
+- Text-informed works with photos: 2/2 = 100% ✅
+- Sculptures with photos: 5/5 = 100% ✅
+- Build time: ~27s
+- Upload size: 5.4MB (smaller than paintings/ceramics)
+
+### Next Steps
+1. All sculpture and text-informed photos deployed
+2. Portfolio photo coverage now comprehensive across all categories
+
+---
+
+## Previous Session (2026-01-04) - Paintings Photos Update
 
 ### Completed Today
 - ✅ **Added High-Quality Photos for All Painting Works:**
