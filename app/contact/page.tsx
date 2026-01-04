@@ -53,7 +53,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right side - Content */}
-          <div className="px-6 py-24 sm:py-32 lg:col-span-7 lg:px-0 lg:pt-16 lg:pb-0 lg:flex lg:items-end">
+          <div className="px-6 py-24 sm:py-32 lg:col-span-7 lg:px-0 lg:pt-16 lg:pb-16 lg:flex lg:items-end">
             <div className="mx-auto max-w-lg lg:mx-0 lg:pb-0">
               {/* Email */}
               <div className="mb-12">

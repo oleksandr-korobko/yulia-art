@@ -7,7 +7,7 @@ export function SelectedWorks() {
   const [firstRow, secondRow] = [selectedWorks.categories.slice(0, 2), selectedWorks.categories.slice(2)];
 
   return (
-    <div className="bg-white py-16 sm:py-20">
+    <div className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <p className="mt-2 max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
           {selectedWorks.title}
