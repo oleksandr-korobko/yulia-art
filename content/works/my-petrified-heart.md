@@ -11,7 +11,6 @@ images:
   - "/images/works/my-petrified-heart/03.jpg"
   - "/images/works/my-petrified-heart/04.jpg"
   - "/images/works/my-petrified-heart/05.jpg"
-  - "/images/works/my-petrified-heart/06.jpg"
 shortDescription: "At the centre of My Petrified Heart is a piece of petrified wood, once living matter transformed into stone. The work reflects on how prolonged exposure to war and violence hardens human sensitivity, turning endurance into emotional fossilisation. It confronts survival as a condition that can persist at the cost of inner responsiveness."
 featured: false
 ---
