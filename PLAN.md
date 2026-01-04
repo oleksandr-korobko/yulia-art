@@ -99,12 +99,12 @@
 - [ ] Lighthouse score improvements
 
 ## Design Polish
-- [ ] **Page transitions** - smooth navigation between pages
-- [ ] **Hover animations** - enhance interactive elements
-- [ ] **Image gallery enhancements** - lightbox or better image viewing
-- [x] Loading states for /works page
-- [ ] Loading states for individual work pages
-- [ ] Loading states for category pages
+- [x] **Page transitions** - smooth navigation between pages ✅
+- [x] **Hover animations** - enhance interactive elements ✅
+- [x] **Image gallery enhancements** - lightbox with full-screen viewing ✅
+- [x] Loading states for /works page ✅
+- [x] Loading states for individual work pages ✅
+- [x] Loading states for category pages ✅
 - [ ] **Error states** - image loading failures, network errors
 - [x] 404 page (basic version)
 - [ ] Enhance 404 page with artwork recommendations

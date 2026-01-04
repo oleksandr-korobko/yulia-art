@@ -11,7 +11,7 @@ export function Footer() {
             href={siteConfig.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-800"
+            className="text-gray-600 hover:text-gray-800 transition-colors duration-200"
           >
             <span className="sr-only">Instagram</span>
             <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" className="size-6">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getContactPageContent, getSiteConfig } from '@/lib/content';
+import { PageTransition } from '@/components/PageTransition';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -33,7 +34,8 @@ export default function ContactPage() {
   const cookiesSection = sections.find((s) => s.startsWith('Third-Party'));
 
   return (
-    <main className="pt-12 lg:pt-16">
+    <PageTransition>
+      <main className="pt-12 lg:pt-16">
       <div className="relative bg-white">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-16 lg:px-8">
           {/* Left side - Image */}
@@ -125,6 +127,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+    </PageTransition>
   );
 }

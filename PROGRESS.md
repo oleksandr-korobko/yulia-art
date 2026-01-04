@@ -2,11 +2,301 @@
 
 **Last Updated:** 2026-01-04
 **Branch:** development
-**Current Focus:** SEO Optimization & Pre-Launch
+**Current Focus:** Design Polish & UX Improvements
 
 ---
 
-## Latest Session (2026-01-04) - SEO Metadata Implementation
+## Latest Session (2026-01-04) - Image Orientation Fix
+
+### Completed Today
+- ✅ **Fixed EXIF Orientation Issue:**
+  - Created scripts/fix-orientation.py to fix rotated images
+  - Processed 153 images, fixed 55 that were rotated incorrectly
+  - Read EXIF orientation from backup (original files)
+  - Physically rotated images to correct orientation
+  - Saved without EXIF data (orientation baked into pixels)
+
+- ✅ **Images Fixed:**
+  - Portrait photos that were displayed horizontally now show correctly
+  - Affected works: the-weight-of-silence, i-have-to-leave-my-childhood-here, lost-dreams, and others
+  - All vertical (portrait) photos now display upright
+  - No more sideways images!
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 33 pages generated correctly
+  - Images regenerated with correct orientation
+
+### Technical Details
+
+**Problem:**
+- When images were compressed, EXIF orientation metadata was removed
+- Browsers/Next.js displayed images in their raw pixel orientation
+- Portrait photos appeared rotated 90° (horizontal)
+
+**Solution:**
+- Read EXIF orientation from original backup files
+- Apply physical rotation based on EXIF orientation value:
+  - Orientation 6 → Rotate 270° (most common for portrait)
+  - Orientation 3 → Rotate 180°
+  - Orientation 8 → Rotate 90°
+- Save rotated images without EXIF (orientation now in pixels)
+
+**Files Created:**
+- `scripts/fix-orientation.py` - Image orientation correction script
+
+**Statistics:**
+- Total images processed: 153
+- Images rotated: 55
+- Images already correct: 98
+
+### User Experience Impact
+- **Proper image display** - All images now show in correct orientation
+- **No more confusion** - Portrait photos display vertically as intended
+- **Better presentation** - Artwork appears as artist intended
+- **Cross-browser consistency** - Works regardless of EXIF support
+
+### Next Steps
+1. Deploy fixed images to production
+2. Continue with error states or other improvements
+
+---
+
+## Previous Session (2026-01-04) - Loading States for Work & Category Pages
+
+### Completed Today
+- ✅ **Loading State Created for /works/[slug]:**
+  - Universal loading skeleton for both category pages and individual work pages
+  - Matches existing loading.tsx style from /works page
+  - Uses animate-pulse for smooth skeleton animation
+  - Gray placeholder blocks with rounded corners
+
+- ✅ **Skeleton Layout:**
+  - Back link placeholder (matches navigation)
+  - Header section (title + description placeholders)
+  - 2-column grid on desktop (md:grid-cols-2)
+  - 4 card placeholders with proper aspect ratio [4/3]
+  - Consistent spacing with actual pages
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 33 pages generated correctly
+  - No TypeScript errors
+  - Loading states ready for use
+
+### Technical Details
+
+**File Created:**
+- `app/works/[slug]/loading.tsx` - Loading skeleton for category and work pages
+
+**Design Decisions:**
+- Universal skeleton works well for both page types
+- Grid layout matches category pages structure
+- Placeholder sizes match actual content dimensions
+- Uses same spacing/padding as real pages (pt-12, pb-16, etc.)
+
+**Files Modified:**
+- `app/works/[slug]/loading.tsx` - NEW loading state
+- `PLAN.md` - Marked loading states as complete
+
+### User Experience Impact
+- **Better perceived performance** - Users see instant feedback while page loads
+- **Consistent experience** - Loading states match final page layout
+- **Professional polish** - Smooth skeleton animation reduces jarring transitions
+- **Reduced cognitive load** - Users know content is loading, not broken
+
+### Next Steps
+1. Error states for image loading failures
+2. Consider enhancing 404 page with artwork recommendations
+3. Accessibility audit
+
+---
+
+## Previous Session (2026-01-04) - Image Gallery Lightbox Implementation
+
+### Completed Today
+- ✅ **Lightbox Component Created:**
+  - Full-screen image viewer with dark overlay (bg-black/95)
+  - Previous/Next navigation buttons (visible only when multiple images)
+  - Close button (X) in top-right corner
+  - Image counter display (e.g., "3 / 8")
+  - Click overlay to close functionality
+  - Prevents body scroll when open
+
+- ✅ **Keyboard Navigation:**
+  - ESC key closes lightbox
+  - Arrow Left/Right keys navigate between images
+  - Uses useCallback for optimized event handlers
+  - Proper cleanup on unmount
+
+- ✅ **Gallery Component Created:**
+  - Client component wrapper for image gallery
+  - Click-to-zoom functionality on all images
+  - Hover effects: scale-105 on image, shadow-xl on container
+  - Zoom indicator overlay (magnifying glass icon)
+  - Rounded corners for polished look
+  - Opens lightbox with correct image index
+
+- ✅ **Integration:**
+  - Replaced static gallery in app/works/[slug]/page.tsx
+  - Gallery component accepts images and workTitle props
+  - Seamless integration with existing server components
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 33 pages generated correctly
+  - No ESLint warnings
+  - No TypeScript errors
+
+### Technical Details
+
+**Components Created:**
+- `components/Lightbox.tsx` - Full-screen image viewer
+- `components/Gallery.tsx` - Clickable gallery grid with lightbox integration
+
+**Features Implemented:**
+1. **Full-screen viewing** - Images display at maximum size (max-h-[85vh])
+2. **Navigation controls** - Prev/Next buttons with hover scale effect
+3. **Keyboard shortcuts** - ESC, ArrowLeft, ArrowRight
+4. **Visual feedback** - Zoom icon overlay on hover
+5. **Smooth transitions** - All interactions use CSS transitions
+6. **Accessibility** - Proper aria-labels on buttons
+
+**Files Modified:**
+- `components/Lightbox.tsx` - NEW full-screen image viewer
+- `components/Gallery.tsx` - NEW gallery wrapper component
+- `app/works/[slug]/page.tsx` - Integrated Gallery component
+- `PLAN.md` - Marked image gallery enhancements as complete
+
+### User Experience Impact
+- **Better artwork viewing** - Full-screen viewing showcases artwork details
+- **Intuitive navigation** - Clear prev/next controls and keyboard shortcuts
+- **Professional presentation** - Lightbox creates gallery-like experience
+- **Mobile-friendly** - Touch-friendly buttons and responsive layout
+- **Discoverable** - Zoom icon clearly indicates clickable images
+
+### Next Steps
+1. Loading states for individual work and category pages
+2. Error states for image loading failures
+3. Consider adding swipe gestures for mobile
+
+---
+
+## Previous Session (2026-01-04) - Hover Animations Enhancement
+
+### Completed Today
+- ✅ **Added Missing Transitions:**
+  - Header navigation links - added `transition-colors duration-200`
+  - Footer Instagram link - added `transition-colors duration-200`
+  - CV Download button - added `transition-colors duration-200`
+  - Dropdown menu items - added `transition-colors duration-150`
+  - Mobile menu items - added `transition-colors duration-150`
+
+- ✅ **Underline Animation for Navigation:**
+  - Added elegant border-bottom animation to main nav links (Home, About, Contact)
+  - Uses `border-b-2 border-transparent hover:border-gray-300`
+  - Smooth transition with `transition-all duration-200`
+  - Creates subtle underline effect on hover
+
+- ✅ **Card Hover Effects (Shadow Lift):**
+  - Works index - category cards with shadow lift effect
+  - Category pages - work cards with shadow lift effect
+  - FeaturedWorks component - work cards with shadow lift effect
+  - Added `transition-all duration-300 hover:shadow-lg hover:-translate-y-1`
+  - Added `rounded-lg` to card images for polish
+  - Creates elegant lift effect on hover
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 33 pages generated correctly
+  - No TypeScript errors
+  - All animations compiled successfully
+
+### Technical Details
+
+**Hover Animations Added:**
+1. **Color transitions** (200ms) - navigation links, footer, buttons
+2. **Underline animation** (200ms) - navigation links with border-bottom
+3. **Shadow lift effect** (300ms) - work/category cards with shadow-lg + translate-y
+4. **Background color transitions** (150ms) - dropdown and mobile menu items
+
+**Files Modified:**
+- `components/layout/Header.tsx` - navigation transitions and underline animation
+- `components/layout/Footer.tsx` - Instagram link transition
+- `app/about/page.tsx` - CV button transition
+- `app/works/page.tsx` - category card hover effects
+- `app/works/[slug]/page.tsx` - work card hover effects
+- `components/home/FeaturedWorks.tsx` - featured work card hover effects
+- `PLAN.md` - Marked hover animations as complete
+
+### User Experience Impact
+- **Professional polish** - smooth, consistent transitions across all interactive elements
+- **Better affordance** - underline animation clearly indicates clickable nav items
+- **Enhanced engagement** - shadow lift effect makes cards feel tangible and interactive
+- **Consistent timing** - 150-300ms durations feel natural, not jarring
+- **No performance cost** - CSS-only transitions, hardware-accelerated
+
+### Next Steps
+1. Image gallery enhancements (lightbox functionality)
+2. Loading states for individual work and category pages
+3. Error states for image loading failures
+
+---
+
+## Previous Session (2026-01-04) - Page Transitions Implementation
+
+### Completed Today
+- ✅ **PageTransition Component Created:**
+  - Created components/PageTransition.tsx with smooth fade-in effect
+  - Uses CSS transitions (500ms duration) for elegant page entry
+  - Client component with mounted state detection
+  - No external dependencies needed - pure CSS + React
+
+- ✅ **Applied Transitions to All Pages:**
+  - app/page.tsx - Home page with hero, selected works, and artist statement
+  - app/works/page.tsx - Works index with category grid
+  - app/works/[slug]/page.tsx - Both CategoryPage and WorkPage components
+  - app/about/page.tsx - About page with profile and Instagram feed
+  - app/contact/page.tsx - Contact page with split layout
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 33 pages generated correctly
+  - No TypeScript errors
+  - Transitions compiled successfully
+
+### Technical Details
+
+**Implementation Approach:**
+- Simple CSS-based transitions using Tailwind utilities
+- Component uses useEffect hook to trigger opacity transition on mount
+- Wraps page content with transition-opacity duration-500 classes
+- opacity-0 → opacity-100 transition creates smooth fade-in effect
+
+**Files Modified:**
+- `components/PageTransition.tsx` - New client component for transitions
+- `app/page.tsx` - Added PageTransition wrapper to home page
+- `app/works/page.tsx` - Added PageTransition wrapper
+- `app/works/[slug]/page.tsx` - Added PageTransition to CategoryPage and WorkPage
+- `app/about/page.tsx` - Added PageTransition wrapper
+- `app/contact/page.tsx` - Added PageTransition wrapper
+- `PLAN.md` - Marked page transitions as complete
+
+### User Experience Impact
+- **Smoother navigation** - elegant fade-in when switching pages
+- **Professional feel** - polished transitions enhance perceived quality
+- **No performance cost** - CSS-only, no JavaScript animations
+- **Consistent behavior** - all pages use same transition timing
+
+### Next Steps
+1. Consider adding more hover animations for interactive elements
+2. Explore image gallery enhancements (lightbox functionality)
+3. Add loading states for individual work and category pages
+4. Optional: Implement more advanced transitions (slide, scale effects)
+
+---
+
+## Previous Session (2026-01-04) - SEO Metadata & Performance Optimization
 
 ### Completed Today
 - ✅ **Phase 1: Root Layout Metadata (app/layout.tsx):**

@@ -10,6 +10,8 @@ import {
 } from '@/lib/content';
 import { CategorySlug } from '@/lib/types';
 import { ArtworkStructuredData } from '@/components/StructuredData';
+import { PageTransition } from '@/components/PageTransition';
+import { Gallery } from '@/components/Gallery';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -125,64 +127,66 @@ function CategoryPage({ slug }: { slug: CategorySlug }) {
   const works = getWorksByCategorySlug(slug);
 
   return (
-    <main className="mx-auto max-w-7xl px-6 pt-12 pb-16 lg:px-8 lg:pt-16 lg:pb-24">
-      {/* Back link */}
-      <Link
-        href="/works"
-        className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors mb-12"
-      >
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+    <PageTransition>
+      <main className="mx-auto max-w-7xl px-6 pt-12 pb-16 lg:px-8 lg:pt-16 lg:pb-24">
+        {/* Back link */}
+        <Link
+          href="/works"
+          className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors mb-12"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-        All Works
-      </Link>
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={1.5}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          All Works
+        </Link>
 
-      {/* Category Header */}
-      <div className="mb-16">
-        <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">
-          {category.name}
-        </h1>
-        <p className="text-lg text-gray-500">{category.description}</p>
-      </div>
-
-      {/* Works Grid */}
-      {works.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-          {works.map((work) => (
-            <Link
-              key={work.slug}
-              href={`/works/${work.slug}`}
-              className="group block"
-            >
-              <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden mb-4">
-                <Image
-                  src={work.coverImage}
-                  alt={work.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <h2 className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                {work.title}
-              </h2>
-              <p className="text-sm text-gray-500 mt-1">{work.year}</p>
-            </Link>
-          ))}
+        {/* Category Header */}
+        <div className="mb-16">
+          <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">
+            {category.name}
+          </h1>
+          <p className="text-lg text-gray-500">{category.description}</p>
         </div>
-      ) : (
-        <p className="text-gray-500">No works in this category yet.</p>
-      )}
-    </main>
+
+        {/* Works Grid */}
+        {works.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+            {works.map((work) => (
+              <Link
+                key={work.slug}
+                href={`/works/${work.slug}`}
+                className="group block transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              >
+                <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden mb-4 rounded-lg">
+                  <Image
+                    src={work.coverImage}
+                    alt={work.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <h2 className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
+                  {work.title}
+                </h2>
+                <p className="text-sm text-gray-500 mt-1">{work.year}</p>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className="text-gray-500">No works in this category yet.</p>
+        )}
+      </main>
+    </PageTransition>
   );
 }
 
@@ -205,7 +209,8 @@ async function WorkPage({ slug }: { slug: string }) {
   return (
     <>
       <ArtworkStructuredData work={work} />
-      <main>
+      <PageTransition>
+        <main>
       {/* HERO: Full-width Cover Image */}
       <section className="relative">
         <div className="w-full h-[70vh] lg:h-[85vh]">
@@ -267,19 +272,7 @@ async function WorkPage({ slug }: { slug: string }) {
 
       {/* GALLERY */}
       <section className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="space-y-16 lg:space-y-24">
-          {work.images.map((image, index) => (
-            <figure key={index}>
-              <Image
-                src={image}
-                alt={`${work.title} - View ${index + 1}`}
-                width={1400}
-                height={900}
-                className="w-full"
-              />
-            </figure>
-          ))}
-        </div>
+        <Gallery images={work.images} workTitle={work.title} />
       </section>
 
       {/* NAVIGATION: Previous / Next */}
@@ -371,7 +364,8 @@ async function WorkPage({ slug }: { slug: string }) {
           Back to {categoryInfo?.name || 'Works'}
         </Link>
       </section>
-    </main>
+        </main>
+      </PageTransition>
     </>
   );
 }

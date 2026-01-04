@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getAboutPageContent, getSiteConfig, getInstagramFeedContent } from '@/lib/content';
+import { PageTransition } from '@/components/PageTransition';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -38,7 +39,8 @@ export default function AboutPage() {
   const paragraphs = aboutContent.content.split('\n\n');
 
   return (
-    <main className="pt-12 lg:pt-16">
+    <PageTransition>
+      <main className="pt-12 lg:pt-16">
       {/* Profile Section */}
       <div className="relative bg-white pb-24 sm:pb-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
@@ -68,7 +70,7 @@ export default function AboutPage() {
               <div className="mt-auto pt-10">
                 <a
                   href={siteConfig.cvFile}
-                  className="inline-block rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                  className="inline-block rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-700 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
                 >
                   {aboutContent.downloadCvText}
                 </a>
@@ -140,6 +142,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+    </PageTransition>
   );
 }

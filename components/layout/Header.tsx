@@ -28,12 +28,12 @@ export function Header({ navigation }: HeaderProps) {
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
             <Link
               href="/"
-              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-all duration-200 leading-6 border-b-2 border-transparent hover:border-gray-300"
             >
               {navigation.home}
             </Link>
             <div className="relative group">
-              <span className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 cursor-pointer leading-6">
+              <span className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-colors duration-200 cursor-pointer leading-6">
                 {navigation.works}
               </span>
               <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -42,7 +42,7 @@ export function Header({ navigation }: HeaderProps) {
                     <Link
                       key={category.slug}
                       href={`/works/${category.slug}`}
-                      className="block rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 hover:bg-gray-50"
+                      className="block rounded-lg px-3 py-2 text-sm leading-6 text-gray-900 hover:bg-gray-50 transition-colors duration-150"
                     >
                       {category.displayName}
                     </Link>
@@ -52,13 +52,13 @@ export function Header({ navigation }: HeaderProps) {
             </div>
             <Link
               href="/about"
-              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-all duration-200 leading-6 border-b-2 border-transparent hover:border-gray-300"
             >
               {navigation.about}
             </Link>
             <Link
               href="/contact"
-              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 leading-6"
+              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-all duration-200 leading-6 border-b-2 border-transparent hover:border-gray-300"
             >
               {navigation.contact}
             </Link>
@@ -83,13 +83,13 @@ export function Header({ navigation }: HeaderProps) {
               <div className="space-y-2 py-6">
                 <Link
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50 transition-colors duration-150"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {navigation.home}
                 </Link>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50 transition-colors duration-150">
                     {navigation.works}
                     <ChevronDownIcon aria-hidden="true" className="size-5" />
                   </DisclosureButton>
@@ -98,7 +98,7 @@ export function Header({ navigation }: HeaderProps) {
                       <Link
                         key={category.slug}
                         href={`/works/${category.slug}`}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-6 text-gray-700 hover:bg-gray-50"
+                        className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-6 text-gray-700 hover:bg-gray-50 transition-colors duration-150"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {category.displayName}
@@ -108,14 +108,14 @@ export function Header({ navigation }: HeaderProps) {
                 </Disclosure>
                 <Link
                   href="/about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50 transition-colors duration-150"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {navigation.about}
                 </Link>
                 <Link
                   href="/contact"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light tracking-wide text-gray-900 hover:bg-gray-50 transition-colors duration-150"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {navigation.contact}
