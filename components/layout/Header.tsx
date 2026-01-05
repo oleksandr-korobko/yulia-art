@@ -22,7 +22,7 @@ export function Header({ navigation }: HeaderProps) {
             href="/"
             className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200"
           >
-            Yuliia Holovatiuk-Ungureanu
+            YULIIA HOLOVATIUK-UNGUREANU
           </Link>
 
           <button

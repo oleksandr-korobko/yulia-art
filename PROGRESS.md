@@ -1,12 +1,54 @@
 # Project Progress
 
-**Last Updated:** 2026-01-04
+**Last Updated:** 2026-01-05
 **Branch:** development
-**Current Focus:** Content Updates & Design Improvements
+**Current Focus:** Header & Hero Design Improvements
 
 ---
 
-## Latest Session (2026-01-04) - Sculptures & Text-Informed Works Photos Update
+## Latest Session (2026-01-05) - Header & Hero Typography Update
+
+### Completed Today
+- ✅ **Header Typography Update:**
+  - Changed artist name to uppercase: "YULIIA HOLOVATIUK-UNGUREANU"
+  - More prominent branding in header
+  - Improved visual hierarchy
+
+- ✅ **Hero Section Simplification:**
+  - Removed artist name heading from hero section
+  - Hero now shows only the artist statement text and image
+  - Cleaner, more focused first impression
+  - Avoids redundancy with header name
+
+- ✅ **Build Verification:**
+  - Production build successful ✅
+  - All 41 pages generated correctly
+  - No TypeScript errors
+
+### Technical Details
+
+**Files Modified:**
+- `components/layout/Header.tsx` - Name changed to uppercase (line 25)
+- `components/home/Hero.tsx` - Removed h1 with artist name (lines 12-14)
+
+**Design Impact:**
+- **Stronger branding** - Uppercase name in header is more memorable
+- **Less redundancy** - Name appears once (header) instead of twice
+- **Better focus** - Hero content focuses on what the artist does
+- **Cleaner layout** - Simplified hero section with more breathing room
+
+### User Experience Impact
+- **Consistent identity** - Artist name always visible in header across all pages
+- **Professional appearance** - Uppercase name creates stronger brand presence
+- **Better readability** - Hero section now jumps straight to the artist statement
+
+### Next Steps
+1. Monitor artist feedback on header/hero changes
+2. Continue with other design improvements if needed
+
+---
+
+## Previous Session (2026-01-04) - Sculptures & Text-Informed Works Photos Update
 
 ### Completed Today
 - ✅ **Added Photos for Sculpture/Text-Informed Works:**
