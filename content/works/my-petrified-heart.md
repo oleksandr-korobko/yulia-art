@@ -1,7 +1,7 @@
 ---
 title: "My Petrified Heart"
 year: 2024
-categories: ["text-informed"]
+categories: ["sculptures"]
 materials: "Found object"
 dimensions: "W32cm x H18cm x D18cm"
 coverImage: "/images/works/my-petrified-heart/cover.jpg"

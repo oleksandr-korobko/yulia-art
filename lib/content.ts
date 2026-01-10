@@ -13,6 +13,7 @@ import {
   AboutPageContent,
   SiteConfig,
   SelectedWorksContent,
+  FeaturedWorksContent,
   InstagramFeedContent,
   ContactPageContent,
   Work,
@@ -88,6 +89,14 @@ export function getSiteConfig(): SiteConfig {
  */
 export function getSelectedWorksContent(): SelectedWorksContent {
   const { data } = readMarkdownFile<SelectedWorksContent>('pages/main/selected-works.md');
+  return data;
+}
+
+/**
+ * Get Featured Works section content
+ */
+export function getFeaturedWorksContent(): FeaturedWorksContent {
+  const { data } = readMarkdownFile<FeaturedWorksContent>('pages/main/featured-works.md');
   return data;
 }
 

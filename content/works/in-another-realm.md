@@ -1,7 +1,7 @@
 ---
 title: "In Another Realm"
 year: 2024
-categories: ["text-informed"]
+categories: ["sculptures"]
 materials: "Burned wood, linoprint, mixed media"
 dimensions: "W100cm x H120cm x D10cm"
 coverImage: "/images/works/in-another-realm/cover.jpg"

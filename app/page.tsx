@@ -1,5 +1,4 @@
 import { Hero } from '@/components/home/Hero';
-import { SelectedWorks } from '@/components/home/SelectedWorks';
 import { SelectedWorksAlt } from '@/components/home/SelectedWorksAlt';
 import { ArtistStatement } from '@/components/home/ArtistStatement';
 import FeaturedWorks from '@/components/home/FeaturedWorks';
@@ -10,7 +9,6 @@ export default function Home() {
     <PageTransition>
       <main>
         <Hero />
-        <SelectedWorks />
         <SelectedWorksAlt />
         <ArtistStatement />
         <FeaturedWorks />

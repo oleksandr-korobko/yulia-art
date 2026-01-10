@@ -7,9 +7,6 @@ dimensions: "Variable"
 coverImage: "/images/works/tomorrow-shall-dawn/cover.jpg"
 images:
   - "/images/works/tomorrow-shall-dawn/01.jpg"
-  - "/images/works/tomorrow-shall-dawn/02.jpg"
-  - "/images/works/tomorrow-shall-dawn/03.jpg"
-  - "/images/works/tomorrow-shall-dawn/04.jpg"
 shortDescription: "[Placeholder] Work using damaged packaging boxes bearing phrase 'Tomorrow will come'."
 featured: false
 ---

@@ -147,6 +147,10 @@ export interface SelectedWorksContent {
   categories: CategoryInfoWithImage[];
 }
 
+export interface FeaturedWorksContent {
+  title: string;
+}
+
 export const CATEGORIES: CategoryInfo[] = [
   {
     slug: 'installations',

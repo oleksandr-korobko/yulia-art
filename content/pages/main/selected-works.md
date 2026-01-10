@@ -1,21 +1,21 @@
 ---
-title: "Selected Works"
+title: "Working Across"
 categories:
   - slug: "installations"
     displayName: "Installations"
-    description: "Spatial works engaging material, scale, and context to create reflective environments shaped by individual & collective experience"
+    description: "Spatial works engaging material, scale, and context to create reflective environments shaped by individual and collective experience"
     previewImage: "/images/categories/installations-preview.jpg"
     altText: "Immersive installation artwork creating reflective environment"
 
   - slug: "sculptures"
     displayName: "Sculptures"
-    description: "Sculptural works often using found objects to explore endurance, rupture, and material memory"
+    description: "Sculptural works often using found objects to explore endurance, rupture, and material memory shaped by war, displacement, search for justice and peace"
     previewImage: "/images/categories/sculptures-preview.jpg"
     altText: "Sculptural work using found objects"
 
   - slug: "paintings"
     displayName: "Paintings"
-    description: "Material-based paintings using natural pigments and earth imprints, where surface operates as substance"
+    description: "Material-based paintings using natural pigments and earth imprints, where the surface operates as substance"
     previewImage: "/images/categories/paintings-preview.jpg"
     altText: "Material-based painting with natural pigments and earth imprints"
 

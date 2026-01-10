@@ -11,7 +11,7 @@ images:
   - "/images/works/de-survivor/03.jpg"
   - "/images/works/de-survivor/04.jpg"
 shortDescription: "De-Survivor presents a ceramic cup recovered intact from the ruins of a missile-struck residential building in Ukraine. The work reflects on endurance and erasure, questioning what it means for an object to remain when a home can no longer exist."
-featured: false
+featured: true
 ---
 
 This sculptural work isolates a found ceramic cup — the sole unbroken artefact recovered from the ruins of a 16-storey residential building in Kharkiv, which burned for two days following a Russian missile strike. Although the structure remained standing, it was declared uninhabitable and later dismantled, its interior reduced to rubble.

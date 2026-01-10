@@ -1,16 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getNewFeaturedWorks } from '@/lib/content';
+import { getNewFeaturedWorks, getFeaturedWorksContent } from '@/lib/content';
 
 export default function FeaturedWorks() {
   const works = getNewFeaturedWorks();
+  const content = getFeaturedWorksContent();
 
   if (works.length === 0) return null;
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
       <div className="flex items-end justify-between mb-12">
-        <h2 className="text-2xl font-light text-gray-900">Selected Works</h2>
+        <h2 className="text-2xl font-light text-gray-900">{content.title}</h2>
         <Link
           href="/works"
           className="text-sm text-gray-500 hover:text-gray-900 transition-colors"

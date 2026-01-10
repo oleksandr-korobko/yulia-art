@@ -10,7 +10,7 @@ export function SelectedWorksAlt() {
     <div className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <p className="mt-2 max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
-          {selectedWorks.title} (Alternative)
+          {selectedWorks.title}
         </p>
         <div className="mt-10 grid grid-cols-1 gap-8 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           {firstRow.map((category, index) => (
