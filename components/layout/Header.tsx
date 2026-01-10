@@ -17,12 +17,13 @@ export function Header({ navigation }: HeaderProps) {
     <header className="bg-white">
       <div className="mx-auto max-w-2xl px-6 py-8 lg:max-w-7xl lg:px-8">
         <nav aria-label="Global" className="flex items-center justify-between">
-          {/* Brand name - visible on all screens */}
+          {/* Brand name - short on mobile, full on desktop */}
           <Link
             href="/"
             className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200"
           >
-            YULIIA HOLOVATIUK-UNGUREANU
+            <span className="lg:hidden">YULIIA UNGUREANU</span>
+            <span className="hidden lg:inline">YULIIA HOLOVATIUK-UNGUREANU</span>
           </Link>
 
           <button
