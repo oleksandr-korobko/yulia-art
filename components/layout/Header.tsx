@@ -64,7 +64,7 @@ export function Header({ navigation }: HeaderProps) {
           {/* Desktop navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-x-12">
             <div className="relative group">
-              <span className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-colors duration-200 cursor-pointer leading-6">
+              <span className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200 cursor-pointer">
                 {navigation.works}
               </span>
               <div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -83,13 +83,13 @@ export function Header({ navigation }: HeaderProps) {
             </div>
             <Link
               href="/about"
-              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-all duration-200 leading-6 border-b-2 border-transparent hover:border-gray-300"
+              className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200"
             >
               {navigation.about}
             </Link>
             <Link
               href="/contact"
-              className="text-base font-light tracking-wide text-gray-900 hover:text-gray-600 transition-all duration-200 leading-6 border-b-2 border-transparent hover:border-gray-300"
+              className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200"
             >
               {navigation.contact}
             </Link>

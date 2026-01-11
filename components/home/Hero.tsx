@@ -8,8 +8,8 @@ export function Hero() {
     <div className="relative bg-white">
       <div className="mx-auto max-w-2xl lg:max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="flex flex-col justify-center px-6 py-16 sm:py-20 lg:px-8 lg:py-32">
-            <p className="text-lg font-light leading-relaxed text-gray-600 sm:text-xl lg:text-2xl">
+          <div className="flex flex-col justify-center px-6 py-16 sm:py-20 lg:px-8 lg:py-32 lg:pr-16">
+            <p className="max-w-xl text-lg font-light leading-[2] tracking-wide text-gray-900 sm:text-xl sm:leading-[2] lg:text-xl lg:leading-[2]">
               {homeContent.content}
             </p>
           </div>
