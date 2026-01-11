@@ -48,7 +48,8 @@
       "Bash(npm run dev:local:*)",
       "Bash(git rm:*)",
       "Bash(npx lighthouse:*)",
-      "Bash(npx lighthouse@11.0.0:*)"
+      "Bash(npx lighthouse@11.0.0:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

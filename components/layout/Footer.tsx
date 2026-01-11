@@ -1,11 +1,13 @@
 import { getSiteConfig } from '@/lib/content';
+import { FooterContainer } from '@/components/ui/Layout';
 
 export function Footer() {
   const siteConfig = getSiteConfig();
 
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-8 md:flex md:items-center md:justify-between lg:px-8">
+      <FooterContainer>
+        <div className="md:flex md:items-center md:justify-between">
         <div className="flex justify-center md:order-2">
           <a
             href={siteConfig.instagram}
@@ -26,7 +28,8 @@ export function Footer() {
         <p className="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
           {siteConfig.copyright}
         </p>
-      </div>
+        </div>
+      </FooterContainer>
     </footer>
   )
 }

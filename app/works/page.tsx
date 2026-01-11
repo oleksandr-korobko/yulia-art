@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import Image from 'next/image';
 import { CATEGORIES, CATEGORY_ORDER } from '@/lib/categories';
 import { getWorksByCategorySlug } from '@/lib/content';
 import { PageTransition } from '@/components/PageTransition';
+import { PageContainer, Grid, Card } from '@/components/ui/Layout';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -28,46 +27,30 @@ export const metadata: Metadata = {
 export default function WorksPage() {
   return (
     <PageTransition>
-      <main className="mx-auto max-w-7xl px-6 pt-12 pb-16 lg:px-8 lg:pt-16 lg:pb-24">
-        <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-16">
-          Works
-        </h1>
+      <main className="pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <PageContainer>
+          <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-16">
+            Works
+          </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {CATEGORY_ORDER.map((slug) => {
-            const category = CATEGORIES[slug];
-            const works = getWorksByCategorySlug(slug);
-            const coverWork = works[0];
+          <Grid cols={3} gap="md">
+            {CATEGORY_ORDER.map((slug) => {
+              const category = CATEGORIES[slug];
+              const works = getWorksByCategorySlug(slug);
+              const coverWork = works[0];
 
-            return (
-              <Link key={slug} href={`/works/${slug}`} className="group block transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                {/* Cover Image */}
-                <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden mb-4 rounded-lg">
-                  {coverWork ? (
-                    <Image
-                      src={coverWork.coverImage}
-                      alt={category.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-300">
-                      No works yet
-                    </div>
-                  )}
-                </div>
-
-                {/* Category Info */}
-                <h2 className="text-lg font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                  {category.name}
-                </h2>
-                <p className="text-sm text-gray-500 mt-1">
-                  {works.length} {works.length === 1 ? 'work' : 'works'}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
+              return (
+                <Card
+                  key={slug}
+                  image={coverWork?.coverImage}
+                  title={category.name}
+                  subtitle={`${works.length} ${works.length === 1 ? 'work' : 'works'}`}
+                  href={`/works/${slug}`}
+                />
+              );
+            })}
+          </Grid>
+        </PageContainer>
       </main>
     </PageTransition>
   );

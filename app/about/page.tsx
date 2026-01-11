@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getAboutPageContent, getSiteConfig, getInstagramFeedContent } from '@/lib/content';
 import { PageTransition } from '@/components/PageTransition';
+import { PageSection, PageContainer } from '@/components/ui/Layout';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -42,8 +43,8 @@ export default function AboutPage() {
     <PageTransition>
       <main className="pt-12 lg:pt-16">
       {/* Profile Section */}
-      <div className="relative bg-white pb-12 sm:pb-16">
-        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <PageSection spacing="md" className="bg-white">
+        <PageContainer>
           <div className="grid grid-cols-1 gap-y-16 sm:gap-y-24 lg:grid-cols-2 lg:items-stretch">
             <div className="overflow-hidden rounded-lg bg-white">
               <Image
@@ -77,12 +78,12 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </PageContainer>
+      </PageSection>
 
       {/* Instagram Grid Section */}
-      <div className="bg-gray-50 py-12 sm:py-16">
-        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <PageSection spacing="md" className="bg-gray-50">
+        <PageContainer>
           <h2 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
             {instagramFeed.sectionTitle}
           </h2>
@@ -140,8 +141,8 @@ export default function AboutPage() {
               {instagramFeed.viewMoreText} <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
-        </div>
-      </div>
+        </PageContainer>
+      </PageSection>
       </main>
     </PageTransition>
   );

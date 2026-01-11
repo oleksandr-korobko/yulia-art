@@ -12,6 +12,7 @@ import { CategorySlug } from '@/lib/types';
 import { ArtworkStructuredData } from '@/components/StructuredData';
 import { PageTransition } from '@/components/PageTransition';
 import { Gallery } from '@/components/Gallery';
+import { PageContainer, Grid, Card } from '@/components/ui/Layout';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -128,63 +129,54 @@ function CategoryPage({ slug }: { slug: CategorySlug }) {
 
   return (
     <PageTransition>
-      <main className="mx-auto max-w-7xl px-6 pt-12 pb-16 lg:px-8 lg:pt-16 lg:pb-24">
-        {/* Back link */}
-        <Link
-          href="/works"
-          className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors mb-12"
-        >
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+      <main className="pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <PageContainer>
+          {/* Back link */}
+          <Link
+            href="/works"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors mb-12"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          All Works
-        </Link>
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            All Works
+          </Link>
 
-        {/* Category Header */}
-        <div className="mb-16">
-          <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">
-            {category.name}
-          </h1>
-          <p className="text-lg text-gray-500">{category.description}</p>
-        </div>
-
-        {/* Works Grid */}
-        {works.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-            {works.map((work) => (
-              <Link
-                key={work.slug}
-                href={`/works/${work.slug}`}
-                className="group block transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-              >
-                <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden mb-4 rounded-lg">
-                  <Image
-                    src={work.coverImage}
-                    alt={work.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <h2 className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                  {work.title}
-                </h2>
-                <p className="text-sm text-gray-500 mt-1">{work.year}</p>
-              </Link>
-            ))}
+          {/* Category Header */}
+          <div className="mb-16">
+            <h1 className="text-4xl lg:text-5xl font-light text-gray-900 mb-4">
+              {category.name}
+            </h1>
+            <p className="text-lg text-gray-500">{category.description}</p>
           </div>
-        ) : (
-          <p className="text-gray-500">No works in this category yet.</p>
-        )}
+
+          {/* Works Grid */}
+          {works.length > 0 ? (
+            <Grid cols={2} gap="xl">
+              {works.map((work) => (
+                <Card
+                  key={work.slug}
+                  image={work.coverImage}
+                  title={work.title}
+                  subtitle={work.year.toString()}
+                  href={`/works/${work.slug}`}
+                />
+              ))}
+            </Grid>
+          ) : (
+            <p className="text-gray-500">No works in this category yet.</p>
+          )}
+        </PageContainer>
       </main>
     </PageTransition>
   );
@@ -225,7 +217,8 @@ async function WorkPage({ slug }: { slug: string }) {
       </section>
 
       {/* WORK INFO */}
-      <section className="mx-auto max-w-4xl px-6 py-16 lg:py-24 lg:px-8">
+      <PageContainer maxWidth="narrow">
+        <section className="py-16 lg:py-24">
         {/* Title & Meta */}
         <div className="mb-16">
           <h1 className="font-serif text-4xl lg:text-5xl font-light text-gray-900 mb-6">
@@ -268,15 +261,19 @@ async function WorkPage({ slug }: { slug: string }) {
             />
           </div>
         </div>
-      </section>
+        </section>
+      </PageContainer>
 
       {/* GALLERY */}
-      <section className="mx-auto max-w-6xl px-6 lg:px-8">
+      <PageContainer maxWidth="wide">
+        <section>
         <Gallery images={work.images} workTitle={work.title} />
-      </section>
+        </section>
+      </PageContainer>
 
       {/* NAVIGATION: Previous / Next */}
-      <section className="mx-auto max-w-6xl px-6 lg:px-8 mt-24 lg:mt-32 pb-24">
+      <PageContainer maxWidth="wide">
+        <section className="mt-24 lg:mt-32 pb-24">
         <div className="border-t border-gray-200 pt-12">
           <div className="flex justify-between items-start">
             {/* Previous */}
@@ -340,10 +337,12 @@ async function WorkPage({ slug }: { slug: string }) {
             )}
           </div>
         </div>
-      </section>
+        </section>
+      </PageContainer>
 
       {/* BACK TO CATEGORY */}
-      <section className="mx-auto max-w-6xl px-6 lg:px-8 pb-16">
+      <PageContainer maxWidth="wide">
+        <section className="pb-16">
         <Link
           href={`/works/${primaryCategory}`}
           className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors"
@@ -363,7 +362,8 @@ async function WorkPage({ slug }: { slug: string }) {
           </svg>
           Back to {categoryInfo?.name || 'Works'}
         </Link>
-      </section>
+        </section>
+      </PageContainer>
         </main>
       </PageTransition>
     </>

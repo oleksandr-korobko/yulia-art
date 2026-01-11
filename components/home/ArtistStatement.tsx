@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import { getArtistStatementContent } from '@/lib/content';
+import { PageSection, PageContainer } from '@/components/ui/Layout';
 
 export function ArtistStatement() {
   const statement = getArtistStatementContent();
   const paragraphs = statement.content.split('\n\n');
 
   return (
-    <div className="bg-white py-12 sm:py-16">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <div className="grid grid-cols-1 gap-x-12 gap-y-16 sm:gap-y-24 lg:grid-cols-2 lg:items-center">
+    <PageSection spacing="sm">
+      <PageContainer>
+        <div className="grid grid-cols-1 gap-x-12 gap-y-8 sm:gap-y-12 lg:grid-cols-2 lg:items-center">
           <div>
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100">
               <Image
@@ -24,7 +25,7 @@ export function ArtistStatement() {
               <h2 className="text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
                 {statement.title}
               </h2>
-              <div className="mt-6 space-y-8">
+              <div className="mt-6 space-y-6">
                 {paragraphs.map((paragraph, index) => (
                   <p key={index}>
                     {paragraph}
@@ -34,7 +35,7 @@ export function ArtistStatement() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </PageContainer>
+    </PageSection>
   );
 }

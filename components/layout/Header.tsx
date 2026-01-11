@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { CATEGORIES, SiteConfig } from '@/lib/types'
+import { HeaderContainer } from '@/components/ui/Layout'
 
 interface HeaderProps {
   navigation: SiteConfig['navigation'];
@@ -41,7 +42,7 @@ export function Header({ navigation }: HeaderProps) {
     <header className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-sm transition-transform duration-300 ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
-      <div className="mx-auto max-w-2xl px-6 py-8 lg:max-w-7xl lg:px-8">
+      <HeaderContainer>
         <nav aria-label="Global" className="flex items-center justify-between">
           {/* Brand name - short on mobile, full on desktop */}
           <Link
@@ -95,7 +96,7 @@ export function Header({ navigation }: HeaderProps) {
             </Link>
           </div>
         </nav>
-      </div>
+      </HeaderContainer>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">

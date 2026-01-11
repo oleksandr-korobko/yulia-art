@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { getNewFeaturedWorks } from '@/lib/content';
 import { CATEGORIES, CATEGORY_ORDER } from '@/lib/categories';
+import { PageContainer, Grid, Card } from '@/components/ui/Layout';
 
 export default function NotFound() {
   const featuredWorks = getNewFeaturedWorks().slice(0, 3);
 
   return (
-    <main className="min-h-[80vh] px-6 py-24 lg:px-8">
-      <div className="mx-auto max-w-7xl">
+    <main className="min-h-[80vh] py-24">
+      <PageContainer>
         {/* 404 Header */}
         <div className="text-center mb-16">
           <h1 className="text-8xl font-light text-gray-200 mb-4">404</h1>
@@ -24,28 +24,17 @@ export default function NotFound() {
             <h3 className="text-2xl font-light text-gray-900 mb-8 text-center">
               Explore Featured Works
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Grid cols={3} gap="md">
               {featuredWorks.map((work) => (
-                <Link
+                <Card
                   key={work.slug}
+                  image={work.coverImage}
+                  title={work.title}
+                  subtitle={work.year.toString()}
                   href={`/works/${work.slug}`}
-                  className="group block transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-                >
-                  <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden mb-4 rounded-lg">
-                    <Image
-                      src={work.coverImage}
-                      alt={work.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <h4 className="text-lg font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                    {work.title}
-                  </h4>
-                  <p className="text-sm text-gray-500 mt-1">{work.year}</p>
-                </Link>
+                />
               ))}
-            </div>
+            </Grid>
           </div>
         )}
 
@@ -93,7 +82,7 @@ export default function NotFound() {
             About the Artist
           </Link>
         </div>
-      </div>
+      </PageContainer>
     </main>
   );
 }

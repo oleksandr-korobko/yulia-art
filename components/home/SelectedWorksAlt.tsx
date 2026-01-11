@@ -1,18 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getSelectedWorksContent } from '@/lib/content';
+import { PageSection, PageContainer } from '@/components/ui/Layout';
 
 export function SelectedWorksAlt() {
   const selectedWorks = getSelectedWorksContent();
   const [firstRow, secondRow] = [selectedWorks.categories.slice(0, 2), selectedWorks.categories.slice(2)];
 
   return (
-    <div className="bg-white py-12 sm:py-16">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <p className="mt-2 max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
+    <PageSection spacing="sm">
+      <PageContainer>
+        <h2 className="mt-2 max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
           {selectedWorks.title}
-        </p>
-        <div className="mt-10 grid grid-cols-1 gap-8 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        </h2>
+        <div className="mt-6 grid grid-cols-1 gap-8 sm:mt-8 lg:grid-cols-6 lg:grid-rows-2">
           {firstRow.map((category, index) => (
             <article
               key={category.slug}
@@ -73,7 +74,7 @@ export function SelectedWorksAlt() {
             </article>
           ))}
         </div>
-      </div>
-    </div>
+      </PageContainer>
+    </PageSection>
   );
 }
