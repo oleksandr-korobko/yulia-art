@@ -13,7 +13,7 @@ export function SelectedWorksAlt() {
         <h2 className="max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
           {selectedWorks.title}
         </h2>
-        <div className="mt-6 grid grid-cols-1 gap-8 sm:mt-8 lg:grid-cols-6 lg:grid-rows-2">
+        <div className="mt-6 grid grid-cols-1 gap-8 sm:mt-8 lg:grid-cols-6">
           {firstRow.map((category, index) => (
             <article
               key={category.slug}
