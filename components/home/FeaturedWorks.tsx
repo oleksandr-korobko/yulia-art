@@ -10,7 +10,7 @@ export default function FeaturedWorks() {
   if (works.length === 0) return null;
 
   return (
-    <PageSection spacing="sm">
+    <PageSection spacing="none" className="pb-8 sm:pb-12">
       <PageContainer>
       <div className="flex items-end justify-between mb-8">
         <h2 className="text-2xl font-light text-gray-900">{content.title}</h2>

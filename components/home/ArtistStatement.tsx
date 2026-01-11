@@ -7,7 +7,7 @@ export function ArtistStatement() {
   const paragraphs = statement.content.split('\n\n');
 
   return (
-    <PageSection spacing="sm">
+    <PageSection spacing="none" className="pb-8 sm:pb-12">
       <PageContainer>
         <div className="grid grid-cols-1 gap-x-12 gap-y-8 sm:gap-y-12 lg:grid-cols-2 lg:items-center">
           <div>

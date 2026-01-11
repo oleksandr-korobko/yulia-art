@@ -8,7 +8,7 @@ export function SelectedWorksAlt() {
   const [firstRow, secondRow] = [selectedWorks.categories.slice(0, 2), selectedWorks.categories.slice(2)];
 
   return (
-    <PageSection spacing="sm">
+    <PageSection spacing="none" className="pb-8 sm:pb-12">
       <PageContainer>
         <h2 className="max-w-lg text-3xl font-light tracking-wide text-gray-900 sm:text-4xl">
           {selectedWorks.title}
