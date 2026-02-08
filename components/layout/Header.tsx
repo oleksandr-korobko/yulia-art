@@ -44,12 +44,15 @@ export function Header({ navigation }: HeaderProps) {
     }`}>
       <HeaderContainer>
         <nav aria-label="Global" className="flex items-center justify-between">
-          {/* Brand name - short on mobile, full on desktop */}
+          {/* Brand name - two lines on mobile, full on desktop */}
           <Link
             href="/"
             className="text-lg lg:text-xl font-light tracking-wider text-gray-900 hover:text-gray-600 transition-colors duration-200"
           >
-            <span className="lg:hidden">YULIIA UNGUREANU</span>
+            <span className="lg:hidden flex flex-col leading-tight text-xs sm:text-sm">
+              <span>YULIIA</span>
+              <span>HOLOVATIUK-UNGUREANU</span>
+            </span>
             <span className="hidden lg:inline">YULIIA HOLOVATIUK-UNGUREANU</span>
           </Link>
 
@@ -59,7 +62,7 @@ export function Header({ navigation }: HeaderProps) {
             className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
           >
             <span className="sr-only">{navigation.openMenu}</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
+            <Bars3Icon aria-hidden="true" className="size-7" />
           </button>
 
           {/* Desktop navigation */}
