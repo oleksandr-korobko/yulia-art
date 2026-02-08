@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props) {
   // For categories
   if (slug in CATEGORIES) {
     return {
-      title: `${category.name} — Yuliia Holovatiuk-Ungureanu`,
+      title: `${category.name} – Yuliia Holovatiuk-Ungureanu`,
       description: category.description,
     };
   }
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props) {
   // For individual works
   const work = await getWork(slug);
   return {
-    title: `${work.title} — Yuliia Holovatiuk-Ungureanu`,
+    title: `${work.title} – Yuliia Holovatiuk-Ungureanu`,
     description: work.shortDescription,
   };
 }
@@ -91,7 +91,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 export const metadata: Metadata = {
   title: {
     default: siteConfig.siteTitle,
-    template: '%s — Yuliia Holovatiuk-Ungureanu',
+    template: '%s – Yuliia Holovatiuk-Ungureanu',
   },
   description: siteConfig.siteDescription,
 
@@ -175,7 +175,7 @@ try {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
   return {
-    title: work.title, // Template from layout.tsx will add " — Yuliia..."
+    title: work.title, // Template from layout.tsx will add " – Yuliia..."
     description: work.shortDescription,
 
     // OpenGraph

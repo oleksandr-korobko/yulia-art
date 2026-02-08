@@ -1,10 +1,10 @@
-# Yuliia Holovatiuk-Ungureanu — Artist Website
+# Yuliia Holovatiuk-Ungureanu – Artist Website
 
 ## Project Overview
 
 Personal portfolio website for Ukrainian-born, UK-based multidisciplinary artist Yuliia Holovatiuk-Ungureanu.
 
-**Design Inspiration:** [Chiharu Shiota](https://www.chiharu-shiota.com/) — minimalist, image-focused, clean navigation
+**Design Inspiration:** [Chiharu Shiota](https://www.chiharu-shiota.com/) – minimalist, image-focused, clean navigation
 
 **Language:** English only (UK audience)
 
@@ -12,16 +12,16 @@ Personal portfolio website for Ukrainian-born, UK-based multidisciplinary artist
 
 ## Development Phases
 
-### Phase 1 (CURRENT) — Static Portfolio
+### Phase 1 (CURRENT) – Static Portfolio
 - Multi-page presentation site
 - Content stored in Markdown files
 - Category-based work organization
 - Events/News section (placeholder for future)
 - Contact page
 
-### Phase 2 (Future) — CMS / Admin Panel
-### Phase 3 (Future) — Shop
-### Phase 4 (Future) — Client Portal, CRM integration
+### Phase 2 (Future) – CMS / Admin Panel
+### Phase 3 (Future) – Shop
+### Phase 4 (Future) – Client Portal, CRM integration
 
 ---
 
@@ -127,7 +127,7 @@ yulia-art/
 
 ---
 
-### WORKS — Category Page (`/works/[category]`)
+### WORKS – Category Page (`/works/[category]`)
 
 **Layout:**
 - Category title at top
@@ -139,7 +139,7 @@ yulia-art/
 
 ---
 
-### WORKS — Single Work (`/works/[category]/[slug]`)
+### WORKS – Single Work (`/works/[category]/[slug]`)
 
 **Layout:**
 - Large hero image
@@ -154,13 +154,13 @@ yulia-art/
 
 ### ABOUT (`/about`)
 
-**Part 1 — Profile:**
+**Part 1 – Profile:**
 - Photo left, text right (or mirrored)
 - Full bio text
 - Artist Statement section
 - Download CV button (PDF)
 
-**Part 2 — Instagram Grid:**
+**Part 2 – Instagram Grid:**
 - 8 photos in 4x2 grid
 - Each links to corresponding Instagram post
 
@@ -248,12 +248,12 @@ This work explores themes of displacement and memory...
 
 ## Design Principles
 
-1. **Minimalism** — Maximum whitespace, minimal UI elements
-2. **Image-first** — Works are the hero, text supports
-3. **Clean typography** — Light fonts, generous spacing
-4. **Neutral palette** — White/black base, color from artwork
-5. **Smooth interactions** — Subtle transitions, no jarring effects
-6. **Mobile-first** — Responsive, touch-friendly
+1. **Minimalism** – Maximum whitespace, minimal UI elements
+2. **Image-first** – Works are the hero, text supports
+3. **Clean typography** – Light fonts, generous spacing
+4. **Neutral palette** – White/black base, color from artwork
+5. **Smooth interactions** – Subtle transitions, no jarring effects
+6. **Mobile-first** – Responsive, touch-friendly
 
 ---
 
@@ -278,7 +278,7 @@ npm run lint         # Lint code
 
 ---
 
-## TODO — Phase 1
+## TODO – Phase 1
 
 ### Setup
 - [ ] Initialize Next.js project with TypeScript
@@ -313,21 +313,21 @@ Components are in `/tailwind-components/` folder. Use as reference/base:
 
 | Component File | Use For |
 |----------------|---------|
-| `Split_with_image_-_marketing.jsx` | **HOME Hero** — image right, text left |
-| `With_angled_image_on_right.jsx` | **HOME Hero alternative** — with navigation |
-| `Three-column_with_background_images.jsx` | **WORKS grid** — category cards |
-| `Split_with_image.jsx` | **ABOUT page** — photo + bio text |
-| `With_testimonial_and_stats.jsx` | **ABOUT alternative** — with stats |
-| `Split_with_image_-_page_sections.jsx` | **CONTACT page** — photo + form/info |
-| `Simple_with_social_links.jsx` | **FOOTER** — social icons + copyright |
-| `Two_row_bento_grid.jsx` | **Instagram grid** — for About page |
-| `With_photo_and_list.jsx` | **Press/News** — future use |
+| `Split_with_image_-_marketing.jsx` | **HOME Hero** – image right, text left |
+| `With_angled_image_on_right.jsx` | **HOME Hero alternative** – with navigation |
+| `Three-column_with_background_images.jsx` | **WORKS grid** – category cards |
+| `Split_with_image.jsx` | **ABOUT page** – photo + bio text |
+| `With_testimonial_and_stats.jsx` | **ABOUT alternative** – with stats |
+| `Split_with_image_-_page_sections.jsx` | **CONTACT page** – photo + form/info |
+| `Simple_with_social_links.jsx` | **FOOTER** – social icons + copyright |
+| `Two_row_bento_grid.jsx` | **Instagram grid** – for About page |
+| `With_photo_and_list.jsx` | **Press/News** – future use |
 
 ## Questions to Resolve
 
-1. **Hero slider** — Auto-rotate or manual arrows? Speed?
-2. **Work detail accordion** — Always collapsed or first section open?
-3. **News/Publications** — Placeholder pages now or omit from navigation?
+1. **Hero slider** – Auto-rotate or manual arrows? Speed?
+2. **Work detail accordion** – Always collapsed or first section open?
+3. **News/Publications** – Placeholder pages now or omit from navigation?
 
 ---
 

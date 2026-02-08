@@ -40,17 +40,17 @@ Consider that it is better for me to start from simple things, even if I have to
 
 Portfolio website for **Yuliia Holovatiuk-Ungureanu**, a UK-based Ukrainian multidisciplinary artist.
 
-**Current Phase:** Phase 1 — Static portfolio site
+**Current Phase:** Phase 1 – Static portfolio site
 
-**Design Reference:** [Chiharu Shiota](https://www.chiharu-shiota.com/) — minimal, image-focused, elegant
+**Design Reference:** [Chiharu Shiota](https://www.chiharu-shiota.com/) – minimal, image-focused, elegant
 
 ## Technical Decisions
 
 ### Stack
 - **Next.js 14+** with App Router (NOT Pages Router)
-- **TypeScript** — strict mode, no `any`
-- **Tailwind CSS** — no separate component CSS files
-- **Markdown** — content in `.md` files with frontmatter
+- **TypeScript** – strict mode, no `any`
+- **Tailwind CSS** – no separate component CSS files
+- **Markdown** – content in `.md` files with frontmatter
 
 ### Structure
 - See `README.md` for full folder structure
@@ -109,7 +109,7 @@ Adapt these to project needs. Convert JSX → TSX. Remove demo content.
 - Create over-engineered abstractions
 - Add unnecessary dependencies
 - Hardcode content in components (use content/ folder)
-- Copy Tailwind components verbatim — adapt and simplify
+- Copy Tailwind components verbatim – adapt and simplify
 
 ## Current Status
 

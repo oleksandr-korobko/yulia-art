@@ -4,7 +4,7 @@
 
 **Yuliia Holovatiuk-Ungureanu** (b. 1987, Lviv, Ukraine) is a multidisciplinary artist currently living and working in the United Kingdom. Her practice spans immersive installation, sculpture, ceramics, painting, and socially engaged art, with a strong focus on material research, historical narratives, and spatial experience.
 
-At the core of her work lies a transformative process: moving from personal and collective experiences of war, displacement, and destruction toward questions of healing, resilience, and the possibility of a future shaped through conscious rebuilding. Rather than illustrating events, Yuliia works with matter itself — clay, soil, natural pigments, found artefacts, archival fragments, and official documents — allowing materials to carry memory, tension, and testimony.
+At the core of her work lies a transformative process: moving from personal and collective experiences of war, displacement, and destruction toward questions of healing, resilience, and the possibility of a future shaped through conscious rebuilding. Rather than illustrating events, Yuliia works with matter itself – clay, soil, natural pigments, found artefacts, archival fragments, and official documents – allowing materials to carry memory, tension, and testimony.
 
 Her installations often operate at the intersection of archive and lived space. Drawing on archival research, historical records, and legal documents, she examines how systems of power, responsibility, and justice are embedded within material traces. This research-driven approach is informed by her background in law, public leadership, and environmental policy, which continues to shape her sensitivity to structure, ethics, sustainability, and scale.
 
@@ -18,9 +18,9 @@ Yuliia's work has been presented in solo and group exhibitions in the UK and Eur
 
 My practice develops through intersections rather than fixed categories. I am interested in how forms, materials, and processes meet, overlap, and transform one another over time. A sculptural gesture may carry archival language, a ceramic structure may operate spatially, and a painted surface may function as an object rather than an image.
 
-The work emerges from lived experience marked by war, displacement, and rupture, yet it does not centre on trauma itself. Instead, it attends to shifts — moments where pressure changes form, fragility gains resistance, and silence becomes an active condition. I am interested in how material holds unresolved histories — historical, emotional, and political — and how meaning emerges through labour, repetition, erosion, and physical endurance rather than direct representation.
+The work emerges from lived experience marked by war, displacement, and rupture, yet it does not centre on trauma itself. Instead, it attends to shifts – moments where pressure changes form, fragility gains resistance, and silence becomes an active condition. I am interested in how material holds unresolved histories – historical, emotional, and political – and how meaning emerges through labour, repetition, erosion, and physical endurance rather than direct representation.
 
-Working with clay, natural pigments, artefacts, and archival materials, I create situations where memory becomes spatial and tactile. Many of my works search for ways of releasing tension, restoring balance, and imagining future-oriented forms of coexistence. For me, this practice is an ongoing process of becoming — a way of moving toward peace, both personal and collective.
+Working with clay, natural pigments, artefacts, and archival materials, I create situations where memory becomes spatial and tactile. Many of my works search for ways of releasing tension, restoring balance, and imagining future-oriented forms of coexistence. For me, this practice is an ongoing process of becoming – a way of moving toward peace, both personal and collective.
 
 ---
 

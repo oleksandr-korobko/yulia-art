@@ -25,7 +25,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 export const metadata: Metadata = {
   title: {
     default: siteConfig.siteTitle,
-    template: '%s — Yuliia Holovatiuk-Ungureanu',
+    template: '%s – Yuliia Holovatiuk-Ungureanu',
   },
   description: siteConfig.siteDescription,
 

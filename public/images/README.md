@@ -21,8 +21,8 @@ images/
 ### Works (`works/[category]/`)
 - **Folder name:** kebab-case English slug (e.g., `echoes-of-displacement`)
 - **Files:**
-  - `cover.jpg` — main cover image (required)
-  - `1.jpg`, `2.jpg`, `3.jpg` — additional gallery images (numbered in display order)
+  - `cover.jpg` – main cover image (required)
+  - `1.jpg`, `2.jpg`, `3.jpg` – additional gallery images (numbered in display order)
 
 ### Other Images
 - **Hero:** `hero-1.jpg`, `hero-2.jpg`, `hero-3.jpg`
@@ -38,9 +38,9 @@ images/
 ## Image Requirements
 
 ### Formats
-- **JPG** — for photographs (best size/quality ratio)
-- **PNG** — if transparency needed
-- **WebP** — Next.js will auto-convert
+- **JPG** – for photographs (best size/quality ratio)
+- **PNG** – if transparency needed
+- **WebP** – Next.js will auto-convert
 
 ### Recommended Sizes
 - **Hero:** 1920×1080px or larger

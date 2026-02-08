@@ -753,7 +753,7 @@ Grid Gaps:
   - Added Twitter Card metadata with large image support
   - Configured robots directives for search engines
   - Added favicon and Apple touch icon references
-  - Implemented title template: "%s — Yuliia Holovatiuk-Ungureanu"
+  - Implemented title template: "%s – Yuliia Holovatiuk-Ungureanu"
 
 - ✅ **Phase 2: Work Pages Metadata (app/works/[slug]/page.tsx):**
   - Category pages: OpenGraph with first work's cover image as preview

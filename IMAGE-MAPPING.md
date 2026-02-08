@@ -15,9 +15,9 @@
 **Зараз:** `https://images.unsplas.h./photo-1536924940846-227afb31e2a5...` (поламане посилання)
 
 **Потрібно:**
-- `/public/images/hero/hero-1.jpg` — головне зображення для hero slider
-- `/public/images/hero/hero-2.jpg` — додаткове (опціонально для слайдера)
-- `/public/images/hero/hero-3.jpg` — додаткове (опціонально для слайдера)
+- `/public/images/hero/hero-1.jpg` – головне зображення для hero slider
+- `/public/images/hero/hero-2.jpg` – додаткове (опціонально для слайдера)
+- `/public/images/hero/hero-3.jpg` – додаткове (опціонально для слайдера)
 
 **Рекомендований розмір:** 1920×1080px або більше
 **Формат:** JPG
@@ -29,7 +29,7 @@
 
 **Використовується в:** `components/home/SelectedWorks.tsx` → `content/pages/main/selected-works.md`
 
-**Зараз:** Усі — Unsplash placeholders
+**Зараз:** Усі – Unsplash placeholders
 
 **Потрібно:**
 - `/public/images/categories/installations-preview.jpg`
@@ -51,8 +51,8 @@
 **Зараз:** Unsplash placeholders
 
 **Потрібно:**
-- `/public/images/profile/artist-portrait.jpg` — офіційне портретне фото для About page
-- `/public/images/profile/artist-working.jpg` — фото в процесі роботи для Artist Statement
+- `/public/images/profile/artist-portrait.jpg` – офіційне портретне фото для About page
+- `/public/images/profile/artist-working.jpg` – фото в процесі роботи для Artist Statement
 
 **Рекомендований розмір:** 800×1000px (портрет)
 **Формат:** JPG
@@ -64,7 +64,7 @@
 
 **Використовується в:** `app/about/page.tsx` → `content/pages/about.md`
 
-**Зараз:** Усі — Unsplash placeholders
+**Зараз:** Усі – Unsplash placeholders
 
 **Потрібно:**
 ```
@@ -157,9 +157,9 @@
 ## Оптимізація зображень
 
 ### Онлайн інструменти:
-- **TinyPNG** (tinypng.com) — найкраще стиснення для JPG/PNG
-- **Squoosh** (squoosh.app) — гнучкі налаштування
-- **ImageOptim** (Mac app) — batch processing
+- **TinyPNG** (tinypng.com) – найкраще стиснення для JPG/PNG
+- **Squoosh** (squoosh.app) – гнучкі налаштування
+- **ImageOptim** (Mac app) – batch processing
 
 ### Цільові показники:
 - Hero: < 500 KB
@@ -187,7 +187,7 @@
 
 Після завантаження зображень потрібно буде:
 
-1. ✅ Реалізувати `lib/content.ts` — markdown reader
+1. ✅ Реалізувати `lib/content.ts` – markdown reader
 2. ✅ Оновити компоненти для читання з markdown замість hardcoded values
 3. ✅ Створити сторінки Works (category + detail pages)
 4. ✅ Додати реальні дані про роботи
