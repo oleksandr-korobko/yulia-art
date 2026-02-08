@@ -64,6 +64,13 @@ Portfolio website for **Yuliia Holovatiuk-Ungureanu**, a UK-based Ukrainian mult
 - PascalCase for components, camelCase for functions
 - No `console.log` in production code
 
+### Typography Rules
+- **Always use en dash (–) not em dash (—)** in all content
+- En dash is used for ranges, connections, and interruptions
+- This applies to: markdown content, TypeScript strings, meta tags, all text
+- Example: "war, displacement, and memory – asking how..." ✓
+- Example: "war, displacement, and memory — asking how..." ✗
+
 ## Work Categories
 
 ```typescript
