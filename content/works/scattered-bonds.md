@@ -14,7 +14,7 @@ shortDescription: "A fractured coral necklace is suspended above a transparent p
 featured: false
 ---
 
-Scattered Bonds examines fractures produced by war as a continuation of long-term violence against Ukrainian identity — through displacement, repression, and the systematic erosion of cultural continuity. Suspended from the ceiling, a fractured coral necklace — once a symbol of femininity, lineage, and Ukrainian tradition — hovers above a transparent platform. Its missing beads, scattered across the surface below, register absence as a physical condition.
+Scattered Bonds examines fractures produced by war as a continuation of long-term violence against Ukrainian identity – through displacement, repression, and the systematic erosion of cultural continuity. Suspended from the ceiling, a fractured coral necklace – once a symbol of femininity, lineage, and Ukrainian tradition – hovers above a transparent platform. Its missing beads, scattered across the surface below, register absence as a physical condition.
 
 Removed from its original function, the necklace operates as a material trace of severed family lines and interrupted inheritance. The work reflects not only the current mass displacement caused by Russia's full-scale invasion, but also earlier waves of forced migration, cultural suppression, and Soviet-era policies that fractured Ukrainian social and cultural structures.
 

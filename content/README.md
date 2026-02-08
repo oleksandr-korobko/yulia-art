@@ -93,10 +93,10 @@ order: 1
 
 ## Наступні кроки
 
-1. **Завантажити зображення** — див. `/IMAGE-MAPPING.md`
-2. **Створити реальні роботи** — замінити example файли реальними
-3. **Реалізувати markdown reader** — `lib/content.ts`
-4. **Оновити компоненти** — читати з markdown замість hardcoded values
+1. **Завантажити зображення** – див. `/IMAGE-MAPPING.md`
+2. **Створити реальні роботи** – замінити example файли реальними
+3. **Реалізувати markdown reader** – `lib/content.ts`
+4. **Оновити компоненти** – читати з markdown замість hardcoded values
 
 ## Використання шляхів до зображень
 
@@ -122,8 +122,8 @@ coverImage: "/images/works/installations/my-work/cover.jpg"
 
 ## Категорії
 
-- `installations` — Installations
-- `sculptures` — Sculptures
-- `paintings` — Paintings
-- `ceramics` — Ceramic Works
-- `text-informed` — Text-Informed & Archival Works
+- `installations` – Installations
+- `sculptures` – Sculptures
+- `paintings` – Paintings
+- `ceramics` – Ceramic Works
+- `text-informed` – Text-Informed & Archival Works

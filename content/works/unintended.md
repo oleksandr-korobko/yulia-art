@@ -19,6 +19,6 @@ featured: false
 
 Unintended is a ceramic sculpture that emerged from a red monochrome painting that was never intended to become three-dimensional. During the studio process, the artist began experimenting with translating the painted surface into clay. What started as a material test became a turning point, shifting the work from a two-dimensional plane into a three-dimensional form.
 
-The work reflects on emotional plasticity and the potential of softness to operate as strength rather than fragility. Melting is understood not as failure, but as transformation — a condition in which form adapts, shifts, and resists fixed resolution. Through clay, weight, and volume, the work extends the painterly gesture into spatial presence and physical endurance.
+The work reflects on emotional plasticity and the potential of softness to operate as strength rather than fragility. Melting is understood not as failure, but as transformation – a condition in which form adapts, shifts, and resists fixed resolution. Through clay, weight, and volume, the work extends the painterly gesture into spatial presence and physical endurance.
 
 As a work-in-progress, Unintended speaks to the unpredictability of material processes and to how risk, deviation from intention, and sustained experimentation can open new directions within artistic practice. The sculpture foregrounds becoming rather than completion, remaining open to further change as part of its conceptual and material logic.

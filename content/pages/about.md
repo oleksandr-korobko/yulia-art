@@ -7,7 +7,7 @@ downloadCvText: "Download CV"
 
 Yuliia Holovatiuk-Ungureanu (b. 1987, Lviv, Ukraine) is a multidisciplinary Ukrainian artist living and working in the United Kingdom. Her practice unfolds across installation, sculpture, ceramics, painting, performance, and socially engaged projects, with a focus on material processes, spatial experience, and embodied engagement.
 
-At the core of her work is a transformative process — moving from lived experiences of war, displacement, and destruction toward questions of responsibility, justice, and the possibility of futures shaped through conscious rebuilding. Working with clay, soil, natural pigments, found objects, and documents, she allows material, repetition, and spatial relationships to carry memory, tension, and endurance rather than illustrate events.
+At the core of her work is a transformative process – moving from lived experiences of war, displacement, and destruction toward questions of responsibility, justice, and the possibility of futures shaped through conscious rebuilding. Working with clay, soil, natural pigments, found objects, and documents, she allows material, repetition, and spatial relationships to carry memory, tension, and endurance rather than illustrate events.
 
 Drawing on archival research, historical records, and legal documents, Yuliia examines how systems of power and responsibility become embedded within material traces. Her use of non-conventional pigments such as kumkum, sindur, turmeric, and earth shifts attention from representation toward material presence and inner transformation.
 

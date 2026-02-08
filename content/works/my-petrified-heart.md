@@ -15,8 +15,8 @@ shortDescription: "At the centre of My Petrified Heart is a piece of petrified w
 featured: false
 ---
 
-At the centre of this work is a piece of petrified wood — once living matter, now transformed into stone through a slow and irreversible geological process. Organic tissue has been replaced by mineral deposits, fixing what was alive into a state of permanence and immobility.
+At the centre of this work is a piece of petrified wood – once living matter, now transformed into stone through a slow and irreversible geological process. Organic tissue has been replaced by mineral deposits, fixing what was alive into a state of permanence and immobility.
 
 The work draws a parallel between this material transformation and the hardening of human sensitivity under prolonged exposure to war, violence, and systemic hostility. The petrified wood is held not as metaphor but as condition: a body that no longer reacts, absorbs, or regenerates in the way it once did.
 
-Removed from its natural environment and held as a singular object, the wood confronts the viewer with a state of emotional and ethical paralysis. The work does not offer resolution or consolation. Instead, it asks when endurance becomes numbness, and survival turns into a form of fossilisation — a lasting consequence of living within sustained violence.
+Removed from its natural environment and held as a singular object, the wood confronts the viewer with a state of emotional and ethical paralysis. The work does not offer resolution or consolation. Instead, it asks when endurance becomes numbness, and survival turns into a form of fossilisation – a lasting consequence of living within sustained violence.

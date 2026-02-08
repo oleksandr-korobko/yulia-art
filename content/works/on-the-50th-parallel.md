@@ -17,6 +17,6 @@ featured: false
 
 On the 50th Parallel was created in Kharkiv using homemade watercolour derived from local earth pigments and gum arabic. Working directly with material sourced from the land, the artist allows the surface to register place not as depiction, but as physical presence.
 
-The painting references Kharkiv's position on the 50th parallel — a geographic line that becomes a conceptual anchor, where territory, identity, and lived experience intersect. Layers of pigment function as material traces, carrying imprint, pressure, and duration rather than narrative imagery.
+The painting references Kharkiv's position on the 50th parallel – a geographic line that becomes a conceptual anchor, where territory, identity, and lived experience intersect. Layers of pigment function as material traces, carrying imprint, pressure, and duration rather than narrative imagery.
 
-Through this work, Yuliia Holovatiuk-Ungureanu approaches landscape as a living archive. The canvas becomes a site where land remembers — holding loss, endurance, and continuity within its own substance.
+Through this work, Yuliia Holovatiuk-Ungureanu approaches landscape as a living archive. The canvas becomes a site where land remembers – holding loss, endurance, and continuity within its own substance.

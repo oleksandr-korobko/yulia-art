@@ -18,6 +18,6 @@ shortDescription: "I Have to Leave My Childhood Here presents a melted plastic c
 featured: true
 ---
 
-This sculpture addresses the impact of war on children through a found object recovered from a destroyed residential house in Irpin, Ukraine. A melted plastic chair — once associated with domestic safety and childhood — has been violently deformed by fire from a Russian missile strike, becoming a material witness to violence.
+This sculpture addresses the impact of war on children through a found object recovered from a destroyed residential house in Irpin, Ukraine. A melted plastic chair – once associated with domestic safety and childhood – has been violently deformed by fire from a Russian missile strike, becoming a material witness to violence.
 
 Removed from its original context and presented intact, the object carries traces of forced evacuation, loss, and interrupted lives. Rather than symbolising innocence, it registers the physical reality of war as it enters civilian and intimate space, marking the moment when childhood is not remembered but materially broken.

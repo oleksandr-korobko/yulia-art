@@ -18,6 +18,6 @@ featured: false
 
 Purity belongs to Liberation, a series of monochromatic paintings created from natural, handmade pigments and dedicated to womanhood and inner strength. The work draws on kumkum and sindur as the only pigments, materials traditionally associated with protection, continuity, and the feminine presence across generations.
 
-The painting unfolds as a deep red surface where vulnerability and resilience coexist. Layers of cold wax and linseed oil create a dense, tactile field that holds traces of touch, repetition, and care — reflecting the quiet labour through which endurance is sustained over time.
+The painting unfolds as a deep red surface where vulnerability and resilience coexist. Layers of cold wax and linseed oil create a dense, tactile field that holds traces of touch, repetition, and care – reflecting the quiet labour through which endurance is sustained over time.
 
 Rather than presenting purity as innocence or idealisation, the work approaches it as a state of inner clarity shaped through responsibility and persistence. Rooted in tradition yet articulated through a contemporary material language, Purity speaks of continuity, healing, and the strength required to preserve identity and memory amid upheaval and displacement.

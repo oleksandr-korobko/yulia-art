@@ -18,4 +18,4 @@ Traces of Caldon Canal is a site-responsive work created in direct relation to H
 
 Using earth pigments alongside oil pastel, the artist records physical textures and tonal shifts drawn from the canal's environment. Pigment is applied as trace rather than image, preserving impressions of surface, sediment, and movement accumulated over decades.
 
-Rather than reconstructing the past, the work operates as a bridge between what has been carried forward and what remains unresolved. The canvas becomes a temporary archive — holding memory, transformation, and continuity within the material language of the place itself.
+Rather than reconstructing the past, the work operates as a bridge between what has been carried forward and what remains unresolved. The canvas becomes a temporary archive – holding memory, transformation, and continuity within the material language of the place itself.

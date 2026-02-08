@@ -17,6 +17,6 @@ featured: false
 
 Golden Serenity belongs to Liberation, a series of monochromatic paintings created from natural, handmade pigments and dedicated to womanhood and feminine power.
 
-Working with kumkum as the only pigment, the painting unfolds as a deep red field where strength and tenderness coexist. Layers of cold wax and linseed oil create a textured surface that holds traces of touch, time, and repetition — echoing the complexity of female experience shaped through care, creation, and resilience.
+Working with kumkum as the only pigment, the painting unfolds as a deep red field where strength and tenderness coexist. Layers of cold wax and linseed oil create a textured surface that holds traces of touch, time, and repetition – echoing the complexity of female experience shaped through care, creation, and resilience.
 
 Rooted in tradition yet expressed through a contemporary material language, Golden Serenity reflects on femininity as a source of quiet authority. It is not an image of power, but a space where strength settles into stillness, continuity, and inner balance.
