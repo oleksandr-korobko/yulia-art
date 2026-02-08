@@ -14,7 +14,7 @@ export function Hero() {
               {homeContent.content}
             </p>
           </div>
-          <div className="relative aspect-[3/4] overflow-hidden">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
             <Image
               alt={homeContent.heroImageAlt}
               src={homeContent.heroImage}
