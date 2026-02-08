@@ -68,13 +68,7 @@ export default function AboutPage() {
                   ))}
                 </div>
               </div>
-              <div className="mt-auto pt-10 flex gap-4">
-                <a
-                  href={siteConfig.cvFile}
-                  className="inline-block rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-light text-white shadow-sm hover:bg-gray-600 hover:shadow-md active:bg-gray-700 transition-all duration-200 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-                >
-                  {aboutContent.downloadCvText}
-                </a>
+              <div className="mt-auto pt-10">
                 <a
                   href={siteConfig.cvFile}
                   className="inline-block rounded-md border border-gray-900 px-3.5 py-2.5 text-sm font-light text-gray-900 hover:bg-gray-900 hover:text-white hover:shadow-md active:bg-gray-700 active:text-white transition-all duration-200 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
