@@ -6,9 +6,9 @@
 
 ### `master` (Production)
 - **Призначення:** Production-ready код
-- **Deployment:** Автоматично деплоїться на Vercel Production
+- **Deployment:** Manual deployment через Vercel CLI
 - **Захист:** Тільки через Pull Requests з `development`
-- **URL:** https://yulia-art.vercel.app
+- **URL:** https://yuliiaholovatiukungureanu.com
 
 ### `development` (Development)
 - **Призначення:** Активна розробка
@@ -35,8 +35,8 @@
 
 3. **Push в development + Deploy на production:**
    ```bash
-   git push origin development
-   npx vercel --prod               # Деплоїть на yulia-art.vercel.app
+   git push origin development    # Creates preview URL automatically
+   npx vercel --prod --yes        # Deploys to yuliiaholovatiukungureanu.com
    ```
 
 ### Випуск в Production
@@ -121,8 +121,8 @@ git diff                    # See changes
 
 ## Vercel Integration
 
-- **Production:** https://yulia-art.vercel.app (from `master`)
-- **Preview:** Automatic preview URLs (from `development`)
+- **Production:** https://yuliiaholovatiukungureanu.com (from manual deploy)
+- **Preview:** Automatic preview URLs (from `development` branch)
 - **Dashboard:** https://vercel.com/oleksandrs-projects-7e418822/yulia-art
 
 ## Tips

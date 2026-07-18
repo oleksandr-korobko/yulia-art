@@ -25,11 +25,16 @@ Consider that it is better for me to start from simple things, even if I have to
 
 ## Deployment Workflow
 
-**When user says "save and deploy":**
-1. Create Git commit with descriptive message
-2. Push to GitHub (`git push origin development`)
-3. Deploy to Vercel production: `npx vercel --prod --yes`
-4. **IMPORTANT:** DO NOT kill the local dev server
+**Development (Preview):**
+1. Push changes: `git push origin development`
+2. Vercel автоматично створює preview URL
+3. Знайти preview URL у Vercel dashboard: https://vercel.com/oleksandrs-projects-7e418822/yulia-art
+4. Перевірити зміни на preview (показати клієнту якщо потрібно)
+
+**Production:**
+1. Deploy: `npx vercel --prod --yes`
+2. Site live at: https://yuliiaholovatiukungureanu.com
+3. **IMPORTANT:** DO NOT kill the local dev server
 
 **Local dev server:**
 - Should remain running during and after deployment
