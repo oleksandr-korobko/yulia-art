@@ -3,7 +3,7 @@ import { getAllWorkSlugs } from '@/lib/content';
 import { CATEGORY_ORDER } from '@/lib/categories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yulia-art.vercel.app';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yuliiaholovatiukungureanu.com';
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
