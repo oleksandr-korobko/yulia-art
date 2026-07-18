@@ -1,12 +1,89 @@
 # Project Progress
 
-**Last Updated:** 2026-01-11
+**Last Updated:** 2026-07-18
 **Branch:** development
-**Current Focus:** UI Components System & Spacing Standardization
+**Current Focus:** SEO & Deployment Workflow
 
 ---
 
-## Latest Session (2026-01-11) - UI Components System Migration
+## Latest Session (2026-07-18) - SEO Fix & Deployment Workflow Documentation
+
+### Completed Today
+- ✅ **SEO Metadata Fixed - Custom Domain Integration:**
+  - Updated NEXT_PUBLIC_SITE_URL in .env.local: `yulia-art.vercel.app` → `yuliiaholovatiukungureanu.com`
+  - Updated app/sitemap.ts line 6: Changed fallback URL to custom domain
+  - Updated app/robots.ts line 4: Changed fallback URL to custom domain
+  - Added NEXT_PUBLIC_SITE_URL environment variable to Vercel (Production + Preview)
+  - **Critical Fix:** All SEO metadata now uses custom domain instead of vercel.app URL
+
+- ✅ **Deployment Verification:**
+  - Authenticated Vercel CLI via browser login
+  - Deployed to production: `npx vercel --prod --yes`
+  - Build successful in 21.59s ✅
+  - All 46 pages generated correctly
+  - Live at: https://yuliiaholovatiukungureanu.com
+
+- ✅ **SEO Metadata Verification:**
+  - Sitemap.xml: All 46 URLs correctly use `yuliiaholovatiukungureanu.com` ✓
+  - OpenGraph tags: `og:url` and `og:image` use custom domain ✓
+  - Twitter Cards: `twitter:image` uses custom domain ✓
+  - No references to `yulia-art.vercel.app` remaining ✓
+
+- ✅ **Documentation Updated:**
+  - Updated CLAUDE.md: Added preview URL workflow and deployment instructions
+  - Updated GIT-WORKFLOW.md: Changed production URLs from vercel.app to custom domain (lines 11, 39, 124)
+  - Documented staging workflow using Vercel Preview URLs
+  - Clarified manual production deployment process
+
+### Technical Details
+
+**Files Modified:**
+- `.env.local` - Updated NEXT_PUBLIC_SITE_URL (not committed, in .gitignore)
+- `app/sitemap.ts` - Updated fallback URL to custom domain
+- `app/robots.ts` - Updated fallback URL to custom domain
+- `CLAUDE.md` - Updated deployment workflow section
+- `GIT-WORKFLOW.md` - Updated production URLs and workflow
+
+**SEO Impact:**
+- **Google indexing:** Now indexes `yuliiaholovatiukungureanu.com` correctly
+- **Social sharing:** Facebook, Twitter, LinkedIn preview cards show custom domain
+- **Sitemap:** All 46 pages reference correct domain for search engines
+- **OpenGraph:** `og:url`, `og:image`, `og:site_name` use custom domain
+- **Twitter Cards:** Proper metadata for Twitter sharing with custom domain
+
+**Deployment Workflow:**
+```
+Development:
+1. Push to development → Auto preview URL from Vercel
+2. Review changes on preview URL
+3. Optional: Show preview to client
+
+Production:
+1. Deploy: npx vercel --prod --yes
+2. Live at: https://yuliiaholovatiukungureanu.com
+```
+
+### Sitemap Statistics
+- **Total URLs:** 46
+  - Static pages: 4 (/, /about, /contact, /works)
+  - Category pages: 5 (/works/installations, /works/sculptures, etc.)
+  - Individual works: 37 (all artwork detail pages)
+- **All URLs verified:** Using custom domain ✓
+
+### User Experience Impact
+- **Professional branding:** Custom domain visible in all metadata
+- **SEO improvement:** Proper domain attribution for search engines
+- **Social sharing:** Correct domain shown when sharing on social media
+- **Consistent identity:** Single domain across all touchpoints
+
+### Next Steps
+1. Monitor Google Search Console for proper indexing
+2. Test social sharing on Facebook/Twitter to verify metadata
+3. Continue with regular development workflow
+
+---
+
+## Previous Session (2026-01-11) - UI Components System Migration
 
 ### Completed Today
 - ✅ **Created Comprehensive UI Components System:**

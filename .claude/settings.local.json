@@ -50,7 +50,16 @@
       "Bash(npx lighthouse:*)",
       "Bash(npx lighthouse@11.0.0:*)",
       "Bash(npx tsc:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(pkill:*)",
+      "Bash(git merge:*)",
+      "Bash(git stash:*)",
+      "Bash(mkdir:*)",
+      "Bash(wc:*)",
+      "Bash(git log:*)",
+      "Bash(vercel whoami:*)",
+      "WebFetch(domain:developers.facebook.com)",
+      "WebFetch(domain:yuliiaholovatiukungureanu.com)"
     ]
   }
 }
