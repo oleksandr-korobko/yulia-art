@@ -10,7 +10,7 @@ export interface Category {
 export const CATEGORIES: Record<CategorySlug, Category> = {
   installations: {
     slug: 'installations',
-    name: 'Installations',
+    name: 'Installations & Performance',
     description: 'Spatial works engaging material, scale, and context',
   },
   sculptures: {

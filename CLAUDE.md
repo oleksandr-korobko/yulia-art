@@ -25,6 +25,17 @@ Consider that it is better for me to start from simple things, even if I have to
 
 ## Deployment Workflow
 
+**CRITICAL RULE - PRODUCTION DEPLOYMENT:**
+🚨 **NEVER deploy to production (`npx vercel --prod`) without EXPLICIT user approval!**
+🚨 **ALWAYS ask first: "Ready to deploy to production?"**
+🚨 **If user says "save and deploy" - do commit + push, then ASK about production!**
+
+**When user says "save and deploy":**
+1. Create Git commit with descriptive message
+2. Push to GitHub: `git push origin development`
+3. **STOP and ASK:** "Changes pushed to development. Deploy to production now?"
+4. **ONLY if user confirms YES:** `npx vercel --prod --yes`
+
 **Development (Preview):**
 1. Push changes: `git push origin development`
 2. Vercel автоматично створює preview URL
@@ -32,9 +43,10 @@ Consider that it is better for me to start from simple things, even if I have to
 4. Перевірити зміни на preview (показати клієнту якщо потрібно)
 
 **Production:**
-1. Deploy: `npx vercel --prod --yes`
-2. Site live at: https://yuliiaholovatiukungureanu.com
-3. **IMPORTANT:** DO NOT kill the local dev server
+1. **ASK USER FIRST!** Never deploy without permission
+2. Deploy: `npx vercel --prod --yes`
+3. Site live at: https://yuliiaholovatiukungureanu.com
+4. **IMPORTANT:** DO NOT kill the local dev server
 
 **Local dev server:**
 - Should remain running during and after deployment

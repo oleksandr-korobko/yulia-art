@@ -19,7 +19,7 @@ export interface CategoryInfo {
 export interface WorkMeta {
   title: string;
   slug: string; // генерується з назви файлу
-  year: number;
+  year: number | string; // Supports "2026", "2025-2026", "2025-ongoing"
   categories: CategorySlug[];
   materials: string;
   dimensions: string;
@@ -27,11 +27,23 @@ export interface WorkMeta {
   images: string[];
   shortDescription: string;
   featured: boolean;
+  // Optional media fields
+  videoFile?: string; // Path to video file: "/videos/works/slug/video.mp4"
+  youtubeId?: string; // YouTube ID for embed
+  audioFile?: string; // Path to audio file: "/audio/works/slug/audio.mp3"
+  downloads?: DownloadItem[]; // Array of downloadable files
 }
 
 // Повна робота (з markdown контентом)
 export interface Work extends WorkMeta {
   content: string; // HTML з markdown
+}
+
+// Downloadable file item for works
+export interface DownloadItem {
+  label: string; // Display text: "Download Original Text"
+  file: string; // Path to file: "/downloads/filename.pdf"
+  description?: string; // Optional description
 }
 
 // Backward compatibility - deprecated, use WorkMeta instead

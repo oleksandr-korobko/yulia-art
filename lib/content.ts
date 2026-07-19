@@ -309,6 +309,17 @@ export function getWorksByCategorySlug(category: CategorySlug): WorkMeta[] {
 }
 
 /**
+ * Helper to extract numeric year for sorting
+ * Handles: 2026, "2026", "2025-2026", "2025-ongoing"
+ */
+function getNumericYear(year: number | string): number {
+  if (typeof year === 'number') return year;
+  // Extract first year from string like "2025-2026" or "2025-ongoing"
+  const match = year.match(/\d{4}/);
+  return match ? parseInt(match[0], 10) : 0;
+}
+
+/**
  * Get featured works for homepage
  */
 export function getNewFeaturedWorks(): WorkMeta[] {
@@ -316,7 +327,7 @@ export function getNewFeaturedWorks(): WorkMeta[] {
 
   return getAllWorksMeta()
     .filter((work) => work.featured)
-    .sort((a, b) => b.year - a.year);
+    .sort((a, b) => getNumericYear(b.year) - getNumericYear(a.year));
 }
 
 /**
