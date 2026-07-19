@@ -12,6 +12,8 @@ images:
   - "/images/works/state-of-becoming/04.jpg"
   - "/images/works/state-of-becoming/05.jpg"
   - "/images/works/state-of-becoming/06.jpg"
+  - "/images/works/state-of-becoming/07.jpg"
+  - "/images/works/state-of-becoming/08.jpg"
 shortDescription: "Video performance centred on repetitive actions of crushing, dissolving, reclaiming, and reworking clay by hand, transforming labour into reflection on impermanence and continual becoming."
 featured: false
 videoFile: ""

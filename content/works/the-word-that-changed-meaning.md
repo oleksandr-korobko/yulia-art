@@ -13,6 +13,7 @@ images:
   - "/images/works/the-word-that-changed-meaning/05.jpg"
   - "/images/works/the-word-that-changed-meaning/06.jpg"
   - "/images/works/the-word-that-changed-meaning/07.jpg"
+  - "/images/works/the-word-that-changed-meaning/08.jpg"
 shortDescription: "Kinetic sculpture examining how a single word and a single material can acquire radically different meanings depending on historical moment, language, and lived reality."
 featured: false
 videoFile: "/videos/works/the-word-that-changed-meaning/video.mp4"

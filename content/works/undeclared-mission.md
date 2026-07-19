@@ -11,6 +11,14 @@ images:
   - "/images/works/undeclared-mission/03.jpg"
   - "/images/works/undeclared-mission/04.jpg"
   - "/images/works/undeclared-mission/05.jpg"
+  - "/images/works/undeclared-mission/06.jpg"
+  - "/images/works/undeclared-mission/07.jpg"
+  - "/images/works/undeclared-mission/08.jpg"
+  - "/images/works/undeclared-mission/09.jpg"
+  - "/images/works/undeclared-mission/10.jpg"
+  - "/images/works/undeclared-mission/11.jpg"
+  - "/images/works/undeclared-mission/12.jpg"
+  - "/images/works/undeclared-mission/13.jpg"
 shortDescription: "Sculptural work centred on an etched copper document titled 'Undeclared Mission of Russia', suspended by heavy-duty industrial metal chain."
 featured: false
 downloads: []

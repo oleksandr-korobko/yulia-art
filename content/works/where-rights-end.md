@@ -18,6 +18,8 @@ images:
   - "/images/works/where-rights-end/10.jpg"
   - "/images/works/where-rights-end/11.jpg"
   - "/images/works/where-rights-end/12.jpg"
+  - "/images/works/where-rights-end/13.jpg"
+  - "/images/works/where-rights-end/14.jpg"
 shortDescription: "Floor-based installation in which the Universal Declaration of Human Rights is printed and fixed directly onto the gallery floor, encircled by yellow-black warning tape."
 featured: false
 ---

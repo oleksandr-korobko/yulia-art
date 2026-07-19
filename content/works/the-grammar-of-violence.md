@@ -17,6 +17,7 @@ images:
   - "/images/works/the-grammar-of-violence/09.jpg"
   - "/images/works/the-grammar-of-violence/10.jpg"
   - "/images/works/the-grammar-of-violence/11.jpg"
+  - "/images/works/the-grammar-of-violence/12.jpg"
 shortDescription: "Video work examining how political language functions as infrastructure that enables, legitimises, and normalises violence in moments of global instability."
 featured: false
 videoFile: ""
