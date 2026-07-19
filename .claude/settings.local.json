@@ -75,7 +75,9 @@
       "Bash(git cat-file:*)",
       "Bash(git config:*)",
       "Bash(git reset:*)",
-      "WebFetch(domain:yulia-gdh89qify-oleksandrs-projects-7e418822.vercel.app)"
+      "WebFetch(domain:yulia-gdh89qify-oleksandrs-projects-7e418822.vercel.app)",
+      "WebFetch(domain:yulia-a7gphwk8u-oleksandrs-projects-7e418822.vercel.app)",
+      "Bash(exiftool:*)"
     ]
   }
 }
