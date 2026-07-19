@@ -166,7 +166,7 @@ export interface FeaturedWorksContent {
 export const CATEGORIES: CategoryInfo[] = [
   {
     slug: 'installations',
-    displayName: 'Installations',
+    displayName: 'Installations & Performance',
     description: 'Spatial works engaging material, scale, and context to create reflective environments shaped by individual & collective experience',
   },
   {
