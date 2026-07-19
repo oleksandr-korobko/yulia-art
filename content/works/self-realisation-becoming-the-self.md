@@ -23,7 +23,8 @@ images:
   - "/images/works/self-realisation-becoming-the-self/15.jpg"
 shortDescription: "Live performance centred on continual reconfiguration of modular ceramic sculpture, approaching identity and rebuilding as unstable processes shaped through movement and collective presence."
 featured: false
-videoFile: "/videos/works/self-realisation-becoming-the-self/video.mp4"
+youtubeId: ""
+# Video will be hosted on YouTube - awaiting video ID from client
 ---
 
 Self-Realisation: Becoming The Self is a live performance centred on the continual reconfiguration of a modular ceramic sculpture composed of large-scale slip-cast bricks. Developed alongside Becoming The Self, the performance approaches identity and rebuilding as unstable processes shaped through movement, repetition, meditation, and collective presence rather than fixed form.

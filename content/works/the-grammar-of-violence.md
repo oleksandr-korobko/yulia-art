@@ -20,11 +20,8 @@ images:
   - "/images/works/the-grammar-of-violence/12.jpg"
 shortDescription: "Video work examining how political language functions as infrastructure that enables, legitimises, and normalises violence in moments of global instability."
 featured: false
-videoFile: ""
-# When ready, add video file path or YouTube ID:
-# videoFile: "/videos/works/the-grammar-of-violence/video.mp4"
-# OR
-# youtubeId: "VIDEO_ID_HERE"
+youtubeId: ""
+# Video will be hosted on YouTube - awaiting video ID from client
 ---
 
 The Grammar of Violence examines how political language functions as an infrastructure that enables, legitimises, and normalises violence in moments of global instability. Through the collision of archival photographs of authoritarian leaders with quoted political rhetoric and the artist's own textual interventions, the work traces recurring linguistic patterns through which aggression is framed as necessity, protection, or lawful action.

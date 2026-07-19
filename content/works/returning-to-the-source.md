@@ -25,7 +25,8 @@ images:
   - "/images/works/returning-to-the-source/17.jpg"
 shortDescription: "Time-based installation in which unfired ceramic bricks gradually dissolve beneath melting ice and water."
 featured: false
-videoFile: "/videos/works/returning-to-the-source/video.mp4"
+youtubeId: ""
+# Video will be hosted on YouTube - awaiting video ID from client
 ---
 
 Returning to The Source is a time-based installation in which unfired ceramic bricks gradually dissolve beneath melting ice and water. The work brings together several strands of the artist's practice: earlier experiments with kinetic sculptures and meditation, her background in environmental policy, and her growing interest in reclaiming clay as both a sustainable process and a metaphor for transformation, impermanence, and return.

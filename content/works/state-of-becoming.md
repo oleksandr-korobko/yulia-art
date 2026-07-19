@@ -16,11 +16,8 @@ images:
   - "/images/works/state-of-becoming/08.jpg"
 shortDescription: "Video performance centred on repetitive actions of crushing, dissolving, reclaiming, and reworking clay by hand, transforming labour into reflection on impermanence and continual becoming."
 featured: false
-videoFile: ""
-# Video file exists but deferred - will add when available
-# videoFile: "/videos/works/state-of-becoming/video.mp4"
-# OR
-# youtubeId: "VIDEO_ID_HERE"
+youtubeId: ""
+# Video will be hosted on YouTube - awaiting video ID from client
 ---
 
 State of Becoming developed through the artist's prolonged engagement with clay, bodily repetition, meditation, and processes of material transformation. Centred on repetitive actions of crushing, dissolving, reclaiming, and reworking clay by hand, the performance gradually transforms physical labour into a reflection on impermanence, self-realisation, and continual becoming. Rather than treating destruction as failure, the work approaches collapse as part of an ongoing cycle through which forms are broken down, absorbed, and reconfigured over time.

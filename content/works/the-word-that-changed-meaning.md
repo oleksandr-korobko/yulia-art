@@ -16,7 +16,8 @@ images:
   - "/images/works/the-word-that-changed-meaning/08.jpg"
 shortDescription: "Kinetic sculpture examining how a single word and a single material can acquire radically different meanings depending on historical moment, language, and lived reality."
 featured: false
-videoFile: "/videos/works/the-word-that-changed-meaning/video.mp4"
+youtubeId: ""
+# Video will be hosted on YouTube - awaiting video ID from client
 ---
 
 The Word That Changed Meaning is a kinetic sculpture examining how a single word and a single material can acquire radically different meanings depending on historical moment, language, and lived reality. The work is constructed from branches and dried cotton flowers – elements traditionally associated with nature, softness, and domestic or decorative use. In everyday global contexts, cotton is linked to textiles, comfort, and beauty. Historically, cotton was also cultivated in Ukraine, forming part of its agricultural and industrial life.
