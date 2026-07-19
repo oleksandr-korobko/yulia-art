@@ -1,8 +1,8 @@
 ---
 title: "Becoming The Self"
-year: "2025-2026"
+year: "2025–2026"
 categories: ["ceramics"]
-materials: "Ceramic modular bricks"
+materials: "Large scale slip-cast ceramic bricks, glazes, mark making and text"
 dimensions: "Dimensions variable"
 featured: false
 coverImage: "/images/works/becoming-the-self/cover.jpg"
@@ -17,13 +17,17 @@ images:
   - "/images/works/becoming-the-self/08.jpg"
   - "/images/works/becoming-the-self/09.jpg"
   - "/images/works/becoming-the-self/10.jpg"
-shortDescription: "An evolving modular ceramic sculpture conceived as a self-portrait that extends beyond individual identity to reflect collective experience"
+  - "/images/works/becoming-the-self/11.jpg"
+  - "/images/works/becoming-the-self/12.jpg"
+  - "/images/works/becoming-the-self/13.jpg"
+  - "/images/works/becoming-the-self/14.jpg"
+shortDescription: "Becoming The Self is an evolving modular sculpture composed of twenty large-scale slip-cast ceramic bricks that reflects on how identity is continuously constructed through pressure, memory, rupture, and lived experience."
 ---
 
-Becoming The Self is an evolving modular ceramic sculpture conceived as a self-portrait that extends beyond individual identity to reflect collective experience. Constructed from large-scale reconfigurable bricks, the work understands becoming as a process shaped by pressure, unwanted intervention, rupture, and the ongoing necessity to rebuild rather than as a stable or resolved state.
+Becoming The Self is an evolving modular sculpture composed of twenty large-scale slip-cast ceramic bricks. The work reflects on how identity is continuously constructed through pressure, memory, rupture, and lived experience rather than existing as a fixed condition. The repetitive modularity of the bricks began to resemble the ways individuals are altered by emotional, political, and historical forces over time, while echoing the psychological condition of Ukrainians living through prolonged war, displacement, and instability.
 
-During the life of the work, two ceramic elements were damaged as a result of external interference. This rupture became central to the sculpture's meaning, marking destruction imposed from outside rather than intentional transformation. The broken elements function as material evidence of vulnerability and endurance – a reminder that identity is often formed under conditions not of one's choosing.
+Produced during Russia's full-scale invasion of Ukraine, the sculpture emerged through the artist's search for inner stability, peace, and self-realisation while living within conditions of uncertainty and rupture. Some ceramic elements remain visibly cracked or deformed following deliberate testing of the clay's physical limits during firing. These fractures are intentionally retained as material records of endurance and vulnerability rather than signs of failure.
 
-Alongside cracked and fractured components, the sculpture includes biscuit-fired ceramic bricks left unglazed. These elements operate as a blank canvas – a point of beginning from zero. Texts embedded within the bricks, drawn from Ukrainian and international literature as well as the artist's own writing, reference works that have shaped personal and collective identity, connecting Ukrainian cultural memory with broader global and intergenerational contexts.
+While some bricks remain blank, others contain handwritten texts and literary references that informed the artist's understanding of ethics, resilience, responsibility, and becoming, including writings by Lesya Ukrainka, the Bhagavad Gita, and Rudyard Kipling's If, alongside participatory handwritten reflections on peace and collective responsibility.
 
-The sculpture is designed to evolve over time. It was reconfigured during a live performance, during which additional bricks were introduced and the structure partially rebuilt, framing rebuilding as an ongoing process and the repeated act of finding oneself again in the aftermath of rupture.
+Through repeated reconfiguration and the live performance Self-Realisation: Becoming The Self, the work approaches rebuilding as a continuous negotiation between fragility, adaptation, memory, and collective resilience.
