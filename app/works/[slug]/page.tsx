@@ -211,7 +211,7 @@ async function WorkPage({ slug }: { slug: string }) {
             alt={work.title}
             fill
             priority
-            className="object-cover"
+            className="object-cover object-[center_35%]"
           />
         </div>
       </section>
