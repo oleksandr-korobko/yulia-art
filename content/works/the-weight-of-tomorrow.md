@@ -28,7 +28,8 @@ images:
   - "/images/works/the-weight-of-tomorrow/20.jpg"
   - "/images/works/the-weight-of-tomorrow/21.jpg"
 shortDescription: "The Weight of Tomorrow is an immersive room-based installation constructed from 355 slip-cast ceramic bricks developed through repetition, accumulation, and material experimentation."
-featured: false
+featured: true
+featuredOrder: 1
 ---
 
 The Weight of Tomorrow is an immersive room-based installation constructed from 355 slip-cast ceramic bricks developed through repetition, accumulation, and material experimentation. The work grows from the artist's interest in childhood construction, play, and the responsibility of imagining future realities while carrying inherited memory and rupture.

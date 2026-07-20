@@ -17,7 +17,8 @@ images:
   - "/images/works/where-rights-end/09.jpg"
   - "/images/works/where-rights-end/10.jpg"
 shortDescription: "Floor-based installation in which the Universal Declaration of Human Rights is printed and fixed directly onto the gallery floor, encircled by yellow-black warning tape."
-featured: false
+featured: true
+featuredOrder: 2
 ---
 
 Where Rights End is a floor-based installation in which the Universal Declaration of Human Rights is printed and fixed directly onto the gallery floor using adhesive spray, then encircled by yellow-black warning tape. Positioned underfoot, the document is subjected to physical proximity, repeated crossing, and potential damage, transforming a foundational legal text into a vulnerable material surface.

@@ -27,6 +27,7 @@ export interface WorkMeta {
   images: string[];
   shortDescription: string;
   featured: boolean;
+  featuredOrder?: number; // Optional priority for featured works (lower = higher priority)
   // Optional media fields
   videoFile?: string; // Path to video file: "/videos/works/slug/video.mp4"
   youtubeId?: string; // YouTube ID for embed

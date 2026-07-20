@@ -16,7 +16,8 @@ images:
   - "/images/works/between-worlds/08.jpg"
   - "/images/works/between-worlds/09.jpg"
 shortDescription: "Translucent resin sculpture reconstructing fifteen ceramic bricks stolen during exhibition, arranged vertically and illuminated from within."
-featured: false
+featured: true
+featuredOrder: 3
 ---
 
 Between Worlds emerged following the theft of fifteen ceramic bricks during one of the exhibitions (On the Edge) in 2026. Reconstructed in translucent resin and arranged in their original vertical formation, the illuminated forms resemble suspended presences existing between disappearance and return. The work gradually developed into a reflection on absence not as emptiness, but as a condition shaped by uncertainty, memory, and unresolved waiting.

@@ -321,13 +321,27 @@ function getNumericYear(year: number | string): number {
 
 /**
  * Get featured works for homepage
+ * Sorts by:
+ *   1. featuredOrder (ascending, if present) - lower number = higher priority
+ *   2. year (descending) - newer first
  */
 export function getNewFeaturedWorks(): WorkMeta[] {
   if (!contentExists()) return [];
 
   return getAllWorksMeta()
     .filter((work) => work.featured)
-    .sort((a, b) => getNumericYear(b.year) - getNumericYear(a.year));
+    .sort((a, b) => {
+      // Primary sort: featuredOrder (if present)
+      const orderA = a.featuredOrder ?? Infinity; // Works without featuredOrder go last
+      const orderB = b.featuredOrder ?? Infinity;
+
+      if (orderA !== orderB) {
+        return orderA - orderB; // Ascending order (1, 2, 3...)
+      }
+
+      // Secondary sort: year (descending)
+      return getNumericYear(b.year) - getNumericYear(a.year);
+    });
 }
 
 /**
