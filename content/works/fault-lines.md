@@ -7,12 +7,12 @@ dimensions: "138 × 115 × 150 cm"
 coverImage: "/images/works/fault-lines/cover.jpg"
 images:
   - "/images/works/fault-lines/01.jpg"
-  - "/images/works/fault-lines/02.jpg"
   - "/images/works/fault-lines/03.jpg"
   - "/images/works/fault-lines/04.jpg"
   - "/images/works/fault-lines/05.jpg"
   - "/images/works/fault-lines/06.jpg"
   - "/images/works/fault-lines/07.jpg"
+  - "/images/works/fault-lines/08.jpg"
 shortDescription: "Fault Lines emerged through the artist's growing interest in material fracture and structural instability produced during prolonged experimentation with clay."
 featured: false
 ---
