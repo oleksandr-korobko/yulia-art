@@ -16,7 +16,7 @@ images:
   - "/images/works/the-escape/08.jpg"
   - "/images/works/the-escape/09.jpg"
 shortDescription: "Installation reconstructing personal belongings carried during forced displacement on February 24, 2022, suspended from barbed wire."
-featured: true
+featured: false
 ---
 
 The Escape is an installation built from restored personal belongings carried by Yuliia Holovatiuk-Ungureanu and her children when they were forced to flee their home on February 24, 2022. Clothes, bags, and a baby stroller are suspended from barbed wire, reconstructing a moment of abrupt displacement and the material reality of leaving under threat. The objects are ordinary, yet charged by the circumstances that transformed them into necessities of survival.

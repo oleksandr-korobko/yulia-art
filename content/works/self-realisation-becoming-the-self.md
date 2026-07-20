@@ -20,7 +20,7 @@ images:
   - "/images/works/self-realisation-becoming-the-self/12.jpg"
   - "/images/works/self-realisation-becoming-the-self/13.jpg"
 shortDescription: "Live performance centred on continual reconfiguration of modular ceramic sculpture, approaching identity and rebuilding as unstable processes shaped through movement and collective presence."
-featured: false
+featured: true
 youtubeId: ""
 # Video will be hosted on YouTube - awaiting video ID from client
 ---
