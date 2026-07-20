@@ -20,7 +20,7 @@ export default function FeaturedWorks() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {works.slice(0, 6).map((work) => (
+        {works.map((work) => (
           <Link
             key={work.slug}
             href={`/works/${work.slug}`}
