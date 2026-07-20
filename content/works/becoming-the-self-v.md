@@ -4,7 +4,8 @@ year: "2025-2026"
 categories: ["ceramics"]
 materials: "Large scale slip-cast ceramic bricks, glazes, mark making and text"
 dimensions: "Dimensions variable"
-featured: false
+featured: true
+featuredOrder: 7
 coverImage: "/images/works/becoming-the-self-v/cover.jpg"
 images:
   - "/images/works/becoming-the-self-v/01.jpg"

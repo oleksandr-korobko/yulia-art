@@ -21,6 +21,7 @@ images:
   - "/images/works/stolen-voice-of-ukraine/13.jpg"
 shortDescription: "Archival installation engaging with Mykhailo Boichuk's case file, revealing Soviet cultural repression through nearly 500 pages."
 featured: true
+featuredOrder: 9
 ---
 
 This installation engages with the silencing of Ukrainian culture through the figure of Mykhailo Boichuk, whose life and work were systematically erased by Soviet repression. Drawing on rare archival materials obtained from the archive of the Security Service of Ukraine, the work focuses on the final chapter of Boichuk's life, revealing how the pursuit of cultural autonomy was criminalised and destroyed. Executed in 1937 and posthumously rehabilitated in 1958, Boichuk's fate stands as a concentrated example of the broader historical violence directed at Ukrainian artists and intellectuals.

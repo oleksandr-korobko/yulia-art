@@ -16,6 +16,7 @@ images:
   - "/images/works/my-wallpaper-fragments-of-a-lost-home/08.jpg"
 shortDescription: "Immersive wallpaper installation combining war-damaged Ukrainian cities with paintings, transforming trauma into domestic background."
 featured: true
+featuredOrder: 8
 ---
 
 My Wallpaper. Fragments of a Lost Home is a large-scale wallpaper installation composed of photographic fragments documenting the destruction of Ukrainian cities caused by Russian missile and artillery attacks. Recorded in 2024, the images depict damaged interiors, shattered buildings, emptied streets, and traces of everyday life interrupted by war. Enlarged to an architectural scale, these fragments surround the viewer, transforming documentary material into an immersive domestic environment.

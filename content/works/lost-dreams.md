@@ -12,6 +12,7 @@ images:
   - "/images/works/lost-dreams/04.jpg"
 shortDescription: "Suspended constellation of paper planes from Ukrainian children's books, mourning lives cut short by war."
 featured: true
+featuredOrder: 5
 ---
 
 Lost Dreams is a suspended constellation of paper planes folded from vintage and contemporary Ukrainian children's books. Floating in space, they recall a simple childhood game, the moment when a sheet of paper becomes flight and imagination has no weight. Pages once meant to teach, comfort, and open the world are transformed into fragile carriers of memory.
