@@ -88,10 +88,58 @@ Portfolio website for **Yuliia Holovatiuk-Ungureanu**, a UK-based Ukrainian mult
 - Example: "war, displacement, and memory – asking how..." ✓
 - Example: "war, displacement, and memory — asking how..." ✗
 
+## Photo Processing Workflow
+
+**CRITICAL: Follow this workflow for ALL photo processing tasks!**
+
+### File Naming Convention
+
+Each work has these photos:
+- **cover.jpg** - Main/hero image (shows on Works index page and top of work detail page)
+- **01.jpg, 02.jpg, 03.jpg, ...** - Gallery images (show in gallery grid on work detail page)
+
+### Processing Artist's Photos
+
+When artist sends archive (e.g., `Citadel_1.jpg`, `Citadel_2.jpg`, ... `Citadel_N.jpg`):
+
+1. **Extract & Parse:**
+   - Use regex: `r'_(\d+)\.jpg$'` to extract number from filename
+   - Convert to integer: `int(match.group(1))`
+   - Sort numerically (NOT alphabetically): `files.sort(key=lambda x: x[0])`
+
+2. **Apply EXIF Fix:**
+   - **ALWAYS** apply `ImageOps.exif_transpose()` BEFORE resizing
+   - This fixes rotation issues from camera EXIF data
+
+3. **Optimize:**
+   - Resize: max width 2400px (preserve aspect ratio)
+   - Quality: 85% JPEG
+   - Progressive: True
+   - Optimize: True
+
+4. **Rename:**
+   - **First file** (`Work_1.jpg`) → `cover.jpg` (main/hero image)
+   - **Remaining files** (`Work_2.jpg`, `Work_3.jpg`, ...) → `01.jpg`, `02.jpg`, `03.jpg`, ...
+
+5. **Update Markdown:**
+   - Update work's `.md` file if image count changed
+   - Update `images` array to match actual files
+
+### Python Script Template
+
+Reference existing scripts in `/tmp/reprocess-*.py` for complete implementation.
+
+### Why This Matters
+
+- **cover.jpg**: Shows on Works index page as work preview
+- **01-N.jpg**: Gallery images on individual work page
+- **Numerical sorting**: Artist uses `_1.jpg`, `_2.jpg`, `_10.jpg` (no leading zeros) - regex + int() handles this correctly
+- **EXIF transpose**: Prevents portrait photos from displaying sideways
+
 ## Work Categories
 
 ```typescript
-type Category = 
+type Category =
   | 'installations'
   | 'sculptures'
   | 'paintings'
