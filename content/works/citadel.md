@@ -16,7 +16,6 @@ images:
   - "/images/works/citadel/08.jpg"
   - "/images/works/citadel/09.jpg"
   - "/images/works/citadel/10.jpg"
-  - "/images/works/citadel/11.jpg"
 shortDescription: "Citadel is a monumental ceramic installation composed of slip-cast bricks arranged as a dark linear structure rising from a hand-shaped field of sand."
 featured: false
 ---
