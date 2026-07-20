@@ -18,6 +18,7 @@ images:
   - "/images/works/self-portrait/10.jpg"
   - "/images/works/self-portrait/11.jpg"
   - "/images/works/self-portrait/12.jpg"
+  - "/images/works/self-portrait/13.jpg"
 shortDescription: "3D printed translucent figure with internal light and guided meditation audio within an immersive spatial environment."
 featured: false
 audioFile: ""

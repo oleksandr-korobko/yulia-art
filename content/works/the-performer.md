@@ -9,6 +9,11 @@ images:
   - "/images/works/the-performer/01.jpg"
   - "/images/works/the-performer/02.jpg"
   - "/images/works/the-performer/03.jpg"
+  - "/images/works/the-performer/04.jpg"
+  - "/images/works/the-performer/05.jpg"
+  - "/images/works/the-performer/06.jpg"
+  - "/images/works/the-performer/07.jpg"
+  - "/images/works/the-performer/08.jpg"
 shortDescription: "Installation incorporating garments and personal belongings used during live performances, oscillating between activation and absence."
 featured: false
 ---

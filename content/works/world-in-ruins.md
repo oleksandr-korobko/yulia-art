@@ -7,6 +7,10 @@ dimensions: "42 × 42 × 42 cm"
 coverImage: "/images/works/world-in-ruins/cover.jpg"
 images:
   - "/images/works/world-in-ruins/01.jpg"
+  - "/images/works/world-in-ruins/02.jpg"
+  - "/images/works/world-in-ruins/03.jpg"
+  - "/images/works/world-in-ruins/04.jpg"
+  - "/images/works/world-in-ruins/05.jpg"
 shortDescription: "Sculptural work reflecting on the fragility of global order through a damaged globe wrapped in barbed wire."
 featured: false
 ---

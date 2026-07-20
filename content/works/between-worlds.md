@@ -13,6 +13,8 @@ images:
   - "/images/works/between-worlds/05.jpg"
   - "/images/works/between-worlds/06.jpg"
   - "/images/works/between-worlds/07.jpg"
+  - "/images/works/between-worlds/08.jpg"
+  - "/images/works/between-worlds/09.jpg"
 shortDescription: "Translucent resin sculpture reconstructing fifteen ceramic bricks stolen during exhibition, arranged vertically and illuminated from within."
 featured: false
 ---
