@@ -5,7 +5,17 @@ categories: ["ceramics"]
 materials: "Slip-cast ceramic bricks"
 dimensions: "Dimensions variable"
 coverImage: "/images/works/becoming-the-self/cover.jpg"
-images: []
+images:
+  - "/images/works/becoming-the-self/01.jpg"
+  - "/images/works/becoming-the-self/02.jpg"
+  - "/images/works/becoming-the-self/03.jpg"
+  - "/images/works/becoming-the-self/04.jpg"
+  - "/images/works/becoming-the-self/05.jpg"
+  - "/images/works/becoming-the-self/06.jpg"
+  - "/images/works/becoming-the-self/07.jpg"
+  - "/images/works/becoming-the-self/08.jpg"
+  - "/images/works/becoming-the-self/09.jpg"
+  - "/images/works/becoming-the-self/10.jpg"
 shortDescription: "Modular ceramic sculpture conceived as self-portrait extending toward collective condition, approaching becoming as ongoing process shaped by pressure, vulnerability, and endurance."
 featured: false
 ---
