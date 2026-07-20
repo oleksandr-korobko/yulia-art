@@ -24,7 +24,7 @@ posts:
   - id: "DH_rbFqq3yo"
     image: "/images/instagram/instagram-7.jpg"
     alt: "Ceramic forms arrangement"
-  - id: "PLACEHOLDER_8"
+  - id: "DH_rbFqq3yo"
     image: "/images/instagram/instagram-8.jpg"
     alt: "Exhibition installation view"
 ---
