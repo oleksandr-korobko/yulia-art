@@ -1,12 +1,84 @@
 # Project Progress
 
-**Last Updated:** 2026-07-18
+**Last Updated:** 2026-07-20
 **Branch:** development
-**Current Focus:** SEO & Deployment Workflow
+**Current Focus:** Photo Updates & Content Management
 
 ---
 
-## Latest Session (2026-07-18) - SEO Fix & Deployment Workflow Documentation
+## Latest Session (2026-07-20) - Citadel Photos Replacement & Photo Processing Rules
+
+### Completed Today
+- ✅ **Citadel Work Photos Replaced:**
+  - Extracted new archive from client (11 photos: Citadel_1.jpg - Citadel_11.jpg)
+  - Deleted all existing Citadel photos (cover.jpg + 01-11.jpg)
+  - Created Python processing script: `/tmp/reprocess-citadel-new.py`
+  - Processed all photos with EXIF orientation fix using `ImageOps.exif_transpose()`
+  - Resized images (max 2400px width, 85% JPEG quality)
+  - Renamed files: Citadel_1.jpg → cover.jpg, Citadel_2-11.jpg → 01-10.jpg
+  - Result: 11 photos total (cover.jpg + 01-10.jpg)
+
+- ✅ **Updated Citadel Markdown:**
+  - Removed reference to 11.jpg (was 11 gallery images, now 10)
+  - Total images: 1 cover + 10 gallery = 11 files
+
+- ✅ **Documentation Updated:**
+  - Added EXIF transpose rule to CLAUDE.md (line 117): "ALWAYS apply ImageOps.exif_transpose() BEFORE resizing"
+  - This prevents future rotation issues when processing photos
+
+### Photo Numbering System Clarification
+
+**Client Question:** "Does Yulia's numbering without leading zeros (Citadel_1.jpg vs Citadel_01.jpg) affect display order?"
+
+**Answer:** ✅ NO - System handles both formats perfectly!
+
+**How it works:**
+1. Regex pattern `r'_(\d+)\.jpg$'` extracts ANY number of digits
+2. Converts to integer: both "_1" and "_01" become integer 1
+3. Sorts numerically (NOT alphabetically): 1, 2, 10, 11 ✓
+4. Result: Files with "_1.jpg" and "_10.jpg" sort correctly
+
+**Conclusion:** No special rules needed. Client can use "_1.jpg" or "_01.jpg" interchangeably.
+
+### Technical Details
+
+**Files Modified:**
+- `content/works/citadel.md` - Removed 11.jpg reference
+- `public/images/works/citadel/*.jpg` - 11 photos replaced
+- `CLAUDE.md` - Added EXIF transpose rule
+
+**Files Created:**
+- `/tmp/reprocess-citadel-new.py` - Photo processing script
+
+**Photo Processing Pipeline:**
+1. Extract archive to `/tmp/`
+2. Find numbered files with regex: `r'_(\d+)\.jpg$'`
+3. Parse numbers as integers and sort numerically
+4. Apply EXIF orientation fix: `ImageOps.exif_transpose()`
+5. Resize if width > 2400px (preserve aspect ratio)
+6. Convert to RGB (remove alpha channel)
+7. Save as JPEG (quality 85%, progressive, optimized)
+8. Rename: first → cover.jpg, rest → 01.jpg, 02.jpg, etc.
+
+**Commit Details:**
+- Commit: 99c9308 "fix: replace all photos for Citadel work with new archive"
+- 10 files changed (9 images modified + 1 deleted + 1 markdown updated)
+- Pushed to development branch
+
+### User Experience Impact
+- **Better photo quality** - New archive with updated photos
+- **Correct orientation** - All photos display properly (EXIF fix applied)
+- **Consistent workflow** - Photo processing pipeline documented and reusable
+- **Future-proof** - Numbering system clarified for client
+
+### Next Steps
+1. Deploy to preview URL for client review
+2. Continue with other photo updates if needed
+3. Monitor for any photo orientation issues
+
+---
+
+## Previous Session (2026-07-18) - SEO Fix & Deployment Workflow Documentation
 
 ### Completed Today
 - ✅ **SEO Metadata Fixed - Custom Domain Integration:**

@@ -115,6 +115,7 @@ npx vercel --prod --yes        # Deploy to production
 3. **Mobile-first:** Always consider mobile first
 4. **Scalable:** Structure must allow for future CMS integration
 5. **Image-heavy:** Optimize all images, use Next.js Image component
+6. **Image Processing:** ALWAYS apply `ImageOps.exif_transpose()` BEFORE resizing when processing photos to prevent rotation issues
 
 ## Tailwind Plus Components
 
