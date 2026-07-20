@@ -1,6 +1,6 @@
 ---
 title: "My Wallpaper. Fragments of a Lost Home"
-year: 2024
+year: 2024-2025
 categories: ["installations", "text-informed"]
 materials: "Wallpaper installation (16 m²), metal clock hands, paintings"
 dimensions: "16 m²"

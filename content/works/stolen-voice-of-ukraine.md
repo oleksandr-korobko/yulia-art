@@ -1,6 +1,6 @@
 ---
 title: "Stolen Voice of Ukraine"
-year: 2024
+year: 2024-2025
 categories: ["installations", "text-informed"]
 materials: "Rare archival copies, etched copper, processed with fire, translation"
 dimensions: "Variable"
