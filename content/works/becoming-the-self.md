@@ -2,28 +2,18 @@
 title: "Becoming The Self"
 year: "2025-2026"
 categories: ["ceramics"]
-materials: "Ceramic modular bricks"
+materials: "Slip-cast ceramic bricks"
 dimensions: "Dimensions variable"
-featured: false
 coverImage: "/images/works/becoming-the-self/cover.jpg"
-images:
-  - "/images/works/becoming-the-self/01.jpg"
-  - "/images/works/becoming-the-self/02.jpg"
-  - "/images/works/becoming-the-self/03.jpg"
-  - "/images/works/becoming-the-self/04.jpg"
-  - "/images/works/becoming-the-self/05.jpg"
-  - "/images/works/becoming-the-self/06.jpg"
-  - "/images/works/becoming-the-self/07.jpg"
-  - "/images/works/becoming-the-self/08.jpg"
-  - "/images/works/becoming-the-self/09.jpg"
-  - "/images/works/becoming-the-self/10.jpg"
-shortDescription: "An evolving modular ceramic sculpture conceived as a self-portrait that extends beyond individual identity to reflect collective experience"
+images: []
+shortDescription: "Modular ceramic sculpture conceived as self-portrait extending toward collective condition, approaching becoming as ongoing process shaped by pressure, vulnerability, and endurance."
+featured: false
 ---
 
-Becoming The Self is an evolving modular ceramic sculpture conceived as a self-portrait that extends beyond individual identity to reflect collective experience. Constructed from large-scale reconfigurable bricks, the work understands becoming as a process shaped by pressure, unwanted intervention, rupture, and the ongoing necessity to rebuild rather than as a stable or resolved state.
+Becoming The Self (І, ІІ, ІІІ, ІV) is a modular ceramic sculpture conceived as a self-portrait that extends beyond individual identity toward a collective condition. Composed of large-scale ceramic bricks arranged in a reconfigurable structure, the work approaches becoming not as a fixed state, but as an ongoing process shaped by pressure, vulnerability, and endurance.
 
-During the life of the work, two ceramic elements were damaged as a result of external interference. This rupture became central to the sculpture's meaning, marking destruction imposed from outside rather than intentional transformation. The broken elements function as material evidence of vulnerability and endurance – a reminder that identity is often formed under conditions not of one's choosing.
+Some bricks bear visible cracks or deformations produced through deliberate testing of the material's limits during production. These fractures are not signs of failure, but material records of stress endured. Despite visible damage, many elements remain intact, holding resilience and fragility in tension.
 
-Alongside cracked and fractured components, the sculpture includes biscuit-fired ceramic bricks left unglazed. These elements operate as a blank canvas – a point of beginning from zero. Texts embedded within the bricks, drawn from Ukrainian and international literature as well as the artist's own writing, reference works that have shaped personal and collective identity, connecting Ukrainian cultural memory with broader global and intergenerational contexts.
+Some bricks remain blank, functioning as unmarked surfaces or open fields, while others incorporate text and mark-making. Poetry by Ukrainian and international authors appears alongside the artist's own writing and gestures. Language functions not as surface inscription, but as internal support, holding memory and lived experience within the structure itself.
 
-The sculpture is designed to evolve over time. It was reconfigured during a live performance, during which additional bricks were introduced and the structure partially rebuilt, framing rebuilding as an ongoing process and the repeated act of finding oneself again in the aftermath of rupture.
+While rooted in autobiography, the work reflects a shared condition shaped by sustained rupture: the necessity to continue building while damage remains visible. Designed to change over time, Becoming The Self is from time to time reconfigured through a live performance framing rebuilding as an open, ongoing process rather than a resolved form.
